@@ -1,0 +1,6 @@
+1. using jupyter notebook and python, I want to create a machine learning model capable of detecting and preventing phishing url using ensemble machine learning method: Gradient Boosting Classifier, CatBoost Classifier, XGBoost Classifier, Multi-layer Perceptron, Random Forest, Support Vector Machine, Decision Tree, K-Nearest Neighbors, Logistic Regression, and Naive Bayes Classifier. Using these modules: beautifulsoup4,Flask, googlesearch_python, numpy, pandas, python_dateutil,requests,  scikit_learn,
+whois, and gunicorn.
+
+2. Upload a datasets.
+
+3. Teach me a step by step guide leaving no stone unturned with outputs as example.
