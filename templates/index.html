@@ -7,9 +7,20 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <style>
         .container {
             margin-top: 50px;
+        }
+        .toggle-icon {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .card-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -47,53 +58,84 @@
             {% if features %}
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title">Explanation of Features:</h3>
-                    <ul>
-                        <li><strong>-1</strong>: Potentially malicious URL.</li>
-                        <li><strong>0</strong>: Suspicious URL.</li>
-                        <li><strong>1</strong>: Likely benign URL.</li>
-                    </ul>
-                    <h3 class="card-title">Extracted Features:</h3>
-                    <div class="table-responsive">
-                        <table class="table" id="featuresTable">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>Feature</th>
-                                    <th>Value</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% set feature_labels = [
-                                    'Using IP', 'Long URL', 'Short URL', 'Symbol @', 'Redirecting //', 'Prefix/Suffix',
-                                    'Sub Domains', 'HTTPS', 'Domain Registration Length', 'Favicon', 'Non-Standard Port',
-                                    'HTTPS Domain URL', 'Request URL', 'Anchor URL', 'Links in <\script> tags',
-                                    'Server Form Handler', 'Info Email', 'Abnormal URL', 'Website Forwarding', 'Status Bar Customization',
-                                    'Disable Right Click', 'Using Popup Window', 'Iframe Redirection', 'Age of Domain',
-                                    'DNS Recording', 'Website Traffic', 'Page Rank', 'Google Index', 'Links Pointing to Page',
-                                    'Stats Report'
-                                ] %}
-                                {% for label, feature in feature_labels|zip(features) %}
-                                <tr>
-                                    <td>{{ label }}</td>
-                                    <td>
-                                        {% if feature == -1 %}
-                                            <span class="text-danger">No</span>
-                                        {% elif feature == 0 %}
-                                            <span class="text-warning">Maybe</span>
-                                        {% elif feature == 1 %}
-                                            <span class="text-success">Yes</span>
-                                        {% endif %}
-                                    </td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
+                    <h3 class="card-title" data-toggle="collapse" href="#featureExplanation" role="button" aria-expanded="false" aria-controls="featureExplanation">
+                        <span><i class="toggle-icon fas fa-chevron-right"></i> Explanation of Features</span>
+                    </h3>
+                    <div class="collapse" id="featureExplanation">
+                        <ul>
+                            <li><strong>-1</strong>: Potentially Malicious.</li>
+                            <li><strong>0</strong>: Suspicious.</li>
+                            <li><strong>1</strong>: Likely Safe.</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="card-title" data-toggle="collapse" href="#extractedFeatures" role="button" aria-expanded="false" aria-controls="extractedFeatures">
+                        <span><i class="toggle-icon fas fa-chevron-right"></i> Extracted Features</span>
+                    </h3>
+                    <div class="collapse" id="extractedFeatures">
+                        <div class="table-responsive">
+                            <table class="table table-striped" id="featuresTable">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% set feature_labels = [
+                                        'Using IP', 'Long URL', 'Short URL', 'Symbol @', 'Redirecting //', 'Prefix/Suffix',
+                                        'Sub Domains', 'HTTPS', 'Domain Registration Length', 'Favicon', 'Non-Standard Port',
+                                        'HTTPS Domain URL', 'Request URL', 'Anchor URL', 'Links in script tags',
+                                        'Server Form Handler', 'Info Email', 'Abnormal URL', 'Website Forwarding', 'Status Bar Customization',
+                                        'Disable Right Click', 'Using Popup Window', 'Iframe Redirection', 'Age of Domain',
+                                        'DNS Recording', 'Website Traffic', 'Page Rank', 'Google Index', 'Links Pointing to Page',
+                                        'Stats Report'
+                                    ] %}
+                                    {% for label, feature in feature_labels|zip(features) %}
+                                    <tr>
+                                        <td>{{ label }}</td>
+                                        <td>
+                                            {% if feature == -1 %}
+                                                <span class="text-danger">Potentially Malicious</span>
+                                            {% elif feature == 0 %}
+                                                <span class="text-warning">Suspicious</span>
+                                            {% elif feature == 1 %}
+                                                <span class="text-success">Likely Safe</span>
+                                            {% else %}
+                                                <span>Unknown</span>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
             {% endif %}
         </div>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            // Handle the toggle icon change on collapse show/hide
+            $('#featureExplanation').on('shown.bs.collapse', function () {
+                $(this).prev().find('.toggle-icon').removeClass('fa-chevron-right').addClass('fa-chevron-down');
+            }).on('hidden.bs.collapse', function () {
+                $(this).prev().find('.toggle-icon').removeClass('fa-chevron-down').addClass('fa-chevron-right');
+            });
+
+            $('#extractedFeatures').on('shown.bs.collapse', function () {
+                $(this).prev().find('.toggle-icon').removeClass('fa-chevron-right').addClass('fa-chevron-down');
+            }).on('hidden.bs.collapse', function () {
+                $(this).prev().find('.toggle-icon').removeClass('fa-chevron-down').addClass('fa-chevron-right');
+            });
+        });
+    </script>
+
+    <!-- Font Awesome for toggle icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 
 </body>
 </html>

@@ -140,7 +140,9 @@ def index():
             pred = "An error occurred while predicting the URL safety. Please try again later."
             y_pro_phishing = 0
             y_pro_non_phishing = 0
-
+        
+        print(features)
+        
         return render_template(
             'index.html', 
             prediction=pred, 
@@ -148,7 +150,7 @@ def index():
             url=final_url, 
             y_pro_phishing=y_pro_phishing, 
             y_pro_non_phishing=y_pro_non_phishing
-        )
+        )        
 
     # GET request handling
     return render_template("index.html", prediction="", features=[], url="", y_pro_phishing=0, y_pro_non_phishing=0)
