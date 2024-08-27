@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='image.jpg') }}">
     <title>Phishing URL Detection</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -53,13 +54,13 @@
                 </div>
             </div>
 
-            <div class="card mb-3 collapse" id="featureExplanation">
+            <div class="card mb-3" data-toggle="collapse" href="#featureExplanation" role="button" aria-expanded="false" aria-controls="featureExplanation">
                 <div class="card-body">
                     <h3 class="card-title">
                         <span>Explanation of Features</span>
                         <i class="toggle-icon fas fa-chevron-right"></i>
                     </h3>                    
-                    <ul>
+                    <ul class="collapse" id="featureExplanation">
                         <li><strong>-1</strong>: Potentially Malicious.</li>
                         <li><strong>0</strong>: Suspicious.</li>
                         <li><strong>1</strong>: Likely Safe.</li>
@@ -67,13 +68,13 @@
                 </div>
             </div>
             
-            <div class="card collapse" id="extractedFeatures">
+            <div class="card" data-toggle="collapse" href="#extractedFeatures" role="button" aria-expanded="false" aria-controls="extractedFeatures">
                 <div class="card-body">
                     <h3 class="card-title">
                         <span>Extracted Features</span>
                         <i class="toggle-icon fas fa-chevron-right"></i>
                     </h3>                    
-                    <div class="table-responsive">
+                    <div class="table-responsive collapse" id="extractedFeatures" >
                         <table class="table table-striped" id="featuresTable">
                             <thead class="thead-dark">
                                 <tr>
@@ -90,92 +91,7 @@
             </div>
         </div>
     </div>
-
-    <script>
-        $(document).ready(function() {
-            // Define the feature labels
-            const featureLabels = [
-                'Using IP', 'Long URL', 'Short URL', 'Symbol @', 'Redirecting //', 'Prefix/Suffix',
-                'Sub Domains', 'HTTPS', 'Domain Registration Length', 'Favicon', 'Non-Standard Port',
-                'HTTPS Domain URL', 'Request URL', 'Anchor URL', 'Links in &lt;script&gt; tags',
-                'Server Form Handler', 'Info Email', 'Abnormal URL', 'Website Forwarding', 'Status Bar Customization',
-                'Disable Right Click', 'Using Popup Window', 'Iframe Redirection', 'Age of Domain',
-                'DNS Recording', 'Website Traffic', 'Page Rank', 'Google Index', 'Links Pointing to Page',
-                'Stats Report'
-            ];
-
-            // Handle form submission
-            $('#urlForm').on('submit', function(event) {
-                event.preventDefault();  // Prevent default form submission
-                $('#results').collapse('hide');  // Hide previous results
-                $('#loadingSpinner').show();  // Show the loading spinner
-
-                const url = $('#url').val();
-
-                $.ajax({
-                    url: '/check_url',  // Adjust the URL if your Flask endpoint is different
-                    method: 'POST',
-                    contentType: 'application/json',
-                    dataType: 'json',
-                    data: JSON.stringify({ url: url }),
-                    success: function(response) {
-                        $('#loadingSpinner').hide();  // Hide the loading spinner
-                        
-                        // Display the results
-                        $('#resultText').text(`${url} ${response.message}`);
-                        $('#resultText').removeClass('text-danger text-success');
-                        if (response.is_phishing) {
-                            $('#resultText').addClass('text-danger');
-                        } else {
-                            $('#resultText').addClass('text-success');
-                        }
-                        
-                        // Populate the features list
-                        if (response.features) {
-                            let featuresHtml = '';
-                            response.features.forEach(function(feature, index) {
-                                let label = featureLabels[index] || 'Unknown';
-                                let valueClass = feature === -1 ? 'text-danger' :
-                                                 feature === 0 ? 'text-warning' : 'text-success';
-                                let valueText = feature === -1 ? 'Potentially Malicious' :
-                                                feature === 0 ? 'Suspicious' : 'Likely Safe';
-                                
-                                featuresHtml += `
-                                    <tr>
-                                        <td>${label}</td>
-                                        <td class="${valueClass}">${valueText}</td>
-                                    </tr>
-                                `;
-                            });
-                            $('#featuresList').html(featuresHtml);
-                            $('#extractedFeatures, #featureExplanation').collapse('show');  // Show features
-                        } else {
-                            $('#extractedFeatures, #featureExplanation').collapse('hide');
-                        }
-
-                        $('#results').collapse('show');  // Show the results section
-                    },
-                    error: function(xhr, status, error) {
-                        $('#loadingSpinner').hide();  // Hide the loading spinner
-                        alert('An error occurred: ' + error);
-                    }
-                });
-            });
-
-            // Handle the toggle icon change on collapse show/hide
-            $('#featureExplanation').on('shown.bs.collapse', function () {
-                $(this).find('.toggle-icon').removeClass('fa-chevron-right').addClass('fa-chevron-down');
-            }).on('hidden.bs.collapse', function () {
-                $(this).find('.toggle-icon').removeClass('fa-chevron-down').addClass('fa-chevron-right');
-            });
-
-            $('#extractedFeatures').on('shown.bs.collapse', function () {
-                $(this).find('.toggle-icon').removeClass('fa-chevron-right').addClass('fa-chevron-down');
-            }).on('hidden.bs.collapse', function () {
-                $(this).find('.toggle-icon').removeClass('fa-chevron-down').addClass('fa-chevron-right');
-            });
-        });
-    </script>
+    <script src="{{ url_for('static', filename='function.js') }}"></script>
 
     <!-- Font Awesome for toggle icons -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>

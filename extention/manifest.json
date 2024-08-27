@@ -1,33 +1,32 @@
 {
-    "manifest_version": 3,
-    "name": "Real-Time Phishing Detector",
-    "version": "1.0",
-    "description": "Detects phishing websites in real-time while browsing.",
-    "permissions": [
-      "webRequest",
-      "webRequestBlocking",
-      "storage",
-      "activeTab",
-      "tabs"
-    ],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "icons": {
-      "48": "icon.png"
-    },
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icon.png"
-    },
-    "host_permissions": [
-      "<all_urls>"
-    ],
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ]
-  }
-  
+  "manifest_version": 3,
+  "name": "Real-Time Phishing Detector",
+  "version": "1.0",
+  "description": "Detects phishing websites in real-time while browsing.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
