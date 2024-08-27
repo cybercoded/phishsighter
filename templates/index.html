@@ -23,7 +23,7 @@
         <h1 class="text-center mb-4">Phishing URL Detection</h1>
         <form method="POST" action="/" class="form-inline justify-content-center mb-4" id="urlForm">
             <div class="form-group">
-                <input type="text" id="url" name="url" placeholder="Enter URL" class="form-control mr-2" required>
+                <input type="url" id="url" name="url" placeholder="Enter URL" class="form-control mr-2" required>
             </div>
             <button type="submit" class="btn btn-primary">Check</button>
         </form>
@@ -32,12 +32,19 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h2 class="card-title">Results for: {{ url }}</h2>
-                    <p class="card-text"><strong>Prediction:</strong> {{ prediction }}</p>
-                    <p class="card-text"><strong>Probability of being a phishing site:</strong> {{ y_pro_phishing * 100 }}%</p>
-                    <p class="card-text"><strong>Probability of being a safe site:</strong> {{ y_pro_non_phishing * 100 }}%</p>
+                    {% if "not reachable" in prediction %}
+                        <p class="card-text text-danger"><strong>{{ prediction }}</strong></p>
+                    {% elif "flagged as dangerou" in prediction %}
+                        <p class="card-text text-danger"><strong>{{ prediction }}</strong></p>
+                    {% else %}
+                        <p class="card-text"><strong>Prediction:</strong> {{ prediction }}</p>
+                        <p class="card-text"><strong>Probability of being a phishing site:</strong> {{ y_pro_phishing * 100 }}%</p>
+                        <p class="card-text"><strong>Probability of being a safe site:</strong> {{ y_pro_non_phishing * 100 }}%</p>
+                    {% endif %}
                 </div>
             </div>
 
+            {% if features %}
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">Explanation of Features:</h3>
@@ -59,7 +66,7 @@
                                 {% set feature_labels = [
                                     'Using IP', 'Long URL', 'Short URL', 'Symbol @', 'Redirecting //', 'Prefix/Suffix',
                                     'Sub Domains', 'HTTPS', 'Domain Registration Length', 'Favicon', 'Non-Standard Port',
-                                    'HTTPS Domain URL', 'Request URL', 'Anchor URL', 'Links in <script> tags',
+                                    'HTTPS Domain URL', 'Request URL', 'Anchor URL', 'Links in <\script> tags',
                                     'Server Form Handler', 'Info Email', 'Abnormal URL', 'Website Forwarding', 'Status Bar Customization',
                                     'Disable Right Click', 'Using Popup Window', 'Iframe Redirection', 'Age of Domain',
                                     'DNS Recording', 'Website Traffic', 'Page Rank', 'Google Index', 'Links Pointing to Page',
@@ -70,11 +77,11 @@
                                     <td>{{ label }}</td>
                                     <td>
                                         {% if feature == -1 %}
-                                            <span class="text-danger">-1</span>
+                                            <span class="text-danger">No</span>
                                         {% elif feature == 0 %}
-                                            <span class="text-warning">0</span>
+                                            <span class="text-warning">Maybe</span>
                                         {% elif feature == 1 %}
-                                            <span class="text-success">1</span>
+                                            <span class="text-success">Yes</span>
                                         {% endif %}
                                     </td>
                                 </tr>
@@ -84,29 +91,9 @@
                     </div>
                 </div>
             </div>
-            <script>
-                var url = "{{ url }}";
-                localStorage.setItem(url, $('#results').html());
-            </script>
+            {% endif %}
         </div>
+    </div>
 
-    <!-- JavaScript to store features in local storage -->
-    <script>
-    
-        // Add event listener to the form submission to store features
-        document.getElementById('urlForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            var url = document.getElementById('url').value.trim(); // Trim to remove leading/trailing whitespaces
-            var storedFeatures = localStorage.getItem(url);
-            if (storedFeatures && storedFeatures != "") {
-                $('#results').html(localStorage.getItem(url)).show('down')
-            } else {
-                // Proceed with form submission
-                this.submit();
-            }
-        });
-    </script>
-    
-    
 </body>
 </html>
