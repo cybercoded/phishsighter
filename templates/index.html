@@ -16,7 +16,7 @@
             cursor: pointer;
             margin-right: 10px;
         }
-        .card-title {
+        .card-body {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -42,24 +42,23 @@
         <div id="results" class="{% if not url %} collapse {% endif %}">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h2 class="card-title">Results for: {{ url }}</h2>
-                    {% if "not reachable" in prediction %}
-                        <p class="card-text text-danger"><strong>{{ prediction }}</strong></p>
-                    {% elif "flagged as dangerou" in prediction %}
-                        <p class="card-text text-danger"><strong>{{ prediction }}</strong></p>
-                    {% else %}
-                        <p class="card-text"><strong>Prediction:</strong> {{ prediction }}</p>
-                        <p class="card-text"><strong>Probability of being a phishing site:</strong> {{ y_pro_phishing * 100 }}%</p>
-                        <p class="card-text"><strong>Probability of being a safe site:</strong> {{ y_pro_non_phishing * 100 }}%</p>
-                    {% endif %}
+                    <h2 class="card-title"> 
+                        {% if "not reachable" in prediction %}
+                            <p class="card-text text-danger"><strong>{{ url }} {{ prediction }}</strong></p>
+                        {% elif "flagged as dangerou" in prediction %}
+                            <p class="card-text text-danger"><strong>{{ url }} {{ prediction }}</strong></p>
+                        {% else %}
+                            <p class="card-text text-success"><strong>{{ url }} {{ prediction }}</strong></p>
+                        {% endif %}
+                    </h2>
                 </div>
             </div>
 
             {% if features %}
-            <div class="card">
+            <div class="card mb-3">
                 <div class="card-body">
                     <h3 class="card-title" data-toggle="collapse" href="#featureExplanation" role="button" aria-expanded="false" aria-controls="featureExplanation">
-                        <span><i class="toggle-icon fas fa-chevron-right"></i> Explanation of Features</span>
+                        <span>Explanation of Features</span>
                     </h3>
                     <div class="collapse" id="featureExplanation">
                         <ul>
@@ -68,9 +67,13 @@
                             <li><strong>1</strong>: Likely Safe.</li>
                         </ul>
                     </div>
-
+                    <i class="toggle-icon fas fa-chevron-right"></i> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
                     <h3 class="card-title" data-toggle="collapse" href="#extractedFeatures" role="button" aria-expanded="false" aria-controls="extractedFeatures">
-                        <span><i class="toggle-icon fas fa-chevron-right"></i> Extracted Features</span>
+                        <span>Extracted Features</span>
                     </h3>
                     <div class="collapse" id="extractedFeatures">
                         <div class="table-responsive">
@@ -85,7 +88,7 @@
                                     {% set feature_labels = [
                                         'Using IP', 'Long URL', 'Short URL', 'Symbol @', 'Redirecting //', 'Prefix/Suffix',
                                         'Sub Domains', 'HTTPS', 'Domain Registration Length', 'Favicon', 'Non-Standard Port',
-                                        'HTTPS Domain URL', 'Request URL', 'Anchor URL', 'Links in script tags',
+                                        'HTTPS Domain URL', 'Request URL', 'Anchor URL', 'Links in <script> tags',
                                         'Server Form Handler', 'Info Email', 'Abnormal URL', 'Website Forwarding', 'Status Bar Customization',
                                         'Disable Right Click', 'Using Popup Window', 'Iframe Redirection', 'Age of Domain',
                                         'DNS Recording', 'Website Traffic', 'Page Rank', 'Google Index', 'Links Pointing to Page',
@@ -111,6 +114,7 @@
                             </table>
                         </div>
                     </div>
+                    <i class="toggle-icon fas fa-chevron-right"></i> 
                 </div>
             </div>
             {% endif %}

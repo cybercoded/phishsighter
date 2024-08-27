@@ -132,17 +132,15 @@ def index():
             y_pro_non_phishing = gbc.predict_proba(x)[0, 1]
 
             if y_pred == 1:
-                pred = f"It is {y_pro_non_phishing * 100:.2f}% safe to go."
+                pred = f"is {y_pro_non_phishing * 100:.2f}% safe to go."
             else:
-                pred = f"It is {y_pro_phishing * 100:.2f}% likely to be a phishing site."
+                pred = f"is {y_pro_phishing * 100:.2f}% likely to be a phishing site."
         except Exception as e:
             logger.error(f"Error during model prediction for {final_url}: {e}")
             pred = "An error occurred while predicting the URL safety. Please try again later."
             y_pro_phishing = 0
             y_pro_non_phishing = 0
-        
-        print(features)
-        
+
         return render_template(
             'index.html', 
             prediction=pred, 
@@ -150,7 +148,7 @@ def index():
             url=final_url, 
             y_pro_phishing=y_pro_phishing, 
             y_pro_non_phishing=y_pro_non_phishing
-        )        
+        )
 
     # GET request handling
     return render_template("index.html", prediction="", features=[], url="", y_pro_phishing=0, y_pro_non_phishing=0)
