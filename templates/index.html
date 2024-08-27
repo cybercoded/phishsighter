@@ -16,7 +16,7 @@
             cursor: pointer;
             margin-right: 10px;
         }
-        .card-body {
+        .card-title {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -26,114 +26,153 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container" style="max-width: 700px">
         <div class="text-center">
             <img src="{{ url_for('static', filename='image.jpg') }}" alt="Phishing URL Detection Logo" class="img-thumbnail" width="200px" height="200px"/>
         </div>
         
         <h1 class="text-center mb-4">Phishing URL Detection</h1>
-        <form method="POST" action="/" class="form-inline justify-content-center mb-4" id="urlForm">
+        <form id="urlForm" class="form-inline justify-content-center mb-4">
             <div class="form-group">
                 <input type="url" id="url" name="url" placeholder="Enter URL" class="form-control mr-2" required>
             </div>
             <button type="submit" class="btn btn-primary">Check</button>
         </form>
 
-        <div id="results" class="{% if not url %} collapse {% endif %}">
+        <div id="loadingSpinner" class="text-center" style="display:none;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <p>Processing your request, please wait...</p>
+        </div>
+
+        <div id="results" class="collapse">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h2 class="card-title"> 
-                        {% if "not reachable" in prediction %}
-                            <p class="card-text text-danger"><strong>{{ url }} {{ prediction }}</strong></p>
-                        {% elif "flagged as dangerou" in prediction %}
-                            <p class="card-text text-danger"><strong>{{ url }} {{ prediction }}</strong></p>
-                        {% else %}
-                            <p class="card-text text-success"><strong>{{ url }} {{ prediction }}</strong></p>
-                        {% endif %}
-                    </h2>
+                    <h2 class="card-title" id="resultText"></h2>
                 </div>
             </div>
 
-            {% if features %}
-            <div class="card mb-3">
+            <div class="card mb-3 collapse" id="featureExplanation">
                 <div class="card-body">
-                    <h3 class="card-title" data-toggle="collapse" href="#featureExplanation" role="button" aria-expanded="false" aria-controls="featureExplanation">
+                    <h3 class="card-title">
                         <span>Explanation of Features</span>
-                    </h3>
-                    <div class="collapse" id="featureExplanation">
-                        <ul>
-                            <li><strong>-1</strong>: Potentially Malicious.</li>
-                            <li><strong>0</strong>: Suspicious.</li>
-                            <li><strong>1</strong>: Likely Safe.</li>
-                        </ul>
-                    </div>
-                    <i class="toggle-icon fas fa-chevron-right"></i> 
+                        <i class="toggle-icon fas fa-chevron-right"></i>
+                    </h3>                    
+                    <ul>
+                        <li><strong>-1</strong>: Potentially Malicious.</li>
+                        <li><strong>0</strong>: Suspicious.</li>
+                        <li><strong>1</strong>: Likely Safe.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="card">
+            
+            <div class="card collapse" id="extractedFeatures">
                 <div class="card-body">
-                    <h3 class="card-title" data-toggle="collapse" href="#extractedFeatures" role="button" aria-expanded="false" aria-controls="extractedFeatures">
+                    <h3 class="card-title">
                         <span>Extracted Features</span>
-                    </h3>
-                    <div class="collapse" id="extractedFeatures">
-                        <div class="table-responsive">
-                            <table class="table table-striped" id="featuresTable">
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <th>Feature</th>
-                                        <th>Value</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {% set feature_labels = [
-                                        'Using IP', 'Long URL', 'Short URL', 'Symbol @', 'Redirecting //', 'Prefix/Suffix',
-                                        'Sub Domains', 'HTTPS', 'Domain Registration Length', 'Favicon', 'Non-Standard Port',
-                                        'HTTPS Domain URL', 'Request URL', 'Anchor URL', 'Links in <script> tags',
-                                        'Server Form Handler', 'Info Email', 'Abnormal URL', 'Website Forwarding', 'Status Bar Customization',
-                                        'Disable Right Click', 'Using Popup Window', 'Iframe Redirection', 'Age of Domain',
-                                        'DNS Recording', 'Website Traffic', 'Page Rank', 'Google Index', 'Links Pointing to Page',
-                                        'Stats Report'
-                                    ] %}
-                                    {% for label, feature in feature_labels|zip(features) %}
-                                    <tr>
-                                        <td>{{ label }}</td>
-                                        <td>
-                                            {% if feature == -1 %}
-                                                <span class="text-danger">Potentially Malicious</span>
-                                            {% elif feature == 0 %}
-                                                <span class="text-warning">Suspicious</span>
-                                            {% elif feature == 1 %}
-                                                <span class="text-success">Likely Safe</span>
-                                            {% else %}
-                                                <span>Unknown</span>
-                                            {% endif %}
-                                        </td>
-                                    </tr>
-                                    {% endfor %}
-                                </tbody>
-                            </table>
-                        </div>
+                        <i class="toggle-icon fas fa-chevron-right"></i>
+                    </h3>                    
+                    <div class="table-responsive">
+                        <table class="table table-striped" id="featuresTable">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody id="featuresList">
+                                <!-- Dynamic content will be injected here -->
+                            </tbody>
+                        </table>
                     </div>
-                    <i class="toggle-icon fas fa-chevron-right"></i> 
                 </div>
             </div>
-            {% endif %}
         </div>
     </div>
 
     <script>
         $(document).ready(function() {
+            // Define the feature labels
+            const featureLabels = [
+                'Using IP', 'Long URL', 'Short URL', 'Symbol @', 'Redirecting //', 'Prefix/Suffix',
+                'Sub Domains', 'HTTPS', 'Domain Registration Length', 'Favicon', 'Non-Standard Port',
+                'HTTPS Domain URL', 'Request URL', 'Anchor URL', 'Links in &lt;script&gt; tags',
+                'Server Form Handler', 'Info Email', 'Abnormal URL', 'Website Forwarding', 'Status Bar Customization',
+                'Disable Right Click', 'Using Popup Window', 'Iframe Redirection', 'Age of Domain',
+                'DNS Recording', 'Website Traffic', 'Page Rank', 'Google Index', 'Links Pointing to Page',
+                'Stats Report'
+            ];
+
+            // Handle form submission
+            $('#urlForm').on('submit', function(event) {
+                event.preventDefault();  // Prevent default form submission
+                $('#results').collapse('hide');  // Hide previous results
+                $('#loadingSpinner').show();  // Show the loading spinner
+
+                const url = $('#url').val();
+
+                $.ajax({
+                    url: '/check_url',  // Adjust the URL if your Flask endpoint is different
+                    method: 'POST',
+                    contentType: 'application/json',
+                    dataType: 'json',
+                    data: JSON.stringify({ url: url }),
+                    success: function(response) {
+                        $('#loadingSpinner').hide();  // Hide the loading spinner
+                        
+                        // Display the results
+                        $('#resultText').text(`${url} ${response.message}`);
+                        $('#resultText').removeClass('text-danger text-success');
+                        if (response.is_phishing) {
+                            $('#resultText').addClass('text-danger');
+                        } else {
+                            $('#resultText').addClass('text-success');
+                        }
+                        
+                        // Populate the features list
+                        if (response.features) {
+                            let featuresHtml = '';
+                            response.features.forEach(function(feature, index) {
+                                let label = featureLabels[index] || 'Unknown';
+                                let valueClass = feature === -1 ? 'text-danger' :
+                                                 feature === 0 ? 'text-warning' : 'text-success';
+                                let valueText = feature === -1 ? 'Potentially Malicious' :
+                                                feature === 0 ? 'Suspicious' : 'Likely Safe';
+                                
+                                featuresHtml += `
+                                    <tr>
+                                        <td>${label}</td>
+                                        <td class="${valueClass}">${valueText}</td>
+                                    </tr>
+                                `;
+                            });
+                            $('#featuresList').html(featuresHtml);
+                            $('#extractedFeatures, #featureExplanation').collapse('show');  // Show features
+                        } else {
+                            $('#extractedFeatures, #featureExplanation').collapse('hide');
+                        }
+
+                        $('#results').collapse('show');  // Show the results section
+                    },
+                    error: function(xhr, status, error) {
+                        $('#loadingSpinner').hide();  // Hide the loading spinner
+                        alert('An error occurred: ' + error);
+                    }
+                });
+            });
+
             // Handle the toggle icon change on collapse show/hide
             $('#featureExplanation').on('shown.bs.collapse', function () {
-                $(this).prev().find('.toggle-icon').removeClass('fa-chevron-right').addClass('fa-chevron-down');
+                $(this).find('.toggle-icon').removeClass('fa-chevron-right').addClass('fa-chevron-down');
             }).on('hidden.bs.collapse', function () {
-                $(this).prev().find('.toggle-icon').removeClass('fa-chevron-down').addClass('fa-chevron-right');
+                $(this).find('.toggle-icon').removeClass('fa-chevron-down').addClass('fa-chevron-right');
             });
 
             $('#extractedFeatures').on('shown.bs.collapse', function () {
-                $(this).prev().find('.toggle-icon').removeClass('fa-chevron-right').addClass('fa-chevron-down');
+                $(this).find('.toggle-icon').removeClass('fa-chevron-right').addClass('fa-chevron-down');
             }).on('hidden.bs.collapse', function () {
-                $(this).prev().find('.toggle-icon').removeClass('fa-chevron-down').addClass('fa-chevron-right');
+                $(this).find('.toggle-icon').removeClass('fa-chevron-down').addClass('fa-chevron-right');
             });
         });
     </script>

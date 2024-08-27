@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, jsonify, render_template
 import numpy as np
 import warnings
 import pickle
@@ -28,12 +28,6 @@ except Exception as e:
 
 # Initialize Flask app
 app = Flask(__name__)
-
-@app.template_filter('zip')
-def zip_filter(a, b):
-    return zip(a, b)
-
-app.jinja_env.filters['zip'] = zip_filter
 
 def check_with_safe_browsing_api(api_key, url):
     """Check the URL with Google Safe Browsing API."""
@@ -65,7 +59,6 @@ def check_with_safe_browsing_api(api_key, url):
         return is_threat
     except requests.RequestException as e:
         logger.error(f"Safe Browsing API request failed for {url}: {e}")
-        # Handle API failures by assuming no threat
         return False
 
 def is_url_reachable(url):
@@ -87,34 +80,35 @@ def is_url_reachable(url):
         logger.error(f"Error checking URL reachability for {url}: {e}")
     return False, None
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/")
 def index():
-    if request.method == "POST":
-        url = request.form.get("url", "").strip()
+    return render_template('index.html')  # Make sure you have an 'index.html' in your templates folder
+
+@app.route("/check_url", methods=["POST"])
+def check_url():
+    try:
+        data = request.get_json()
+        url = data.get("url", "").strip()
         logger.info(f"Received URL: {url}")
 
         if not url:
-            pred = "No URL provided. Please enter a valid URL."
-            return render_template('index.html', prediction=pred, features=[], url=url, y_pro_phishing=0, y_pro_non_phishing=0)
+            return jsonify({"error": "No URL provided."}), 400
 
         # Step 1: Check URL safety using Google Safe Browsing API
         api_key = os.getenv("GOOGLE_SAFE_BROWSING_API_KEY")
         if not api_key:
             logger.error("Google Safe Browsing API key is missing!")
-            pred = "Internal error: API key not configured. Please try again later."
-            return render_template('index.html', prediction=pred, features=[], url=url, y_pro_phishing=0, y_pro_non_phishing=0)
+            return jsonify({"error": "API key not configured."}), 500
 
         is_threat = check_with_safe_browsing_api(api_key, url)
 
         if is_threat:
-            pred = "The URL is flagged as dangerous by Google Safe Browsing. Please avoid visiting this site."
-            return render_template('index.html', prediction=pred, features=[], url=url, y_pro_phishing=0, y_pro_non_phishing=0)
+            return jsonify({"is_phishing": True, "message": "The URL is flagged as dangerous by Google Safe Browsing."})
 
         # Step 2: Check URL reachability
         reachable, final_url = is_url_reachable(url)
         if not reachable:
-            pred = "The URL is not reachable. Please check the URL and try again."
-            return render_template('index.html', prediction=pred, features=[], url=url, y_pro_phishing=0, y_pro_non_phishing=0)
+            return jsonify({"error": "The URL is not reachable."}), 400
 
         # Step 3: Proceed with feature extraction and prediction
         try:
@@ -122,8 +116,7 @@ def index():
             features = obj.getFeaturesList()
         except Exception as e:
             logger.error(f"Error during feature extraction for {final_url}: {e}")
-            pred = "An error occurred while extracting features from the URL. Please try again later."
-            return render_template('index.html', prediction=pred, features=[], url=final_url, y_pro_phishing=0, y_pro_non_phishing=0)
+            return jsonify({"error": "Feature extraction failed."}), 500
 
         try:
             x = np.array(features).reshape(1, -1)
@@ -132,26 +125,28 @@ def index():
             y_pro_non_phishing = gbc.predict_proba(x)[0, 1]
 
             if y_pred == 1:
-                pred = f"is {y_pro_non_phishing * 100:.2f}% safe to go."
+                return jsonify({
+                    "is_phishing": False,
+                    "message": f"The site is {y_pro_non_phishing * 100:.2f}% safe.",
+                    "y_pro_phishing": y_pro_phishing,
+                    "features": features,
+                    "y_pro_non_phishing": y_pro_non_phishing
+                })
             else:
-                pred = f"is {y_pro_phishing * 100:.2f}% likely to be a phishing site."
+                return jsonify({
+                    "is_phishing": True,
+                    "message": f"The site is {y_pro_phishing * 100:.2f}% likely to be a phishing site.",
+                    "y_pro_phishing": y_pro_phishing,
+                    "features": features,
+                    "y_pro_non_phishing": y_pro_non_phishing
+                })
         except Exception as e:
             logger.error(f"Error during model prediction for {final_url}: {e}")
-            pred = "An error occurred while predicting the URL safety. Please try again later."
-            y_pro_phishing = 0
-            y_pro_non_phishing = 0
+            return jsonify({"error": "Prediction failed."}), 500
 
-        return render_template(
-            'index.html', 
-            prediction=pred, 
-            features=features, 
-            url=final_url, 
-            y_pro_phishing=y_pro_phishing, 
-            y_pro_non_phishing=y_pro_non_phishing
-        )
-
-    # GET request handling
-    return render_template("index.html", prediction="", features=[], url="", y_pro_phishing=0, y_pro_non_phishing=0)
+    except Exception as e:
+        logger.error(f"An unexpected error occurred: {e}")
+        return jsonify({"error": "An unexpected error occurred."}), 500
 
 if __name__ == "__main__":
     app.run(debug=True)
