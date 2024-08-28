@@ -17,7 +17,7 @@
             cursor: pointer;
             margin-right: 10px;
         }
-        .card-title {
+        .extracted-features-card {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -33,11 +33,13 @@
         </div>
         
         <h1 class="text-center mb-4">Phishing URL Detection</h1>
-        <form id="urlForm" class="form-inline justify-content-center mb-4">
-            <div class="form-group">
-                <input type="url" id="url" name="url" placeholder="Enter URL" class="form-control mr-2" required>
+        <form id="urlForm" class="row g-3 justify-content-center mb-4">
+            <div class="col-8 col-md-8">
+                <input type="text" id="url" name="url" placeholder="Enter URL" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary">Check</button>
+            <div class="col-4 col-md-auto">
+                <button type="submit" class="btn btn-primary btn-block">Check</button>
+            </div>
         </form>
 
         <div id="loadingSpinner" class="text-center" style="display:none;">
@@ -53,24 +55,10 @@
                     <h2 class="card-title" id="resultText"></h2>
                 </div>
             </div>
-
-            <div class="card mb-3" data-toggle="collapse" href="#featureExplanation" role="button" aria-expanded="false" aria-controls="featureExplanation">
-                <div class="card-body">
-                    <h3 class="card-title">
-                        <span>Explanation of Features</span>
-                        <i class="toggle-icon fas fa-chevron-right"></i>
-                    </h3>                    
-                    <ul class="collapse" id="featureExplanation">
-                        <li><strong>-1</strong>: Potentially Malicious.</li>
-                        <li><strong>0</strong>: Suspicious.</li>
-                        <li><strong>1</strong>: Likely Safe.</li>
-                    </ul>
-                </div>
-            </div>
             
             <div class="card" data-toggle="collapse" href="#extractedFeatures" role="button" aria-expanded="false" aria-controls="extractedFeatures">
                 <div class="card-body">
-                    <h3 class="card-title">
+                    <h3 class="card-title extracted-features-card">
                         <span>Extracted Features</span>
                         <i class="toggle-icon fas fa-chevron-right"></i>
                     </h3>                    
