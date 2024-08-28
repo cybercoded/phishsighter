@@ -44,9 +44,9 @@ $(document).ready(function() {
                 $('#loadingSpinner').hide();  // Hide the loading spinner
                 
                 // Display the results
-                $('#resultText').text(`${url} ${response.message}`);
+                $('#resultText').html(`<strong>${url}</strong> ${response.message}`);
                 $('#resultText').removeClass('text-danger text-success');
-                if (response.is_phishing) {
+                if (response.is_phishing || response.message.includes('not reachable')) {
                     $('#resultText').addClass('text-danger');
                 } else {
                     $('#resultText').addClass('text-success');

@@ -103,12 +103,12 @@ def check_url():
         is_threat = check_with_safe_browsing_api(api_key, url)
 
         if is_threat:
-            return jsonify({"is_phishing": True, "message": "The URL is flagged as dangerous by Google Safe Browsing."})
+            return jsonify({"is_phishing": True, "message": "is a phishing URL"})
 
         # Step 2: Check URL reachability
         reachable, final_url = is_url_reachable(url)
         if not reachable:
-            return jsonify({"error": "The URL is not reachable."}), 400
+            return jsonify({"message": "is not reachable"}), 200
 
         # Step 3: Proceed with feature extraction and prediction
         try:
@@ -127,7 +127,7 @@ def check_url():
             if y_pred == 1:
                 return jsonify({
                     "is_phishing": False,
-                    "message": f"The site is {y_pro_non_phishing * 100:.2f}% safe.",
+                    "message": f"is {y_pro_non_phishing * 100:.2f}% safe.",
                     "y_pro_phishing": y_pro_phishing,
                     "features": features,
                     "y_pro_non_phishing": y_pro_non_phishing
@@ -135,7 +135,7 @@ def check_url():
             else:
                 return jsonify({
                     "is_phishing": True,
-                    "message": f"The site is {y_pro_phishing * 100:.2f}% likely to be a phishing site.",
+                    "message": f"is {y_pro_phishing * 100:.2f}% likely to be a phishing site.",
                     "y_pro_phishing": y_pro_phishing,
                     "features": features,
                     "y_pro_non_phishing": y_pro_non_phishing
