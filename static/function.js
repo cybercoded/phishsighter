@@ -123,9 +123,9 @@ $(document).ready(function() {
     });
 
     // Handle the toggle icon change on collapse show/hide
-    $('#extractedFeatures').on('shown.bs.collapse', function () {
-        $(this).find('.toggle-icon').removeClass('fa-chevron-right').addClass('fa-chevron-down');
+    $('#extracted-features-toggler').on('shown.bs.collapse', function () {
+        $(this).find('.toggle-icon').removeClass('fa-chevron-right').addClass('fa-chevron-up');
     }).on('hidden.bs.collapse', function () {
-        $(this).find('.toggle-icon').removeClass('fa-chevron-down').addClass('fa-chevron-right');
+        $(this).find('.toggle-icon').removeClass('fa-chevron-down').addClass('fa-chevron-down');
     });
 });
