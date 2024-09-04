@@ -1,44 +1,31 @@
 import requests
-import os
-from dotenv import load_dotenv
+from bs4 import BeautifulSoup
+from urllib.parse import urljoin, urlparse
+import re
+from urllib.parse import urlparse
+import whois
 
-load_dotenv()
 
-def check_with_safe_browsing_api(api_key, url):
-    """Check the URL with Google Safe Browsing API."""
-    safe_browsing_url = "https://safebrowsing.googleapis.com/v4/threatMatches:find"
-    payload = {
-        "client": {
-            "clientId": "yourcompanyname",  # Replace with your company or project name
-            "clientVersion": "1.0"
-        },
-        "threatInfo": {
-            "threatTypes": ["MALWARE", "SOCIAL_ENGINEERING", "UNWANTED_SOFTWARE", "POTENTIALLY_HARMFUL_APPLICATION"],
-            "platformTypes": ["ANY_PLATFORM"],
-            "threatEntryTypes": ["URL"],
-            "threatEntries": [{"url": url}]
-        }
-    }
-    params = {"key": api_key}
+url = "http://google.com/"
+domain = urlparse(url).netloc
+response = requests.get(url)
+response.raise_for_status()  # Ensure the request was successful
+soup = BeautifulSoup(response.text, 'html.parser')
+whois_response = whois.whois(domain)
 
+
+def PageRank():
     try:
-        response = requests.post(safe_browsing_url, json=payload, params=params)
-        response.raise_for_status()  # Raises an HTTPError for bad HTTP status codes
-        result = response.json()
+        prank_checker_response = requests.post("https://www.checkpagerank.net/index.php", {"name": domain})
 
-        # Debugging information
-        print(f"Safe Browsing API response: {result}")
+        global_rank = int(re.findall(r"Global Rank: ([0-9]+)", prank_checker_response.text)[0])
+        print(global_rank)
+        if global_rank > 0 and global_rank < 100000:
+            return 1
+        return -1
+    except:
+        return -1
 
-        return "matches" in result  # Returns True if threats are found, False otherwise
+# Example usage assuming url and whois_response are defined
+print(PageRank())
 
-    except requests.exceptions.HTTPError as http_err:
-        print(f"HTTP error occurred: {http_err}")  # Handle specific HTTP errors
-    except Exception as err:
-        print(f"Other error occurred: {err}")  # Handle other possible errors
-
-    return False  # Return False if the request fails
-
-# Replace with your API key and test URL
-api_key = os.getenv("GOOGLE_SAFE_BROWSING_API_KEY")
-is_threat = check_with_safe_browsing_api(api_key, "https://www.youtube.com")
-print("Is Threat:", is_threat)

@@ -59,6 +59,9 @@ $(document).ready(function() {
 
         let url = $('#url').val();
 
+        $('#extractedFeatures').collapse('hide');  // Show features
+        $('#featuresList').html(''); // remove previous features list
+
         url = formatAndValidateUrl(url);
         if (!url) {
             alert('Please enter a valid URL.');

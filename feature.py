@@ -9,7 +9,10 @@ import whois
 from datetime import date, datetime
 import time
 from dateutil.parser import parse as date_parse
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
+import os
 
 class FeatureExtraction:
     features = []
@@ -24,7 +27,7 @@ class FeatureExtraction:
 
         try:
             self.response = requests.get(url)
-            self.soup = BeautifulSoup(response.text, 'html.parser')
+            self.soup = BeautifulSoup(self.response.text, 'html.parser')
         except:
             pass
 
@@ -37,10 +40,7 @@ class FeatureExtraction:
         try:
             self.whois_response = whois.whois(self.domain)
         except:
-            pass
-
-
-        
+            pass        
 
         self.features.append(self.UsingIp())
         self.features.append(self.longUrl())
@@ -51,8 +51,7 @@ class FeatureExtraction:
         self.features.append(self.SubDomains())
         self.features.append(self.Hppts())
         self.features.append(self.DomainRegLen())
-        self.features.append(self.Favicon())
-        
+        self.features.append(self.Favicon())        
 
         self.features.append(self.NonStdPort())
         self.features.append(self.HTTPSDomainURL())
@@ -95,33 +94,33 @@ class FeatureExtraction:
 
     # 3.shortUrl
     def shortUrl(self):
-        match = re.search('bit\.ly|goo\.gl|shorte\.st|go2l\.ink|x\.co|ow\.ly|t\.co|tinyurl|tr\.im|is\.gd|cli\.gs|'
-                    'yfrog\.com|migre\.me|ff\.im|tiny\.cc|url4\.eu|twit\.ac|su\.pr|twurl\.nl|snipurl\.com|'
-                    'short\.to|BudURL\.com|ping\.fm|post\.ly|Just\.as|bkite\.com|snipr\.com|fic\.kr|loopt\.us|'
-                    'doiop\.com|short\.ie|kl\.am|wp\.me|rubyurl\.com|om\.ly|to\.ly|bit\.do|t\.co|lnkd\.in|'
-                    'db\.tt|qr\.ae|adf\.ly|goo\.gl|bitly\.com|cur\.lv|tinyurl\.com|ow\.ly|bit\.ly|ity\.im|'
-                    'q\.gs|is\.gd|po\.st|bc\.vc|twitthis\.com|u\.to|j\.mp|buzurl\.com|cutt\.us|u\.bb|yourls\.org|'
-                    'x\.co|prettylinkpro\.com|scrnch\.me|filoops\.info|vzturl\.com|qr\.net|1url\.com|tweez\.me|v\.gd|tr\.im|link\.zip\.net', self.url)
+        match = re.search(r'bit\.ly|goo\.gl|shorte\.st|go2l\.ink|x\.co|ow\.ly|t\.co|tinyurl|tr\.im|is\.gd|cli\.gs|'
+                    r'yfrog\.com|migre\.me|ff\.im|tiny\.cc|url4\.eu|twit\.ac|su\.pr|twurl\.nl|snipurl\.com|'
+                    r'short\.to|BudURL\.com|ping\.fm|post\.ly|Just\.as|bkite\.com|snipr\.com|fic\.kr|loopt\.us|'
+                    r'doiop\.com|short\.ie|kl\.am|wp\.me|rubyurl\.com|om\.ly|to\.ly|bit\.do|t\.co|lnkd\.in|'
+                    r'db\.tt|qr\.ae|adf\.ly|goo\.gl|bitly\.com|cur\.lv|tinyurl\.com|ow\.ly|bit\.ly|ity\.im|'
+                    r'q\.gs|is\.gd|po\.st|bc\.vc|twitthis\.com|u\.to|j\.mp|buzurl\.com|cutt\.us|u\.bb|yourls\.org|'
+                    r'x\.co|prettylinkpro\.com|scrnch\.me|filoops\.info|vzturl\.com|qr\.net|1url\.com|tweez\.me|v\.gd|tr\.im|link\.zip\.net', self.url)
         if match:
             return -1
         return 1
 
     # 4.Symbol@
     def symbol(self):
-        if re.findall("@",self.url):
+        if re.findall(r"@",self.url):
             return -1
         return 1
     
     # 5.Redirecting//
     def redirecting(self):
-        if self.url.rfind('//')>6:
+        if self.url.rfind(r'//')>6:
             return -1
         return 1
     
     # 6.prefixSuffix
     def prefixSuffix(self):
         try:
-            match = re.findall('\-', self.domain)
+            match = re.findall(r'\-', self.domain)
             if match:
                 return -1
             return 1
@@ -130,7 +129,7 @@ class FeatureExtraction:
     
     # 7.SubDomains
     def SubDomains(self):
-        dot_count = len(re.findall("\.", self.url))
+        dot_count = len(re.findall(r"\.", self.url))
         if dot_count == 1:
             return 1
         elif dot_count == 2:
@@ -173,13 +172,32 @@ class FeatureExtraction:
     # 10. Favicon
     def Favicon(self):
         try:
-            for head in self.soup.find_all('head'):
-                for head.link in self.soup.find_all('link', href=True):
-                    dots = [x.start(0) for x in re.finditer('\.', head.link['href'])]
-                    if self.url in head.link['href'] or len(dots) == 1 or domain in head.link['href']:
-                        return 1
-            return -1
-        except:
+
+            # Look for <link> tags with potential favicon information
+            for link in self.soup.find_all('link', href=True):
+                href = link['href']
+                rel = link.get('rel', [])
+                print(f"Found link tag: href={href}, rel={rel}")  # Debugging output
+                
+                # Normalize the URL to handle relative paths
+                favicon_url = urljoin(self.url, href)
+                
+                # Check if the link is a likely favicon
+                if 'icon' in href.lower() or 'icon' in [r.lower() for r in rel]:
+                    print(f"Favicon found: {favicon_url}")  # Debugging output
+                    return 1
+
+            # Fallback: Check for the common favicon location
+            fallback_favicon_url = urljoin(self.url, '/favicon.ico')
+            fallback_response = requests.get(fallback_favicon_url)
+            if fallback_response.status_code == 200:
+                print(f"Favicon found at fallback location: {fallback_favicon_url}")  # Debugging output
+                return 1
+
+            print("No favicon found.")  # Debugging output
+            return -1  # Favicon not found
+        except Exception as e:
+            print(f"An error occurred: {e}")
             return -1
 
     # 11. NonStdPort
@@ -205,25 +223,25 @@ class FeatureExtraction:
     def RequestURL(self):
         try:
             for img in self.soup.find_all('img', src=True):
-                dots = [x.start(0) for x in re.finditer('\.', img['src'])]
+                dots = [x.start(0) for x in re.finditer(r'\.', img['src'])]
                 if self.url in img['src'] or self.domain in img['src'] or len(dots) == 1:
                     success = success + 1
                 i = i+1
 
             for audio in self.soup.find_all('audio', src=True):
-                dots = [x.start(0) for x in re.finditer('\.', audio['src'])]
+                dots = [x.start(0) for x in re.finditer(r'\.', audio['src'])]
                 if self.url in audio['src'] or self.domain in audio['src'] or len(dots) == 1:
                     success = success + 1
                 i = i+1
 
             for embed in self.soup.find_all('embed', src=True):
-                dots = [x.start(0) for x in re.finditer('\.', embed['src'])]
+                dots = [x.start(0) for x in re.finditer(r'\.', embed['src'])]
                 if self.url in embed['src'] or self.domain in embed['src'] or len(dots) == 1:
                     success = success + 1
                 i = i+1
 
             for iframe in self.soup.find_all('iframe', src=True):
-                dots = [x.start(0) for x in re.finditer('\.', iframe['src'])]
+                dots = [x.start(0) for x in re.finditer(r'\.', iframe['src'])]
                 if self.url in iframe['src'] or self.domain in iframe['src'] or len(dots) == 1:
                     success = success + 1
                 i = i+1
@@ -246,7 +264,7 @@ class FeatureExtraction:
         try:
             i,unsafe = 0,0
             for a in self.soup.find_all('a', href=True):
-                if "#" in a['href'] or "javascript" in a['href'].lower() or "mailto" in a['href'].lower() or not (url in a['href'] or self.domain in a['href']):
+                if "#" in a['href'] or "javascript" in a['href'].lower() or "mailto" in a['href'].lower() or not (self.url in a['href'] or self.domain in a['href']):
                     unsafe = unsafe + 1
                 i = i + 1
 
@@ -270,13 +288,13 @@ class FeatureExtraction:
             i,success = 0,0
         
             for link in self.soup.find_all('link', href=True):
-                dots = [x.start(0) for x in re.finditer('\.', link['href'])]
+                dots = [x.start(0) for x in re.finditer(r'\.', link['href'])]
                 if self.url in link['href'] or self.domain in link['href'] or len(dots) == 1:
                     success = success + 1
                 i = i+1
 
             for script in self.soup.find_all('script', src=True):
-                dots = [x.start(0) for x in re.finditer('\.', script['src'])]
+                dots = [x.start(0) for x in re.finditer(r'\.', script['src'])]
                 if self.url in script['src'] or self.domain in script['src'] or len(dots) == 1:
                     success = success + 1
                 i = i+1
@@ -323,11 +341,36 @@ class FeatureExtraction:
     # 18. AbnormalURL
     def AbnormalURL(self):
         try:
-            if self.response.text == self.whois_response:
-                return 1
+            # Extract the domain from the URL and remove 'www.' if present
+            url_domain = urlparse(self.url).netloc.lower()
+            if url_domain.startswith('www.'):
+                url_domain = url_domain[4:]  # Remove 'www.'
+
+            print(f"Normalized URL domain: {url_domain}")
+
+            # Perform WHOIS lookup
+            domain_info = whois.whois(self.url)
+
+            # Extract the domain from the WHOIS response
+            whois_domain = domain_info.domain_name
+            if whois_domain:
+                if isinstance(whois_domain, list):
+                    whois_domain = whois_domain[0]  # Take the first domain if it's a list
+                whois_domain = whois_domain.lower()
             else:
-                return -1
-        except:
+                whois_domain = ""
+
+            print(f"WHOIS domain: {whois_domain}")
+
+            # Compare the extracted domains
+            if url_domain == whois_domain:
+                print("Domains match")
+                return 1  # The domain matches WHOIS information, so it's likely not abnormal
+            else:
+                print("Domains do not match")
+                return -1  # The domain doesn't match WHOIS information, so it might be abnormal
+        except Exception as e:
+            print(f"An error occurred: {e}")
             return -1
 
     # 19. WebsiteForwarding
@@ -421,11 +464,47 @@ class FeatureExtraction:
     # 26. WebsiteTraffic   
     def WebsiteTraffic(self):
         try:
-            rank = BeautifulSoup(urllib.request.urlopen("http://data.alexa.com/data?cli=10&dat=s&url=" + url).read(), "xml").find("REACH")['RANK']
-            if (int(rank) < 100000):
-                return 1
-            return 0
-        except :
+            # Get Google PageSpeed API key from environment variables
+            api_key = os.getenv("GOOGLE_SAFE_BROWSING_API_KEY")
+            if not api_key:
+                print("Google PageSpeed Insights API key is missing!")
+                return -1
+
+            # Construct the API URL
+            api_url = f"https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={self.url}&key={api_key}"
+
+            # Set up retry strategy
+            retry_strategy = Retry(
+                total=3,  # Total number of retries
+                status_forcelist=[429, 500, 502, 503, 504],  # Retry on these HTTP status codes
+                allowed_methods=["HEAD", "GET", "OPTIONS"],  # Retry on these HTTP methods
+                backoff_factor=1  # Wait time between retries: {backoff_factor} * (2 ** {retry count})
+            )
+            adapter = HTTPAdapter(max_retries=retry_strategy)
+            http = requests.Session()
+            http.mount("https://", adapter)
+            http.mount("http://", adapter)
+
+            # Make a request to the API with an increased timeout
+            response = http.get(api_url, timeout=20)  # Increase the timeout to 20 seconds
+            response.raise_for_status()
+
+            # Parse the response JSON
+            data = response.json()
+
+            # Get the overall performance score
+            performance_score = data.get("lighthouseResult", {}).get("categories", {}).get("performance", {}).get("score", 0)
+
+            # Convert score to percentage (e.g., 0.9 -> 90)
+            performance_score_percentage = performance_score * 100
+
+            # Example heuristic: Consider websites with a performance score above 75 as high traffic
+            if performance_score_percentage > 75:
+                return 1  # Indicates high traffic or well-optimized site
+            return 0  # Indicates lower traffic or less optimized site
+
+        except requests.RequestException as e:
+            print(f"Error retrieving website traffic data from Google PageSpeed Insights API for {self.url}: {e}")
             return -1
 
     # 27. PageRank
@@ -468,15 +547,14 @@ class FeatureExtraction:
     # 30. StatsReport
     def StatsReport(self):
         try:
-            url_match = re.search(
-        'at\.ua|usa\.cc|baltazarpresentes\.com\.br|pe\.hu|esy\.es|hol\.es|sweddy\.com|myjino\.ru|96\.lt|ow\.ly', url)
+            url_match = re.search(r'at\.ua|usa\.cc|baltazarpresentes\.com\.br|pe\.hu|esy\.es|hol\.es|sweddy\.com|myjino\.ru|96\.lt|ow\.ly', self.url)
             ip_address = socket.gethostbyname(self.domain)
-            ip_match = re.search('146\.112\.61\.108|213\.174\.157\.151|121\.50\.168\.88|192\.185\.217\.116|78\.46\.211\.158|181\.174\.165\.13|46\.242\.145\.103|121\.50\.168\.40|83\.125\.22\.219|46\.242\.145\.98|'
-                                '107\.151\.148\.44|107\.151\.148\.107|64\.70\.19\.203|199\.184\.144\.27|107\.151\.148\.108|107\.151\.148\.109|119\.28\.52\.61|54\.83\.43\.69|52\.69\.166\.231|216\.58\.192\.225|'
-                                '118\.184\.25\.86|67\.208\.74\.71|23\.253\.126\.58|104\.239\.157\.210|175\.126\.123\.219|141\.8\.224\.221|10\.10\.10\.10|43\.229\.108\.32|103\.232\.215\.140|69\.172\.201\.153|'
-                                '216\.218\.185\.162|54\.225\.104\.146|103\.243\.24\.98|199\.59\.243\.120|31\.170\.160\.61|213\.19\.128\.77|62\.113\.226\.131|208\.100\.26\.234|195\.16\.127\.102|195\.16\.127\.157|'
-                                '34\.196\.13\.28|103\.224\.212\.222|172\.217\.4\.225|54\.72\.9\.51|192\.64\.147\.141|198\.200\.56\.183|23\.253\.164\.103|52\.48\.191\.26|52\.214\.197\.72|87\.98\.255\.18|209\.99\.17\.27|'
-                                '216\.38\.62\.18|104\.130\.124\.96|47\.89\.58\.141|78\.46\.211\.158|54\.86\.225\.156|54\.82\.156\.19|37\.157\.192\.102|204\.11\.56\.48|110\.34\.231\.42', ip_address)
+            ip_match = re.search(r'146\.112\.61\.108|213\.174\.157\.151|121\.50\.168\.88|192\.185\.217\.116|78\.46\.211\.158|181\.174\.165\.13|46\.242\.145\.103|121\.50\.168\.40|83\.125\.22\.219|46\.242\.145\.98|'
+                                r'107\.151\.148\.44|107\.151\.148\.107|64\.70\.19\.203|199\.184\.144\.27|107\.151\.148\.108|107\.151\.148\.109|119\.28\.52\.61|54\.83\.43\.69|52\.69\.166\.231|216\.58\.192\.225|'
+                                r'118\.184\.25\.86|67\.208\.74\.71|23\.253\.126\.58|104\.239\.157\.210|175\.126\.123\.219|141\.8\.224\.221|10\.10\.10\.10|43\.229\.108\.32|103\.232\.215\.140|69\.172\.201\.153|'
+                                r'216\.218\.185\.162|54\.225\.104\.146|103\.243\.24\.98|199\.59\.243\.120|31\.170\.160\.61|213\.19\.128\.77|62\.113\.226\.131|208\.100\.26\.234|195\.16\.127\.102|195\.16\.127\.157|'
+                                r'34\.196\.13\.28|103\.224\.212\.222|172\.217\.4\.225|54\.72\.9\.51|192\.64\.147\.141|198\.200\.56\.183|23\.253\.164\.103|52\.48\.191\.26|52\.214\.197\.72|87\.98\.255\.18|209\.99\.17\.27|'
+                                r'216\.38\.62\.18|104\.130\.124\.96|47\.89\.58\.141|78\.46\.211\.158|54\.86\.225\.156|54\.82\.156\.19|37\.157\.192\.102|204\.11\.56\.48|110\.34\.231\.42', ip_address)
             if url_match:
                 return -1
             elif ip_match:

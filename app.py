@@ -80,6 +80,20 @@ def is_url_reachable(url):
         logger.error(f"Error checking URL reachability for {url}: {e}")
     return False, None
 
+def download_phishing_page(url):
+    """Download the HTML content of the phishing page."""
+    try:
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            file_path = os.path.join("phishing_pages", f"{url.replace('https://', '').replace('http://', '').replace('/', '_')}.html")
+            with open(file_path, 'w', encoding='utf-8') as file:
+                file.write(response.text)
+            logger.info(f"Downloaded and saved phishing page: {file_path}")
+        else:
+            logger.error(f"Failed to download the phishing page, status code: {response.status_code}")
+    except requests.RequestException as e:
+        logger.error(f"Error downloading phishing page for {url}: {e}")
+
 @app.route("/")
 def index():
     return render_template('index.html')  # Make sure you have an 'index.html' in your templates folder
@@ -103,7 +117,12 @@ def check_url():
         is_threat = check_with_safe_browsing_api(api_key, url)
 
         if is_threat:
-            return jsonify({"is_phishing": True, "message": "is a phishing URL"})
+            download_phishing_page(final_url)
+            return jsonify({
+                "is_phishing": True,
+                "message": f"is 100% a phishing URL",
+                "features": features
+            })
 
         # Step 2: Check URL reachability
         reachable, final_url = is_url_reachable(url)
@@ -128,17 +147,14 @@ def check_url():
                 return jsonify({
                     "is_phishing": False,
                     "message": f"is {y_pro_non_phishing * 100:.2f}% safe.",
-                    "y_pro_phishing": y_pro_phishing,
-                    "features": features,
-                    "y_pro_non_phishing": y_pro_non_phishing
+                    "features": features
                 })
             else:
+                download_phishing_page(final_url)
                 return jsonify({
                     "is_phishing": True,
                     "message": f"is {y_pro_phishing * 100:.2f}% likely to be a phishing site.",
-                    "y_pro_phishing": y_pro_phishing,
-                    "features": features,
-                    "y_pro_non_phishing": y_pro_non_phishing
+                    "features": features
                 })
         except Exception as e:
             logger.error(f"Error during model prediction for {final_url}: {e}")
