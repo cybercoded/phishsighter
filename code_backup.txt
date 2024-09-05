@@ -1,0 +1,51 @@
+PlotFeatureGraph([
+    'LargestLineLength',
+    'HasTitle',
+    'HasFavicon',
+    'IsResponsive',
+    'IsHTTPS',
+    'NoOfURLRedirect',
+    'HasDescription',
+    'NoOfPopup',
+    'HasExternalFormSubmit',
+    'NoOfiFrame',
+    'HasCopyrightInfo',
+    'HasSocialNet',
+    'HasPasswordField',
+    'HasSubmitButton',
+    'HasHiddenFields',
+    'Bank',
+    'Pay',
+    'Crypto',
+    'NoOfImage',
+    'NoOfCSS',
+    'NoOfJS',
+    'NoOfSelfRef',
+    'NoOfEmptyRef',
+    'NoOfExternalRef'
+]);
+
+
+PlotFeatureGraph([
+    'CharContinuationRate', 
+    'TLDLegitimateProb', 
+    'URLCharProb', 
+    'DomainTitleMatchScore', 
+    'URLTitleMatchScore'
+]);
+
+
+PlotFeatureGraph([
+    'TLD',
+    'URLLength',
+    'IsDomainIP',
+    'NoOfSubDomain',
+    'NoOfObfuscatedChar',
+    'IsHTTPS',
+    'NoOfLettersInURL',
+    'NoOfDegitsInURL',
+    'NoOfEqualsInURL',
+    'NoOfQMarkInURL',
+    'NoOfAmpersandInURL',
+    'NoOfOtherSpecialCharsInURL'
+]);
