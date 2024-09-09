@@ -5,6 +5,7 @@
         "ylabel",
         "DegitRatioInURL",
         "NoOfDegitsInURL",
+        "ticklabel",
         "USIIL",
         "tlds",
         "xticks"
