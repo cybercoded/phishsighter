@@ -7,7 +7,6 @@ $(document).ready(function() {
 
     // Function to validate a URL and add http:// if necessary
     function formatAndValidateUrl(urlString) {
-        // Check if the URL starts with http://, https://, or another protocol
         if (!/^https?:\/\//i.test(urlString)) {
             urlString = 'http://' + urlString;
         }
@@ -44,10 +43,9 @@ $(document).ready(function() {
         const formattedUrl = formatAndValidateUrl(urlParam);
         if (formattedUrl) {
             $('#url').val(formattedUrl); // Set the URL input value
-            // Delay the form submission slightly to ensure the DOM is ready
             setTimeout(function() {
                 $('#urlForm').trigger('submit'); // Automatically submit the form
-            }, 100); // Adjust the delay as necessary
+            }, 100);
         } else {
             alert('Invalid URL provided.');
         }
@@ -57,23 +55,30 @@ $(document).ready(function() {
     $('#urlForm').on('submit', function(event) {
         event.preventDefault();  // Prevent default form submission
 
-        let url = $('#url').val();
-
-        $('#extractedFeatures').collapse('hide');  // Show features
-        $('#featuresList').html(''); // remove previous features list
-
-        url = formatAndValidateUrl(url);
-        if (!url) {
-            alert('Please enter a valid URL.');
+        let urls = $('#url').val().split('\n').filter(url => url.trim() !== ''); // Split input by new lines and remove empty strings
+        if (urls.length === 0) {
+            alert("Please enter at least one URL.");
             return;
         }
 
-        // Update the URL parameters
-        updateUrlParams(url);
-
-        $('#results').collapse('hide');  // Hide previous results
+        $('#extractedFeatures').collapse('hide');  // Hide features section
+        $('#featuresList').html(''); // Clear previous features list
+        $('#results').html('');  // Clear previous results
         $('#loadingSpinner').show();  // Show the loading spinner
 
+        urls.forEach(function(url, index) {
+            url = formatAndValidateUrl(url);
+            if (url) {
+                updateUrlParams(url);  // Update the URL parameters for each valid URL
+                checkUrl(url, index);  // Submit each URL via AJAX
+            } else {
+                alert('Please enter a valid URL.');
+            }
+        });
+    });
+
+    // Function to submit a URL and process the result
+    function checkUrl(url, index) {
         $.ajax({
             url: '/check_url',  // Adjust the URL if your Flask endpoint is different
             method: 'POST',
@@ -81,20 +86,40 @@ $(document).ready(function() {
             dataType: 'json',
             data: JSON.stringify({ url: url }),
             success: function(response) {
-                $('#loadingSpinner').hide();  // Hide the loading spinner
-                
-                // Display the results
-                $('#resultText').html(`<strong>${url}</strong> ${response.message}`);
-                $('#resultText').removeClass('text-danger text-success');
-                if (response.is_phishing || response.message.includes('not reachable')) {
-                    $('#resultText').addClass('text-danger');
-                } else {
-                    $('#resultText').addClass('text-success');
-                }
-                
-                // Populate the features list
+                $('#loadingSpinner').hide();  // Hide the loading spinner when the first response is received
+
+                // Create unique IDs for each result and its features for toggling
+                const resultId = `result-${index}`;
+                const featuresId = `features-${index}`;
+
+                // Append the results for each URL
+                let resultHtml = `
+                    <div class="card mb-3">
+                        <div class="card-header" id="${resultId}">
+                            <strong>Result for: ${url}</strong>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#${featuresId}" aria-expanded="false" aria-controls="${featuresId}">
+                                Toggle Features
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <p class="${response.message.includes('phishing site') ? 'text-danger' : 'text-success'}">
+                                ${response.message}
+                            </p>
+                        </div>
+                        <div id="${featuresId}" class="collapse">
+                            <div class="card-body">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Feature</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                `;
+
+                // Populate the features list for the current URL
                 if (response.features) {
-                    let featuresHtml = '';
                     response.features.forEach(function(feature, index) {
                         let label = featureLabels[index] || 'Unknown';
                         let valueClass = feature === -1 ? 'text-danger' :
@@ -102,33 +127,37 @@ $(document).ready(function() {
                         let valueText = feature === -1 ? 'Potentially Malicious' :
                                         feature === 0 ? 'Suspicious' : 'Likely Safe';
                         
-                        featuresHtml += `
+                        resultHtml += `
                             <tr>
                                 <td>${label}</td>
                                 <td class="${valueClass}">${valueText}</td>
                             </tr>
                         `;
                     });
-                    $('#featuresList').html(featuresHtml);
-                    $('#extractedFeatures').collapse('show');  // Show features
                 } else {
-                    $('#extractedFeatures').collapse('hide');
+                    resultHtml += `
+                        <tr>
+                            <td colspan="2">No features available</td>
+                        </tr>
+                    `;
                 }
 
-                $('#results').collapse('show');  // Show the results section
+                resultHtml += `
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                $('#results').append(resultHtml);  // Append result for each URL
+
+                $('#results').collapse('show');  // Show the results section after each URL
             },
-            
-            error: function(xhr, status, error) {
-                $('#loadingSpinner').hide();  // Hide the loading spinner
-                alert('An error occurred: ' + error);
+            error: function(resp) {
+                $('#loadingSpinner').hide();  // Hide the loading spinner in case of error
+                alert(`Error checking ${url}: ${resp.responseJSON.error}`);
             }
         });
-    });
-
-    // Handle the toggle icon change on collapse show/hide
-    $('#extracted-features-toggler').on('shown.bs.collapse', function () {
-        $(this).find('.toggle-icon').removeClass('fa-chevron-right').addClass('fa-chevron-up');
-    }).on('hidden.bs.collapse', function () {
-        $(this).find('.toggle-icon').removeClass('fa-chevron-down').addClass('fa-chevron-down');
-    });
+    }
 });

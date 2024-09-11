@@ -13,6 +13,25 @@ from urllib.parse import urlparse, urljoin
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 import os
+import logging
+
+# Set up logger
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+# Create a file handler for logging
+log_file = "error_logs.log"
+file_handler = logging.FileHandler(log_file)
+
+# Create a formatter and set it for the file handler
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(formatter)
+
+# Add the file handler to the logger
+logger.addHandler(file_handler)
+
+# Ensure no logging goes to the console (remove other handlers)
+logger.propagate = False
 
 class FeatureExtraction:
     features = []
@@ -177,27 +196,27 @@ class FeatureExtraction:
             for link in self.soup.find_all('link', href=True):
                 href = link['href']
                 rel = link.get('rel', [])
-                print(f"Found link tag: href={href}, rel={rel}")  # Debugging output
+                logger.error(f"Found link tag: href={href}, rel={rel}")  # Debugging output
                 
                 # Normalize the URL to handle relative paths
                 favicon_url = urljoin(self.url, href)
                 
                 # Check if the link is a likely favicon
                 if 'icon' in href.lower() or 'icon' in [r.lower() for r in rel]:
-                    print(f"Favicon found: {favicon_url}")  # Debugging output
+                    logger.error(f"Favicon found: {favicon_url}")  # Debugging output
                     return 1
 
             # Fallback: Check for the common favicon location
             fallback_favicon_url = urljoin(self.url, '/favicon.ico')
             fallback_response = requests.get(fallback_favicon_url)
             if fallback_response.status_code == 200:
-                print(f"Favicon found at fallback location: {fallback_favicon_url}")  # Debugging output
+                logger.error(f"Favicon found at fallback location: {fallback_favicon_url}")  # Debugging output
                 return 1
 
-            print("No favicon found.")  # Debugging output
+            logger.error("No favicon found.")  # Debugging output
             return -1  # Favicon not found
         except Exception as e:
-            print(f"An error occurred: {e}")
+            logger.error(f"An error occurred: {e}")
             return -1
 
     # 11. NonStdPort
@@ -346,7 +365,7 @@ class FeatureExtraction:
             if url_domain.startswith('www.'):
                 url_domain = url_domain[4:]  # Remove 'www.'
 
-            print(f"Normalized URL domain: {url_domain}")
+            logger.error(f"Normalized URL domain: {url_domain}")
 
             # Perform WHOIS lookup
             domain_info = whois.whois(self.url)
@@ -360,17 +379,17 @@ class FeatureExtraction:
             else:
                 whois_domain = ""
 
-            print(f"WHOIS domain: {whois_domain}")
+            logger.error(f"WHOIS domain: {whois_domain}")
 
             # Compare the extracted domains
             if url_domain == whois_domain:
-                print("Domains match")
+                logger.error("Domains match")
                 return 1  # The domain matches WHOIS information, so it's likely not abnormal
             else:
-                print("Domains do not match")
+                logger.error("Domains do not match")
                 return -1  # The domain doesn't match WHOIS information, so it might be abnormal
         except Exception as e:
-            print(f"An error occurred: {e}")
+            logger.error(f"An error occurred: {e}")
             return -1
 
     # 19. WebsiteForwarding
@@ -467,7 +486,7 @@ class FeatureExtraction:
             # Get Google PageSpeed API key from environment variables
             api_key = os.getenv("GOOGLE_SAFE_BROWSING_API_KEY")
             if not api_key:
-                print("Google PageSpeed Insights API key is missing!")
+                logger.error("Google PageSpeed Insights API key is missing!")
                 return -1
 
             # Construct the API URL
@@ -504,7 +523,7 @@ class FeatureExtraction:
             return 0  # Indicates lower traffic or less optimized site
 
         except requests.RequestException as e:
-            print(f"Error retrieving website traffic data from Google PageSpeed Insights API for {self.url}: {e}")
+            logger.error(f"Error retrieving website traffic data from Google PageSpeed Insights API for {self.url}: {e}")
             return -1
 
     # 27. PageRank

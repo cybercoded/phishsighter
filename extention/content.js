@@ -1,25 +1,36 @@
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  if (request.action === "checkPhishing") {
-    const currentUrl = window.location.href;
-
-    fetch("http://localhost:5000/", {
-      method: "POST",
+async function sendDataToServer(data) {
+  try {
+    const response = await fetch('http://localhost:5000/check_url', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json"
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ url: currentUrl })
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.is_phishing) {
-        alert("Warning: This site may be a phishing site!");
-        // Optionally redirect to a warning page
-        window.location.href = "https://your-safe-page.com";
-      }
-    })
-    .catch(error => console.error('Error:', error));
-  }
-});
+      body: JSON.stringify({ url: window.location.href }),
+    });
 
-// Send message to background script to check phishing on load
-chrome.runtime.sendMessage({ action: "checkPhishing" });
+    const data = await response.json();
+    if (data.message.includes('phishing site')) {
+      chrome.runtime.sendMessage({
+        action: "showNotification",
+        message: data.message,
+        url: window.location.href // or wherever you want the URL to come from
+      }, function(response) {
+        console.log('Message sent:');
+      });
+    }
+    
+    // You won't be able to parse the response as JSON in no-cors mode
+    console.log('Request sent, but response handling is limited due to no-cors mode');
+  } catch (error) {
+    console.error('Error sending data to server:', error);
+  }
+}
+
+
+// Call the function to fetch data
+sendDataToServer();
+
+
+
+
+

