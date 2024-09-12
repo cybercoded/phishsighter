@@ -148,7 +148,7 @@ def process_url(url, show_progress=False):
 
     # Initialize progress bar for CLI mode
     if show_progress:
-        tqdm_bar = tqdm(total=5, desc="Processing URL", unit="step")
+        tqdm_bar = tqdm(total=4, desc="Processing URL", unit="step")
 
     # Step 1: Check URL safety using Google Safe Browsing API
     if show_progress:
@@ -235,7 +235,7 @@ if __name__ == "__main__":
     # Set up argparse for command-line arguments
     parser = argparse.ArgumentParser(description="Phishing detection app with Flask and URL handling.")
     parser.add_argument("-u", "--url", help="URL of the phishing site to analyze")
-    parser.add_argument("--debug", action="store_true", help="Run Flask in debug mode.")
+    parser.add_argument("-w", "--web", action="store_true", help="Run Flask in GUI mode.")
     args = parser.parse_args()
 
     if args.url:
@@ -245,4 +245,4 @@ if __name__ == "__main__":
         # print(f"Features: {features}")
     else:
         # If no URL is provided, run the Flask app
-        app.run(debug=args.debug)
+        app.run(debug=args.web)

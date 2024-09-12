@@ -878,3 +878,448 @@
 2024-09-11 14:38:04,532 - ERROR - Domains do not match
 2024-09-11 14:38:16,411 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
 2024-09-11 14:38:16,411 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 20:48:07,300 - INFO - Model loaded successfully.
+2024-09-11 20:53:12,334 - INFO - Model loaded successfully.
+2024-09-11 20:53:58,554 - INFO - Model loaded successfully.
+2024-09-11 20:54:12,667 - INFO - Received URL: https://www.loom.com/signup
+2024-09-11 20:54:20,340 - INFO - Safe Browsing API response for https://www.loom.com/signup: {}
+2024-09-11 20:54:20,490 - INFO - Trying original URL: https://www.loom.com/signup
+2024-09-11 20:54:21,283 - INFO - Original URL is reachable: https://www.loom.com/signup
+2024-09-11 20:55:06,920 - INFO - Received URL: https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&prompt=select_account&include_granted_scopes=true&response_type=code&redirect_uri=https%3A%2F%2Fwww.loom.com%2Fapi%2Fauth%2Fgoogle%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=YXV0aFVSTD1odHRwcyUzQSUyRiUyRnd3dy5sb29tLmNvbSUyRnNpZ251cCZmcm9tV2ViU2lnbnVwPXRydWUmaGFzUHJvbW90aW9uYWxDaGVja2JveExvYWRlZD1mYWxzZQ%3D%3D&client_id=443240113960-6mj529r3r24gpp4c9u57n9ndrg01i911.apps.googleusercontent.com
+2024-09-11 20:55:07,002 - INFO - Safe Browsing API response for https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&prompt=select_account&include_granted_scopes=true&response_type=code&redirect_uri=https%3A%2F%2Fwww.loom.com%2Fapi%2Fauth%2Fgoogle%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=YXV0aFVSTD1odHRwcyUzQSUyRiUyRnd3dy5sb29tLmNvbSUyRnNpZ251cCZmcm9tV2ViU2lnbnVwPXRydWUmaGFzUHJvbW90aW9uYWxDaGVja2JveExvYWRlZD1mYWxzZQ%3D%3D&client_id=443240113960-6mj529r3r24gpp4c9u57n9ndrg01i911.apps.googleusercontent.com: {}
+2024-09-11 20:55:07,004 - INFO - Trying original URL: https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&prompt=select_account&include_granted_scopes=true&response_type=code&redirect_uri=https%3A%2F%2Fwww.loom.com%2Fapi%2Fauth%2Fgoogle%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=YXV0aFVSTD1odHRwcyUzQSUyRiUyRnd3dy5sb29tLmNvbSUyRnNpZ251cCZmcm9tV2ViU2lnbnVwPXRydWUmaGFzUHJvbW90aW9uYWxDaGVja2JveExvYWRlZD1mYWxzZQ%3D%3D&client_id=443240113960-6mj529r3r24gpp4c9u57n9ndrg01i911.apps.googleusercontent.com
+2024-09-11 20:55:10,149 - INFO - Original URL is reachable: https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&prompt=select_account&include_granted_scopes=true&response_type=code&redirect_uri=https%3A%2F%2Fwww.loom.com%2Fapi%2Fauth%2Fgoogle%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=YXV0aFVSTD1odHRwcyUzQSUyRiUyRnd3dy5sb29tLmNvbSUyRnNpZ251cCZmcm9tV2ViU2lnbnVwPXRydWUmaGFzUHJvbW90aW9uYWxDaGVja2JveExvYWRlZD1mYWxzZQ%3D%3D&client_id=443240113960-6mj529r3r24gpp4c9u57n9ndrg01i911.apps.googleusercontent.com
+2024-09-11 21:19:44,832 - INFO - Model loaded successfully.
+2024-09-11 21:19:52,485 - INFO - Model loaded successfully.
+2024-09-11 21:21:23,960 - INFO - Model loaded successfully.
+2024-09-11 21:21:23,966 - INFO - Received URL: https://www.facebook.com/
+2024-09-11 21:21:25,056 - INFO - Safe Browsing API response for https://www.facebook.com/: {}
+2024-09-11 21:21:25,078 - INFO - Trying original URL: https://www.facebook.com/
+2024-09-11 21:21:25,427 - INFO - Original URL is reachable: https://www.facebook.com/
+2024-09-11 21:21:28,821 - ERROR - Found link tag: href=/data/manifest/, rel=['manifest']
+2024-09-11 21:21:28,821 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-11 21:21:28,822 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-11 21:21:28,822 - ERROR - Found link tag: href=https://www.facebook.com/, rel=['canonical']
+2024-09-11 21:21:28,822 - ERROR - Found link tag: href=https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico, rel=['icon']
+2024-09-11 21:21:28,822 - ERROR - Favicon found: https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico
+2024-09-11 21:21:28,825 - ERROR - Normalized URL domain: facebook.com
+2024-09-11 21:21:31,187 - ERROR - WHOIS domain: facebook.com
+2024-09-11 21:21:31,187 - ERROR - Domains match
+2024-09-11 21:22:33,133 - INFO - Received URL: http://localhost:5000/
+2024-09-11 21:22:33,233 - INFO - Safe Browsing API response for http://localhost:5000/: {}
+2024-09-11 21:22:33,233 - INFO - Trying HTTPS URL: https://localhost:5000/
+2024-09-11 21:22:35,322 - ERROR - Error checking URL reachability for http://localhost:5000/: HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 21:26:18,653 - INFO - Model loaded successfully.
+2024-09-11 21:26:18,665 - INFO - Received URL: https://www.facebook.com/
+2024-09-11 21:26:18,808 - INFO - Safe Browsing API response for https://www.facebook.com/: {}
+2024-09-11 21:26:18,810 - INFO - Trying original URL: https://www.facebook.com/
+2024-09-11 21:26:19,115 - INFO - Original URL is reachable: https://www.facebook.com/
+2024-09-11 21:26:20,349 - ERROR - Found link tag: href=/data/manifest/, rel=['manifest']
+2024-09-11 21:26:20,349 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-11 21:26:20,354 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-11 21:26:20,354 - ERROR - Found link tag: href=https://www.facebook.com/, rel=['canonical']
+2024-09-11 21:26:20,355 - ERROR - Found link tag: href=https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico, rel=['icon']
+2024-09-11 21:26:20,355 - ERROR - Favicon found: https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico
+2024-09-11 21:26:20,361 - ERROR - Normalized URL domain: facebook.com
+2024-09-11 21:26:20,968 - ERROR - WHOIS domain: facebook.com
+2024-09-11 21:26:20,969 - ERROR - Domains match
+2024-09-11 21:27:18,034 - INFO - Model loaded successfully.
+2024-09-11 21:27:18,049 - INFO - Received URL: https://login-wsapp-hk.top/
+2024-09-11 21:27:18,175 - INFO - Safe Browsing API response for https://login-wsapp-hk.top/: {}
+2024-09-11 21:27:18,177 - INFO - Trying original URL: https://login-wsapp-hk.top/
+2024-09-11 21:27:18,214 - ERROR - Error checking URL reachability for https://login-wsapp-hk.top/: HTTPSConnectionPool(host='login-wsapp-hk.top', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000174F5A714F0>: Failed to resolve 'login-wsapp-hk.top' ([Errno 11001] getaddrinfo failed)"))
+2024-09-11 21:28:12,094 - INFO - Model loaded successfully.
+2024-09-11 21:28:12,127 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:28:12,282 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 21:28:12,286 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:28:12,378 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:28:13,815 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 21:28:13,816 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 21:28:13,817 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 21:28:13,818 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 21:28:14,840 - ERROR - WHOIS domain: webflow.io
+2024-09-11 21:28:14,840 - ERROR - Domains do not match
+2024-09-11 21:28:26,295 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 21:28:26,360 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:29:09,730 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 21:29:09,817 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 21:29:09,818 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 21:29:09,826 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 21:29:45,936 - INFO - Received URL: https://www.facebook.com/
+2024-09-11 21:29:45,939 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:29:45,944 - INFO - Received URL: https://github.com/login
+2024-09-11 21:29:45,954 - INFO - Received URL: https://login-wsapp-hk.top/
+2024-09-11 21:29:46,019 - INFO - Safe Browsing API response for https://www.facebook.com/: {}
+2024-09-11 21:29:46,021 - INFO - Trying original URL: https://www.facebook.com/
+2024-09-11 21:29:46,046 - INFO - Safe Browsing API response for https://github.com/login: {}
+2024-09-11 21:29:46,048 - INFO - Safe Browsing API response for https://login-wsapp-hk.top/: {}
+2024-09-11 21:29:46,049 - INFO - Trying original URL: https://login-wsapp-hk.top/
+2024-09-11 21:29:46,052 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 21:29:46,053 - INFO - Trying original URL: https://github.com/login
+2024-09-11 21:29:46,055 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:29:46,061 - ERROR - Error checking URL reachability for https://login-wsapp-hk.top/: HTTPSConnectionPool(host='login-wsapp-hk.top', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000289E9E03F20>: Failed to resolve 'login-wsapp-hk.top' ([Errno 11001] getaddrinfo failed)"))
+2024-09-11 21:29:46,211 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:29:46,381 - INFO - Original URL is reachable: https://www.facebook.com/
+2024-09-11 21:29:46,384 - INFO - Original URL is reachable: https://github.com/login
+2024-09-11 21:29:47,295 - ERROR - Found link tag: href=/data/manifest/, rel=['manifest']
+2024-09-11 21:29:47,295 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-11 21:29:47,296 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-11 21:29:47,296 - ERROR - Found link tag: href=https://www.facebook.com/, rel=['canonical']
+2024-09-11 21:29:47,296 - ERROR - Found link tag: href=https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico, rel=['icon']
+2024-09-11 21:29:47,297 - ERROR - Favicon found: https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico
+2024-09-11 21:29:47,338 - ERROR - Found link tag: href=https://github.githubassets.com, rel=['dns-prefetch']
+2024-09-11 21:29:47,339 - ERROR - Normalized URL domain: facebook.com
+2024-09-11 21:29:47,340 - ERROR - Found link tag: href=https://avatars.githubusercontent.com, rel=['dns-prefetch']
+2024-09-11 21:29:47,340 - ERROR - Found link tag: href=https://github-cloud.s3.amazonaws.com, rel=['dns-prefetch']
+2024-09-11 21:29:47,341 - ERROR - Found link tag: href=https://user-images.githubusercontent.com/, rel=['dns-prefetch']
+2024-09-11 21:29:47,341 - ERROR - Found link tag: href=https://github.githubassets.com, rel=['preconnect']
+2024-09-11 21:29:47,341 - ERROR - Found link tag: href=https://avatars.githubusercontent.com, rel=['preconnect']
+2024-09-11 21:29:47,342 - ERROR - Found link tag: href=https://github.githubassets.com/assets/light-3e154969b9f9.css, rel=['stylesheet']
+2024-09-11 21:29:47,342 - ERROR - Found link tag: href=https://github.githubassets.com/assets/dark-9c5b7a476542.css, rel=['stylesheet']
+2024-09-11 21:29:47,342 - ERROR - Found link tag: href=https://github.githubassets.com/assets/primer-primitives-4cf0d59ab51a.css, rel=['stylesheet']
+2024-09-11 21:29:47,342 - ERROR - Found link tag: href=https://github.githubassets.com/assets/primer-ff8ec1db4f06.css, rel=['stylesheet']
+2024-09-11 21:29:47,343 - ERROR - Found link tag: href=https://github.githubassets.com/assets/global-d50796f51147.css, rel=['stylesheet']
+2024-09-11 21:29:47,343 - ERROR - Found link tag: href=https://github.githubassets.com/assets/github-e4eed26e112b.css, rel=['stylesheet']
+2024-09-11 21:29:47,343 - ERROR - Found link tag: href=https://github.githubassets.com/, rel=['assets']
+2024-09-11 21:29:47,343 - ERROR - Found link tag: href=/opensearch.xml, rel=['search']
+2024-09-11 21:29:47,344 - ERROR - Found link tag: href=https://github.com/fluidicon.png, rel=['fluid-icon']
+2024-09-11 21:29:47,344 - ERROR - Favicon found: https://github.com/fluidicon.png
+2024-09-11 21:29:47,363 - ERROR - Normalized URL domain: github.com
+2024-09-11 21:29:47,374 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 21:29:47,374 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 21:29:47,375 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 21:29:47,376 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 21:29:47,841 - ERROR - WHOIS domain: facebook.com
+2024-09-11 21:29:47,841 - ERROR - Domains match
+2024-09-11 21:29:48,005 - ERROR - WHOIS domain: github.com
+2024-09-11 21:29:48,006 - ERROR - Domains match
+2024-09-11 21:29:48,339 - ERROR - WHOIS domain: webflow.io
+2024-09-11 21:29:48,340 - ERROR - Domains do not match
+2024-09-11 21:29:59,833 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 21:29:59,834 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:30:40,937 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:30:41,013 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 21:30:41,014 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:30:41,065 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:30:42,143 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 21:30:42,143 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 21:30:42,143 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 21:30:42,144 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 21:30:43,092 - ERROR - WHOIS domain: webflow.io
+2024-09-11 21:30:43,092 - ERROR - Domains do not match
+2024-09-11 21:30:44,659 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 21:30:44,661 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:30:55,747 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:30:55,828 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 21:30:55,829 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:30:55,905 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:30:57,425 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 21:30:57,425 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 21:30:57,425 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 21:30:57,426 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 21:30:58,529 - ERROR - WHOIS domain: webflow.io
+2024-09-11 21:30:58,530 - ERROR - Domains do not match
+2024-09-11 21:31:11,193 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 21:31:11,194 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 21:36:56,424 - INFO - Received URL: https://multi-44b.pages.dev/
+2024-09-11 21:36:56,526 - INFO - Safe Browsing API response for https://multi-44b.pages.dev/: {}
+2024-09-11 21:36:56,527 - INFO - Trying original URL: https://multi-44b.pages.dev/
+2024-09-11 21:36:56,657 - INFO - Original URL is reachable: https://multi-44b.pages.dev/
+2024-09-11 21:36:56,999 - ERROR - Found link tag: href=/cdn-cgi/styles/cf.errors.css, rel=['stylesheet']
+2024-09-11 21:36:57,257 - ERROR - Favicon found at fallback location: https://multi-44b.pages.dev/favicon.ico
+2024-09-11 21:36:57,262 - ERROR - Normalized URL domain: multi-44b.pages.dev
+2024-09-11 21:36:57,484 - ERROR - WHOIS domain: 
+2024-09-11 21:36:57,484 - ERROR - Domains do not match
+2024-09-11 21:37:27,412 - INFO - Downloaded and saved phishing page: phishing_pages\multi-44b.pages.dev.html
+2024-09-11 21:37:27,413 - INFO - URL already exists in phishing-site-urls.txt: https://multi-44b.pages.dev/
+2024-09-11 21:38:45,778 - INFO - Received URL: https://chatgpt.com/
+2024-09-11 21:38:45,892 - INFO - Safe Browsing API response for https://chatgpt.com/: {}
+2024-09-11 21:38:45,893 - INFO - Trying original URL: https://chatgpt.com/
+2024-09-11 23:33:18,018 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 23:33:18,116 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 23:33:18,117 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 23:33:18,131 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 23:33:20,700 - INFO - Received URL: https://www.facebook.com/
+2024-09-11 23:33:20,729 - INFO - Received URL: https://github.com/login
+2024-09-11 23:33:20,756 - INFO - Received URL: https://multi-44b.pages.dev/
+2024-09-11 23:33:20,761 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 23:33:20,789 - INFO - Safe Browsing API response for https://www.facebook.com/: {}
+2024-09-11 23:33:20,790 - INFO - Trying original URL: https://www.facebook.com/
+2024-09-11 23:33:20,827 - INFO - Safe Browsing API response for https://github.com/login: {}
+2024-09-11 23:33:20,828 - INFO - Trying original URL: https://github.com/login
+2024-09-11 23:33:20,838 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 23:33:20,839 - INFO - Safe Browsing API response for https://multi-44b.pages.dev/: {}
+2024-09-11 23:33:20,839 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 23:33:20,840 - INFO - Trying original URL: https://multi-44b.pages.dev/
+2024-09-11 23:33:20,929 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 23:33:20,969 - INFO - Original URL is reachable: https://multi-44b.pages.dev/
+2024-09-11 23:33:21,056 - INFO - Original URL is reachable: https://github.com/login
+2024-09-11 23:33:21,088 - INFO - Original URL is reachable: https://www.facebook.com/
+2024-09-11 23:33:21,306 - ERROR - Found link tag: href=/cdn-cgi/styles/cf.errors.css, rel=['stylesheet']
+2024-09-11 23:33:21,439 - ERROR - Favicon found at fallback location: https://multi-44b.pages.dev/favicon.ico
+2024-09-11 23:33:21,444 - ERROR - Normalized URL domain: multi-44b.pages.dev
+2024-09-11 23:33:21,656 - ERROR - WHOIS domain: 
+2024-09-11 23:33:21,656 - ERROR - Domains do not match
+2024-09-11 23:33:21,864 - ERROR - Found link tag: href=/data/manifest/, rel=['manifest']
+2024-09-11 23:33:21,864 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-11 23:33:21,864 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-11 23:33:21,864 - ERROR - Found link tag: href=https://www.facebook.com/, rel=['canonical']
+2024-09-11 23:33:21,864 - ERROR - Found link tag: href=https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico, rel=['icon']
+2024-09-11 23:33:21,864 - ERROR - Favicon found: https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico
+2024-09-11 23:33:21,870 - ERROR - Normalized URL domain: facebook.com
+2024-09-11 23:33:21,904 - ERROR - Found link tag: href=https://github.githubassets.com, rel=['dns-prefetch']
+2024-09-11 23:33:21,904 - ERROR - Found link tag: href=https://avatars.githubusercontent.com, rel=['dns-prefetch']
+2024-09-11 23:33:21,904 - ERROR - Found link tag: href=https://github-cloud.s3.amazonaws.com, rel=['dns-prefetch']
+2024-09-11 23:33:21,905 - ERROR - Found link tag: href=https://user-images.githubusercontent.com/, rel=['dns-prefetch']
+2024-09-11 23:33:21,905 - ERROR - Found link tag: href=https://github.githubassets.com, rel=['preconnect']
+2024-09-11 23:33:21,905 - ERROR - Found link tag: href=https://avatars.githubusercontent.com, rel=['preconnect']
+2024-09-11 23:33:21,905 - ERROR - Found link tag: href=https://github.githubassets.com/assets/light-3e154969b9f9.css, rel=['stylesheet']
+2024-09-11 23:33:21,905 - ERROR - Found link tag: href=https://github.githubassets.com/assets/dark-9c5b7a476542.css, rel=['stylesheet']
+2024-09-11 23:33:21,906 - ERROR - Found link tag: href=https://github.githubassets.com/assets/primer-primitives-4cf0d59ab51a.css, rel=['stylesheet']
+2024-09-11 23:33:21,906 - ERROR - Found link tag: href=https://github.githubassets.com/assets/primer-ff8ec1db4f06.css, rel=['stylesheet']
+2024-09-11 23:33:21,906 - ERROR - Found link tag: href=https://github.githubassets.com/assets/global-d50796f51147.css, rel=['stylesheet']
+2024-09-11 23:33:21,906 - ERROR - Found link tag: href=https://github.githubassets.com/assets/github-e4eed26e112b.css, rel=['stylesheet']
+2024-09-11 23:33:21,906 - ERROR - Found link tag: href=https://github.githubassets.com/, rel=['assets']
+2024-09-11 23:33:21,907 - ERROR - Found link tag: href=/opensearch.xml, rel=['search']
+2024-09-11 23:33:21,907 - ERROR - Found link tag: href=https://github.com/fluidicon.png, rel=['fluid-icon']
+2024-09-11 23:33:21,907 - ERROR - Favicon found: https://github.com/fluidicon.png
+2024-09-11 23:33:21,922 - ERROR - Normalized URL domain: github.com
+2024-09-11 23:33:22,277 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 23:33:22,277 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 23:33:22,277 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 23:33:22,278 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 23:33:22,379 - ERROR - WHOIS domain: facebook.com
+2024-09-11 23:33:22,379 - ERROR - Domains match
+2024-09-11 23:33:22,558 - ERROR - WHOIS domain: github.com
+2024-09-11 23:33:22,558 - ERROR - Domains match
+2024-09-11 23:33:23,254 - ERROR - WHOIS domain: webflow.io
+2024-09-11 23:33:23,254 - ERROR - Domains do not match
+2024-09-11 23:33:53,330 - INFO - Downloaded and saved phishing page: phishing_pages\multi-44b.pages.dev.html
+2024-09-11 23:33:53,359 - INFO - URL already exists in phishing-site-urls.txt: https://multi-44b.pages.dev/
+2024-09-11 23:33:55,912 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 23:33:55,914 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 23:34:29,192 - INFO - Received URL: https://www.facebook.com/
+2024-09-11 23:34:29,266 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 23:34:29,273 - INFO - Received URL: https://github.com/login
+2024-09-11 23:34:29,278 - INFO - Received URL: https://multi-44b.pages.dev/
+2024-09-11 23:34:29,286 - INFO - Safe Browsing API response for https://www.facebook.com/: {}
+2024-09-11 23:34:29,287 - INFO - Trying original URL: https://www.facebook.com/
+2024-09-11 23:34:29,353 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 23:34:29,354 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 23:34:29,383 - INFO - Safe Browsing API response for https://multi-44b.pages.dev/: {}
+2024-09-11 23:34:29,384 - INFO - Trying original URL: https://multi-44b.pages.dev/
+2024-09-11 23:34:29,396 - INFO - Safe Browsing API response for https://github.com/login: {}
+2024-09-11 23:34:29,397 - INFO - Trying original URL: https://github.com/login
+2024-09-11 23:34:29,435 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 23:34:29,459 - INFO - Original URL is reachable: https://multi-44b.pages.dev/
+2024-09-11 23:34:29,609 - INFO - Original URL is reachable: https://www.facebook.com/
+2024-09-11 23:34:29,633 - INFO - Original URL is reachable: https://github.com/login
+2024-09-11 23:34:29,752 - ERROR - Found link tag: href=/cdn-cgi/styles/cf.errors.css, rel=['stylesheet']
+2024-09-11 23:34:29,917 - ERROR - Favicon found at fallback location: https://multi-44b.pages.dev/favicon.ico
+2024-09-11 23:34:29,922 - ERROR - Normalized URL domain: multi-44b.pages.dev
+2024-09-11 23:34:30,169 - ERROR - WHOIS domain: 
+2024-09-11 23:34:30,169 - ERROR - Domains do not match
+2024-09-11 23:34:30,535 - ERROR - Found link tag: href=/data/manifest/, rel=['manifest']
+2024-09-11 23:34:30,535 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-11 23:34:30,535 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-11 23:34:30,536 - ERROR - Found link tag: href=https://www.facebook.com/, rel=['canonical']
+2024-09-11 23:34:30,536 - ERROR - Found link tag: href=https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico, rel=['icon']
+2024-09-11 23:34:30,536 - ERROR - Favicon found: https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico
+2024-09-11 23:34:30,539 - ERROR - Normalized URL domain: facebook.com
+2024-09-11 23:34:30,609 - ERROR - Found link tag: href=https://github.githubassets.com, rel=['dns-prefetch']
+2024-09-11 23:34:30,609 - ERROR - Found link tag: href=https://avatars.githubusercontent.com, rel=['dns-prefetch']
+2024-09-11 23:34:30,609 - ERROR - Found link tag: href=https://github-cloud.s3.amazonaws.com, rel=['dns-prefetch']
+2024-09-11 23:34:30,610 - ERROR - Found link tag: href=https://user-images.githubusercontent.com/, rel=['dns-prefetch']
+2024-09-11 23:34:30,610 - ERROR - Found link tag: href=https://github.githubassets.com, rel=['preconnect']
+2024-09-11 23:34:30,610 - ERROR - Found link tag: href=https://avatars.githubusercontent.com, rel=['preconnect']
+2024-09-11 23:34:30,610 - ERROR - Found link tag: href=https://github.githubassets.com/assets/light-3e154969b9f9.css, rel=['stylesheet']
+2024-09-11 23:34:30,610 - ERROR - Found link tag: href=https://github.githubassets.com/assets/dark-9c5b7a476542.css, rel=['stylesheet']
+2024-09-11 23:34:30,610 - ERROR - Found link tag: href=https://github.githubassets.com/assets/primer-primitives-4cf0d59ab51a.css, rel=['stylesheet']
+2024-09-11 23:34:30,610 - ERROR - Found link tag: href=https://github.githubassets.com/assets/primer-ff8ec1db4f06.css, rel=['stylesheet']
+2024-09-11 23:34:30,610 - ERROR - Found link tag: href=https://github.githubassets.com/assets/global-d50796f51147.css, rel=['stylesheet']
+2024-09-11 23:34:30,610 - ERROR - Found link tag: href=https://github.githubassets.com/assets/github-e4eed26e112b.css, rel=['stylesheet']
+2024-09-11 23:34:30,611 - ERROR - Found link tag: href=https://github.githubassets.com/, rel=['assets']
+2024-09-11 23:34:30,611 - ERROR - Found link tag: href=/opensearch.xml, rel=['search']
+2024-09-11 23:34:30,611 - ERROR - Found link tag: href=https://github.com/fluidicon.png, rel=['fluid-icon']
+2024-09-11 23:34:30,611 - ERROR - Favicon found: https://github.com/fluidicon.png
+2024-09-11 23:34:30,622 - ERROR - Normalized URL domain: github.com
+2024-09-11 23:34:30,670 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 23:34:30,670 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 23:34:30,670 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 23:34:30,671 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 23:34:31,197 - ERROR - WHOIS domain: facebook.com
+2024-09-11 23:34:31,197 - ERROR - Domains match
+2024-09-11 23:34:31,404 - ERROR - WHOIS domain: github.com
+2024-09-11 23:34:31,404 - ERROR - Domains match
+2024-09-11 23:34:31,789 - ERROR - WHOIS domain: webflow.io
+2024-09-11 23:34:31,790 - ERROR - Domains do not match
+2024-09-11 23:34:59,676 - INFO - Downloaded and saved phishing page: phishing_pages\multi-44b.pages.dev.html
+2024-09-11 23:34:59,679 - INFO - URL already exists in phishing-site-urls.txt: https://multi-44b.pages.dev/
+2024-09-11 23:35:03,256 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 23:35:03,257 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 23:40:47,460 - INFO - Model loaded successfully.
+2024-09-11 23:41:07,330 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 23:41:07,454 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 23:41:07,455 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 23:41:07,461 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-12 00:05:27,552 - INFO - Received URL: https://www.facebook.com/
+2024-09-12 00:05:27,600 - INFO - Received URL: https://github.com/login
+2024-09-12 00:05:27,606 - INFO - Received URL: https://multi-44b.pages.dev/
+2024-09-12 00:05:27,614 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:05:27,679 - INFO - Safe Browsing API response for https://www.facebook.com/: {}
+2024-09-12 00:05:27,680 - INFO - Safe Browsing API response for https://github.com/login: {}
+2024-09-12 00:05:27,681 - INFO - Trying original URL: https://www.facebook.com/
+2024-09-12 00:05:27,682 - INFO - Trying original URL: https://github.com/login
+2024-09-12 00:05:27,689 - INFO - Safe Browsing API response for https://multi-44b.pages.dev/: {}
+2024-09-12 00:05:27,690 - INFO - Trying original URL: https://multi-44b.pages.dev/
+2024-09-12 00:05:27,700 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-12 00:05:27,701 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:05:27,828 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:05:27,842 - INFO - Original URL is reachable: https://multi-44b.pages.dev/
+2024-09-12 00:05:27,915 - INFO - Original URL is reachable: https://github.com/login
+2024-09-12 00:05:27,975 - INFO - Original URL is reachable: https://www.facebook.com/
+2024-09-12 00:05:28,338 - ERROR - Found link tag: href=/cdn-cgi/styles/cf.errors.css, rel=['stylesheet']
+2024-09-12 00:05:28,462 - ERROR - Favicon found at fallback location: https://multi-44b.pages.dev/favicon.ico
+2024-09-12 00:05:28,464 - ERROR - Normalized URL domain: multi-44b.pages.dev
+2024-09-12 00:05:28,679 - ERROR - WHOIS domain: 
+2024-09-12 00:05:28,680 - ERROR - Domains do not match
+2024-09-12 00:05:28,807 - ERROR - Found link tag: href=/data/manifest/, rel=['manifest']
+2024-09-12 00:05:28,808 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-12 00:05:28,809 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-12 00:05:28,809 - ERROR - Found link tag: href=https://www.facebook.com/, rel=['canonical']
+2024-09-12 00:05:28,809 - ERROR - Found link tag: href=https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico, rel=['icon']
+2024-09-12 00:05:28,809 - ERROR - Favicon found: https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico
+2024-09-12 00:05:28,813 - ERROR - Normalized URL domain: facebook.com
+2024-09-12 00:05:29,037 - ERROR - Found link tag: href=https://github.githubassets.com, rel=['dns-prefetch']
+2024-09-12 00:05:29,037 - ERROR - Found link tag: href=https://avatars.githubusercontent.com, rel=['dns-prefetch']
+2024-09-12 00:05:29,038 - ERROR - Found link tag: href=https://github-cloud.s3.amazonaws.com, rel=['dns-prefetch']
+2024-09-12 00:05:29,038 - ERROR - Found link tag: href=https://user-images.githubusercontent.com/, rel=['dns-prefetch']
+2024-09-12 00:05:29,038 - ERROR - Found link tag: href=https://github.githubassets.com, rel=['preconnect']
+2024-09-12 00:05:29,038 - ERROR - Found link tag: href=https://avatars.githubusercontent.com, rel=['preconnect']
+2024-09-12 00:05:29,038 - ERROR - Found link tag: href=https://github.githubassets.com/assets/light-3e154969b9f9.css, rel=['stylesheet']
+2024-09-12 00:05:29,038 - ERROR - Found link tag: href=https://github.githubassets.com/assets/dark-9c5b7a476542.css, rel=['stylesheet']
+2024-09-12 00:05:29,039 - ERROR - Found link tag: href=https://github.githubassets.com/assets/primer-primitives-4cf0d59ab51a.css, rel=['stylesheet']
+2024-09-12 00:05:29,039 - ERROR - Found link tag: href=https://github.githubassets.com/assets/primer-ff8ec1db4f06.css, rel=['stylesheet']
+2024-09-12 00:05:29,039 - ERROR - Found link tag: href=https://github.githubassets.com/assets/global-d50796f51147.css, rel=['stylesheet']
+2024-09-12 00:05:29,039 - ERROR - Found link tag: href=https://github.githubassets.com/assets/github-e4eed26e112b.css, rel=['stylesheet']
+2024-09-12 00:05:29,039 - ERROR - Found link tag: href=https://github.githubassets.com/, rel=['assets']
+2024-09-12 00:05:29,039 - ERROR - Found link tag: href=/opensearch.xml, rel=['search']
+2024-09-12 00:05:29,040 - ERROR - Found link tag: href=https://github.com/fluidicon.png, rel=['fluid-icon']
+2024-09-12 00:05:29,040 - ERROR - Favicon found: https://github.com/fluidicon.png
+2024-09-12 00:05:29,052 - ERROR - Normalized URL domain: github.com
+2024-09-12 00:05:29,199 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-12 00:05:29,199 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 00:05:29,199 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-12 00:05:29,201 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-12 00:05:29,366 - ERROR - WHOIS domain: facebook.com
+2024-09-12 00:05:29,366 - ERROR - Domains match
+2024-09-12 00:05:29,680 - ERROR - WHOIS domain: github.com
+2024-09-12 00:05:29,680 - ERROR - Domains match
+2024-09-12 00:05:30,154 - ERROR - WHOIS domain: webflow.io
+2024-09-12 00:05:30,154 - ERROR - Domains do not match
+2024-09-12 00:06:00,121 - INFO - Downloaded and saved phishing page: phishing_pages\multi-44b.pages.dev.html
+2024-09-12 00:06:00,122 - INFO - URL already exists in phishing-site-urls.txt: https://multi-44b.pages.dev/
+2024-09-12 00:06:02,643 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-12 00:06:02,644 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:07:05,295 - INFO - Received URL: https://multi-44b.pages.dev/
+2024-09-12 00:07:05,313 - INFO - Received URL: https://www.facebook.com/
+2024-09-12 00:07:05,388 - INFO - Safe Browsing API response for https://multi-44b.pages.dev/: {}
+2024-09-12 00:07:05,389 - INFO - Trying original URL: https://multi-44b.pages.dev/
+2024-09-12 00:07:05,390 - INFO - Safe Browsing API response for https://www.facebook.com/: {}
+2024-09-12 00:07:05,392 - INFO - Trying original URL: https://www.facebook.com/
+2024-09-12 00:07:05,461 - INFO - Original URL is reachable: https://multi-44b.pages.dev/
+2024-09-12 00:07:05,541 - INFO - Original URL is reachable: https://www.facebook.com/
+2024-09-12 00:07:05,757 - ERROR - Found link tag: href=/cdn-cgi/styles/cf.errors.css, rel=['stylesheet']
+2024-09-12 00:07:05,899 - ERROR - Favicon found at fallback location: https://multi-44b.pages.dev/favicon.ico
+2024-09-12 00:07:05,906 - ERROR - Normalized URL domain: multi-44b.pages.dev
+2024-09-12 00:07:06,123 - ERROR - WHOIS domain: 
+2024-09-12 00:07:06,124 - ERROR - Domains do not match
+2024-09-12 00:07:06,317 - ERROR - Found link tag: href=/data/manifest/, rel=['manifest']
+2024-09-12 00:07:06,317 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-12 00:07:06,317 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-12 00:07:06,317 - ERROR - Found link tag: href=https://www.facebook.com/, rel=['canonical']
+2024-09-12 00:07:06,318 - ERROR - Found link tag: href=https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico, rel=['icon']
+2024-09-12 00:07:06,318 - ERROR - Favicon found: https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico
+2024-09-12 00:07:06,323 - ERROR - Normalized URL domain: facebook.com
+2024-09-12 00:07:06,824 - ERROR - WHOIS domain: facebook.com
+2024-09-12 00:07:06,825 - ERROR - Domains match
+2024-09-12 00:07:37,150 - INFO - Downloaded and saved phishing page: phishing_pages\multi-44b.pages.dev.html
+2024-09-12 00:07:37,151 - INFO - URL already exists in phishing-site-urls.txt: https://multi-44b.pages.dev/
+2024-09-12 00:07:50,705 - INFO - Received URL: https://www.facebook.com/
+2024-09-12 00:07:50,722 - INFO - Received URL: https://multi-44b.pages.dev/
+2024-09-12 00:07:50,803 - INFO - Safe Browsing API response for https://multi-44b.pages.dev/: {}
+2024-09-12 00:07:50,804 - INFO - Trying original URL: https://multi-44b.pages.dev/
+2024-09-12 00:07:50,809 - INFO - Safe Browsing API response for https://www.facebook.com/: {}
+2024-09-12 00:07:50,810 - INFO - Trying original URL: https://www.facebook.com/
+2024-09-12 00:07:50,870 - INFO - Original URL is reachable: https://multi-44b.pages.dev/
+2024-09-12 00:07:50,985 - INFO - Original URL is reachable: https://www.facebook.com/
+2024-09-12 00:07:51,165 - ERROR - Found link tag: href=/cdn-cgi/styles/cf.errors.css, rel=['stylesheet']
+2024-09-12 00:07:51,280 - ERROR - Favicon found at fallback location: https://multi-44b.pages.dev/favicon.ico
+2024-09-12 00:07:51,283 - ERROR - Normalized URL domain: multi-44b.pages.dev
+2024-09-12 00:07:51,491 - ERROR - WHOIS domain: 
+2024-09-12 00:07:51,491 - ERROR - Domains do not match
+2024-09-12 00:07:51,686 - ERROR - Found link tag: href=/data/manifest/, rel=['manifest']
+2024-09-12 00:07:51,686 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-12 00:07:51,686 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-12 00:07:51,687 - ERROR - Found link tag: href=https://www.facebook.com/, rel=['canonical']
+2024-09-12 00:07:51,687 - ERROR - Found link tag: href=https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico, rel=['icon']
+2024-09-12 00:07:51,687 - ERROR - Favicon found: https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico
+2024-09-12 00:07:51,694 - ERROR - Normalized URL domain: facebook.com
+2024-09-12 00:07:52,213 - ERROR - WHOIS domain: facebook.com
+2024-09-12 00:07:52,213 - ERROR - Domains match
+2024-09-12 00:08:21,466 - INFO - Downloaded and saved phishing page: phishing_pages\multi-44b.pages.dev.html
+2024-09-12 00:08:21,468 - INFO - URL already exists in phishing-site-urls.txt: https://multi-44b.pages.dev/
+2024-09-12 00:11:13,357 - INFO - Model loaded successfully.
+2024-09-12 00:11:13,362 - INFO - Received URL: https://www.facebook.com/
+2024-09-12 00:11:13,481 - INFO - Safe Browsing API response for https://www.facebook.com/: {}
+2024-09-12 00:11:13,481 - INFO - Trying original URL: https://www.facebook.com/
+2024-09-12 00:11:13,646 - INFO - Original URL is reachable: https://www.facebook.com/
+2024-09-12 00:11:14,666 - ERROR - Found link tag: href=/data/manifest/, rel=['manifest']
+2024-09-12 00:11:14,666 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-12 00:11:14,666 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-12 00:11:14,666 - ERROR - Found link tag: href=https://www.facebook.com/, rel=['canonical']
+2024-09-12 00:11:14,666 - ERROR - Found link tag: href=https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico, rel=['icon']
+2024-09-12 00:11:14,666 - ERROR - Favicon found: https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico
+2024-09-12 00:11:14,670 - ERROR - Normalized URL domain: facebook.com
+2024-09-12 00:11:15,345 - ERROR - WHOIS domain: facebook.com
+2024-09-12 00:11:15,345 - ERROR - Domains match
+2024-09-12 00:12:05,488 - INFO - Model loaded successfully.
+2024-09-12 00:12:05,493 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:12:05,614 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-12 00:12:05,615 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:12:05,716 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:12:07,069 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-12 00:12:07,069 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 00:12:07,069 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-12 00:12:07,070 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-12 00:12:08,254 - ERROR - WHOIS domain: webflow.io
+2024-09-12 00:12:08,255 - ERROR - Domains do not match
+2024-09-12 00:12:50,155 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-12 00:12:50,157 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:13:57,253 - INFO - Model loaded successfully.
+2024-09-12 00:13:57,258 - INFO - Received URL: https://www.facebook.com/
+2024-09-12 00:13:57,347 - INFO - Safe Browsing API response for https://www.facebook.com/: {}
+2024-09-12 00:13:57,348 - INFO - Trying original URL: https://www.facebook.com/
+2024-09-12 00:13:57,510 - INFO - Original URL is reachable: https://www.facebook.com/
+2024-09-12 00:13:58,364 - ERROR - Found link tag: href=/data/manifest/, rel=['manifest']
+2024-09-12 00:13:58,365 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-12 00:13:58,365 - ERROR - Found link tag: href=https://m.facebook.com/, rel=['alternate']
+2024-09-12 00:13:58,365 - ERROR - Found link tag: href=https://www.facebook.com/, rel=['canonical']
+2024-09-12 00:13:58,365 - ERROR - Found link tag: href=https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico, rel=['icon']
+2024-09-12 00:13:58,365 - ERROR - Favicon found: https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico
+2024-09-12 00:13:58,369 - ERROR - Normalized URL domain: facebook.com
+2024-09-12 00:13:58,884 - ERROR - WHOIS domain: facebook.com
+2024-09-12 00:13:58,884 - ERROR - Domains match
+2024-09-12 00:14:47,147 - INFO - Model loaded successfully.
+2024-09-12 00:14:47,152 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:14:47,230 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-12 00:14:47,231 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:14:47,319 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:14:48,503 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-12 00:14:48,503 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 00:14:48,503 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-12 00:14:48,504 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-12 00:14:49,538 - ERROR - WHOIS domain: webflow.io
+2024-09-12 00:14:49,538 - ERROR - Domains do not match
+2024-09-12 00:15:20,287 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-12 00:15:20,288 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/

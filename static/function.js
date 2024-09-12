@@ -1,4 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function() { 
+    let pendingRequests = 0; // Counter for pending requests
+
     // Function to get URL parameters
     function getQueryParam(param) {
         const urlParams = new URLSearchParams(window.location.search);
@@ -66,6 +68,8 @@ $(document).ready(function() {
         $('#results').html('');  // Clear previous results
         $('#loadingSpinner').show();  // Show the loading spinner
 
+        pendingRequests = urls.length; // Set the pending requests count
+
         urls.forEach(function(url, index) {
             url = formatAndValidateUrl(url);
             if (url) {
@@ -86,7 +90,13 @@ $(document).ready(function() {
             dataType: 'json',
             data: JSON.stringify({ url: url }),
             success: function(response) {
-                $('#loadingSpinner').hide();  // Hide the loading spinner when the first response is received
+                // Decrease the pending requests count
+                pendingRequests--;
+                
+                // Hide the loading spinner only when all responses are received
+                if (pendingRequests === 0) {
+                    $('#loadingSpinner').hide();
+                }
 
                 // Create unique IDs for each result and its features for toggling
                 const resultId = `result-${index}`;
@@ -155,7 +165,14 @@ $(document).ready(function() {
                 $('#results').collapse('show');  // Show the results section after each URL
             },
             error: function(resp) {
-                $('#loadingSpinner').hide();  // Hide the loading spinner in case of error
+                // Decrease the pending requests count in case of an error
+                pendingRequests--;
+                
+                // Hide the loading spinner only when all responses are received
+                if (pendingRequests === 0) {
+                    $('#loadingSpinner').hide();
+                }
+
                 alert(`Error checking ${url}: ${resp.responseJSON.error}`);
             }
         });
