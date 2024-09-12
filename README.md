@@ -5,7 +5,7 @@
 **[Installation Instructions](#installation-instructions)**<br>
 **[Usage Instructions](#usage-instructions)**<br>
 **[Compatibility](#compatibility)**<br>
-**[Building the Browser Extension](#building-the-extension-bundles)**<br>
+**[Building the Browser Extension](#building-the-browser-extension)**<br>
 **[Help and support](#help-and-support)**<br>
 
 
