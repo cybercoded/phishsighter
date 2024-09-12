@@ -1323,3 +1323,204 @@
 2024-09-12 00:14:49,538 - ERROR - Domains do not match
 2024-09-12 00:15:20,287 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
 2024-09-12 00:15:20,288 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:16:34,763 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:16:34,855 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-12 00:16:34,856 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:16:34,931 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:16:36,138 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-12 00:16:36,175 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 00:16:36,175 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-12 00:16:36,176 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-12 00:16:37,147 - ERROR - WHOIS domain: webflow.io
+2024-09-12 00:16:37,147 - ERROR - Domains do not match
+2024-09-12 00:17:11,438 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-12 00:17:11,439 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:17:48,118 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:17:48,213 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-12 00:17:48,214 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:17:48,290 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:17:49,516 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-12 00:17:49,516 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 00:17:49,516 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-12 00:17:49,517 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-12 00:17:50,458 - ERROR - WHOIS domain: webflow.io
+2024-09-12 00:17:50,459 - ERROR - Domains do not match
+2024-09-12 00:18:24,037 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-12 00:18:24,038 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:20:03,219 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:20:03,309 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-12 00:20:03,310 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:20:03,411 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:20:04,720 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-12 00:20:04,720 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 00:20:04,720 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-12 00:20:04,722 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-12 00:20:05,810 - ERROR - WHOIS domain: webflow.io
+2024-09-12 00:20:05,810 - ERROR - Domains do not match
+2024-09-12 00:20:38,811 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-12 00:20:38,812 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:21:55,427 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:21:56,073 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-12 00:21:56,074 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:21:56,382 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:21:57,730 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-12 00:21:57,730 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 00:21:57,731 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-12 00:21:57,732 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-12 00:21:58,861 - ERROR - WHOIS domain: webflow.io
+2024-09-12 00:21:58,861 - ERROR - Domains do not match
+2024-09-12 00:22:29,727 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-12 00:22:29,728 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:23:53,314 - INFO - Received URL: https://www.google.com/search?q=photopea&oq=pho&gs_lcrp=EgZjaHJvbWUqDQgBEAAYgwEYsQMYgAQyBggAEEUYOTINCAEQABiDARixAxiABDIKCAIQABixAxiABDITCAMQLhiDARjHARixAxjRAxiABDINCAQQABiDARixAxiABDINCAUQLhiDARixAxiABDIHCAYQABiABDIGCAcQRRg90gEIMzY0NGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8
+2024-09-12 00:23:53,450 - INFO - Safe Browsing API response for https://www.google.com/search?q=photopea&oq=pho&gs_lcrp=EgZjaHJvbWUqDQgBEAAYgwEYsQMYgAQyBggAEEUYOTINCAEQABiDARixAxiABDIKCAIQABixAxiABDITCAMQLhiDARjHARixAxjRAxiABDINCAQQABiDARixAxiABDINCAUQLhiDARixAxiABDIHCAYQABiABDIGCAcQRRg90gEIMzY0NGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8: {}
+2024-09-12 00:23:53,452 - INFO - Trying original URL: https://www.google.com/search?q=photopea&oq=pho&gs_lcrp=EgZjaHJvbWUqDQgBEAAYgwEYsQMYgAQyBggAEEUYOTINCAEQABiDARixAxiABDIKCAIQABixAxiABDITCAMQLhiDARjHARixAxjRAxiABDINCAQQABiDARixAxiABDINCAUQLhiDARixAxiABDIHCAYQABiABDIGCAcQRRg90gEIMzY0NGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8
+2024-09-12 00:23:53,759 - INFO - Original URL is reachable: https://www.google.com/search?q=photopea&oq=pho&gs_lcrp=EgZjaHJvbWUqDQgBEAAYgwEYsQMYgAQyBggAEEUYOTINCAEQABiDARixAxiABDIKCAIQABixAxiABDITCAMQLhiDARjHARixAxjRAxiABDINCAQQABiDARixAxiABDINCAUQLhiDARixAxiABDIHCAYQABiABDIGCAcQRRg90gEIMzY0NGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8
+2024-09-12 00:23:54,789 - INFO - Received URL: https://www.photopea.com/
+2024-09-12 00:23:54,848 - ERROR - Found link tag: href=//www.google.com/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 00:23:54,849 - ERROR - Favicon found: https://www.google.com/favicon.ico
+2024-09-12 00:23:54,855 - ERROR - Normalized URL domain: google.com
+2024-09-12 00:23:54,884 - INFO - Safe Browsing API response for https://www.photopea.com/: {}
+2024-09-12 00:23:54,884 - INFO - Trying original URL: https://www.photopea.com/
+2024-09-12 00:23:55,052 - INFO - Original URL is reachable: https://www.photopea.com/
+2024-09-12 00:23:55,464 - ERROR - WHOIS domain: google.com
+2024-09-12 00:23:55,464 - ERROR - Domains match
+2024-09-12 00:23:58,846 - ERROR - Found link tag: href=promo/icon512.png, rel=['apple-touch-icon']
+2024-09-12 00:23:58,847 - ERROR - Favicon found: https://www.photopea.com/promo/icon512.png
+2024-09-12 00:23:58,851 - ERROR - Normalized URL domain: photopea.com
+2024-09-12 00:23:59,413 - ERROR - WHOIS domain: photopea.com
+2024-09-12 00:23:59,413 - ERROR - Domains match
+2024-09-12 00:41:11,356 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:41:11,448 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-12 00:41:11,448 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:41:11,521 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:41:13,022 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-12 00:41:13,022 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 00:41:13,022 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-12 00:41:13,023 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-12 00:41:14,036 - ERROR - WHOIS domain: webflow.io
+2024-09-12 00:41:14,036 - ERROR - Domains do not match
+2024-09-12 00:41:34,813 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:41:35,234 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-12 00:41:35,235 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:41:35,837 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:41:37,711 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-12 00:41:37,711 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 00:41:37,711 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-12 00:41:37,712 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-12 00:41:38,667 - ERROR - WHOIS domain: webflow.io
+2024-09-12 00:41:38,667 - ERROR - Domains do not match
+2024-09-12 00:41:48,921 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-12 00:41:48,959 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:42:00,259 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-12 00:42:00,260 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-12 00:51:42,067 - INFO - Received URL: https://chatgpt.com/
+2024-09-12 00:51:42,221 - INFO - Safe Browsing API response for https://chatgpt.com/: {}
+2024-09-12 00:51:42,222 - INFO - Trying original URL: https://chatgpt.com/
+2024-09-12 00:51:52,723 - INFO - Received URL: https://blackboard.staffs.ac.uk/ultra/stream
+2024-09-12 00:51:52,815 - INFO - Safe Browsing API response for https://blackboard.staffs.ac.uk/ultra/stream: {}
+2024-09-12 00:51:52,817 - INFO - Trying original URL: https://blackboard.staffs.ac.uk/ultra/stream
+2024-09-12 00:54:45,192 - INFO - Received URL: https://staffsuniversity-onmicrosoft-com.access.mcas.ms/aad_login
+2024-09-12 00:54:45,333 - INFO - Safe Browsing API response for https://staffsuniversity-onmicrosoft-com.access.mcas.ms/aad_login: {}
+2024-09-12 00:54:45,334 - INFO - Trying original URL: https://staffsuniversity-onmicrosoft-com.access.mcas.ms/aad_login
+2024-09-12 00:54:48,682 - INFO - Received URL: https://staffsuniversity-my.sharepoint.com/personal/o039586m_student_staffs_ac_uk/_layouts/15/Doc.aspx?sourcedoc=%7BBEE09EDF-7690-4888-970E-FD1172C1F73C%7D&file=Final%20Report.docx&action=default&mobileredirect=true
+2024-09-12 00:54:48,785 - INFO - Safe Browsing API response for https://staffsuniversity-my.sharepoint.com/personal/o039586m_student_staffs_ac_uk/_layouts/15/Doc.aspx?sourcedoc=%7BBEE09EDF-7690-4888-970E-FD1172C1F73C%7D&file=Final%20Report.docx&action=default&mobileredirect=true: {}
+2024-09-12 00:54:48,804 - INFO - Trying original URL: https://staffsuniversity-my.sharepoint.com/personal/o039586m_student_staffs_ac_uk/_layouts/15/Doc.aspx?sourcedoc=%7BBEE09EDF-7690-4888-970E-FD1172C1F73C%7D&file=Final%20Report.docx&action=default&mobileredirect=true
+2024-09-12 02:19:30,480 - INFO - Received URL: https://staffsuniversity-my.sharepoint.com/:w:/r/personal/o039586m_student_staffs_ac_uk/_layouts/15/Doc.aspx?sourcedoc=%7BBEE09EDF-7690-4888-970E-FD1172C1F73C%7D&file=Final%20Report.docx&action=default&mobileredirect=true
+2024-09-12 02:19:30,699 - INFO - Safe Browsing API response for https://staffsuniversity-my.sharepoint.com/:w:/r/personal/o039586m_student_staffs_ac_uk/_layouts/15/Doc.aspx?sourcedoc=%7BBEE09EDF-7690-4888-970E-FD1172C1F73C%7D&file=Final%20Report.docx&action=default&mobileredirect=true: {}
+2024-09-12 02:19:30,700 - INFO - Trying original URL: https://staffsuniversity-my.sharepoint.com/:w:/r/personal/o039586m_student_staffs_ac_uk/_layouts/15/Doc.aspx?sourcedoc=%7BBEE09EDF-7690-4888-970E-FD1172C1F73C%7D&file=Final%20Report.docx&action=default&mobileredirect=true
+2024-09-12 02:19:31,728 - INFO - Received URL: https://www.freescreenrecording.com/thanks-for-download
+2024-09-12 02:19:31,799 - INFO - Safe Browsing API response for https://www.freescreenrecording.com/thanks-for-download: {}
+2024-09-12 02:19:31,800 - INFO - Trying original URL: https://www.freescreenrecording.com/thanks-for-download
+2024-09-12 02:19:32,470 - INFO - Original URL is reachable: https://www.freescreenrecording.com/thanks-for-download
+2024-09-12 02:19:38,322 - ERROR - Found link tag: href=https://www.freescreenrecording.com/thanks-for-download, rel=['canonical']
+2024-09-12 02:19:38,323 - ERROR - Found link tag: href=https://www.freescreenrecording.com/content/fonts/EuclidCircularB-Regular.woff2, rel=['preload']
+2024-09-12 02:19:38,323 - ERROR - Found link tag: href=https://www.freescreenrecording.com/content/fonts/EuclidCircularB-Medium.woff2, rel=['preload']
+2024-09-12 02:19:38,323 - ERROR - Found link tag: href=https://fonts.googleapis.com/css?family=Open+Sans:400,700, rel=['preload']
+2024-09-12 02:19:38,323 - ERROR - Found link tag: href=https://fonts.googleapis.com/css?family=Lato:400,700,900, rel=['preload']
+2024-09-12 02:19:38,463 - ERROR - Found link tag: href=https://fonts.googleapis.com/css?family=Open+Sans:400,700, rel=['stylesheet']
+2024-09-12 02:19:38,464 - ERROR - Found link tag: href=https://fonts.googleapis.com/css?family=Lato:400,700,900, rel=['stylesheet']
+2024-09-12 02:19:38,464 - ERROR - Found link tag: href=/datacache/css/7c1842b2f1987c460294181caac8b350_20200129132218.css, rel=['stylesheet']
+2024-09-12 02:19:38,464 - ERROR - Found link tag: href=/datacache/css/4f33f913544d8ddc4d960c6a5e7a2562_20200129132218.css, rel=['stylesheet']
+2024-09-12 02:19:38,464 - ERROR - Found link tag: href=https://www.freescreenrecording.com/css/print.css, rel=['stylesheet']
+2024-09-12 02:19:38,465 - ERROR - Found link tag: href=https://www.freescreenrecording.com/favicon.ico, rel=['icon']
+2024-09-12 02:19:38,465 - ERROR - Favicon found: https://www.freescreenrecording.com/favicon.ico
+2024-09-12 02:19:38,468 - ERROR - Normalized URL domain: freescreenrecording.com
+2024-09-12 02:19:39,625 - ERROR - WHOIS domain: freescreenrecording.com
+2024-09-12 02:19:39,625 - ERROR - Domains match
+2024-09-12 02:19:58,843 - INFO - Received URL: https://www.freescreenrecording.com/
+2024-09-12 02:19:58,915 - INFO - Safe Browsing API response for https://www.freescreenrecording.com/: {}
+2024-09-12 02:19:58,915 - INFO - Trying original URL: https://www.freescreenrecording.com/
+2024-09-12 02:19:59,573 - INFO - Original URL is reachable: https://www.freescreenrecording.com/
+2024-09-12 02:20:03,405 - ERROR - Found link tag: href=https://www.freescreenrecording.com/, rel=['canonical']
+2024-09-12 02:20:03,406 - ERROR - Found link tag: href=https://www.freescreenrecording.com/content/fonts/EuclidCircularB-Regular.woff2, rel=['preload']
+2024-09-12 02:20:03,406 - ERROR - Found link tag: href=https://www.freescreenrecording.com/content/fonts/EuclidCircularB-Medium.woff2, rel=['preload']
+2024-09-12 02:20:03,406 - ERROR - Found link tag: href=https://fonts.googleapis.com/css?family=Open+Sans:400,700, rel=['preload']
+2024-09-12 02:20:03,406 - ERROR - Found link tag: href=https://fonts.googleapis.com/css?family=Lato:400,700,900, rel=['preload']
+2024-09-12 02:20:03,406 - ERROR - Found link tag: href=https://fonts.googleapis.com/css?family=Open+Sans:400,700, rel=['stylesheet']
+2024-09-12 02:20:03,407 - ERROR - Found link tag: href=https://fonts.googleapis.com/css?family=Lato:400,700,900, rel=['stylesheet']
+2024-09-12 02:20:03,407 - ERROR - Found link tag: href=/datacache/css/f474b859a8d2b869dfd1be3b795da71d_20200129132218.css, rel=['stylesheet']
+2024-09-12 02:20:03,407 - ERROR - Found link tag: href=/datacache/css/63373a448ce1238bd495d3ea4cb8c2c9_20200129132218.css, rel=['stylesheet']
+2024-09-12 02:20:03,407 - ERROR - Found link tag: href=https://www.freescreenrecording.com/css/print.css, rel=['stylesheet']
+2024-09-12 02:20:03,407 - ERROR - Found link tag: href=https://www.freescreenrecording.com/favicon.ico, rel=['icon']
+2024-09-12 02:20:03,407 - ERROR - Favicon found: https://www.freescreenrecording.com/favicon.ico
+2024-09-12 02:20:03,655 - ERROR - Normalized URL domain: freescreenrecording.com
+2024-09-12 02:20:06,027 - ERROR - WHOIS domain: freescreenrecording.com
+2024-09-12 02:20:06,027 - ERROR - Domains match
+2024-09-12 02:20:24,393 - INFO - Received URL: https://mail.google.com/mail/u/0/#inbox
+2024-09-12 02:20:24,496 - INFO - Safe Browsing API response for https://mail.google.com/mail/u/0/#inbox: {}
+2024-09-12 02:20:24,497 - INFO - Trying original URL: https://mail.google.com/mail/u/0/#inbox
+2024-09-12 02:20:25,039 - INFO - Original URL is reachable: https://mail.google.com/mail/u/0/#inbox
+2024-09-12 02:20:28,410 - ERROR - Found link tag: href=//www.gstatic.com, rel=['preconnect']
+2024-09-12 02:20:28,589 - ERROR - Favicon found at fallback location: https://mail.google.com/favicon.ico
+2024-09-12 02:20:28,617 - ERROR - Normalized URL domain: mail.google.com
+2024-09-12 02:20:30,267 - ERROR - WHOIS domain: google.com
+2024-09-12 02:20:30,267 - ERROR - Domains do not match
+2024-09-12 02:21:27,844 - INFO - Received URL: https://www.google.com/search?q=free+cam+download&oq=free+cam+download&gs_lcrp=EgZjaHJvbWUyDggAEEUYJxg5GIAEGIoFMgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMg0IBhAAGIYDGIAEGIoFMgoIBxAAGIAEGKIEMgoICBAAGIAEGKIEMgoICRAAGIAEGKIEqAIAsAIA&sourceid=chrome&ie=UTF-8
+2024-09-12 02:21:27,928 - INFO - Safe Browsing API response for https://www.google.com/search?q=free+cam+download&oq=free+cam+download&gs_lcrp=EgZjaHJvbWUyDggAEEUYJxg5GIAEGIoFMgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMg0IBhAAGIYDGIAEGIoFMgoIBxAAGIAEGKIEMgoICBAAGIAEGKIEMgoICRAAGIAEGKIEqAIAsAIA&sourceid=chrome&ie=UTF-8: {}
+2024-09-12 02:21:27,945 - INFO - Trying original URL: https://www.google.com/search?q=free+cam+download&oq=free+cam+download&gs_lcrp=EgZjaHJvbWUyDggAEEUYJxg5GIAEGIoFMgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMg0IBhAAGIYDGIAEGIoFMgoIBxAAGIAEGKIEMgoICBAAGIAEGKIEMgoICRAAGIAEGKIEqAIAsAIA&sourceid=chrome&ie=UTF-8
+2024-09-12 02:21:30,361 - INFO - Original URL is reachable: https://www.google.com/search?q=free+cam+download&oq=free+cam+download&gs_lcrp=EgZjaHJvbWUyDggAEEUYJxg5GIAEGIoFMgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMg0IBhAAGIYDGIAEGIoFMgoIBxAAGIAEGKIEMgoICBAAGIAEGKIEMgoICRAAGIAEGKIEqAIAsAIA&sourceid=chrome&ie=UTF-8
+2024-09-12 02:21:31,688 - ERROR - Found link tag: href=//www.google.com/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 02:21:31,688 - ERROR - Favicon found: https://www.google.com/favicon.ico
+2024-09-12 02:21:31,696 - ERROR - Normalized URL domain: google.com
+2024-09-12 02:21:32,133 - INFO - Received URL: https://getintopc.com/wait-for-resource-5/
+2024-09-12 02:21:32,224 - INFO - Safe Browsing API response for https://getintopc.com/wait-for-resource-5/: {}
+2024-09-12 02:21:32,225 - INFO - Trying original URL: https://getintopc.com/wait-for-resource-5/
+2024-09-12 02:21:32,439 - ERROR - WHOIS domain: google.com
+2024-09-12 02:21:32,440 - ERROR - Domains match
+2024-09-12 02:21:34,532 - INFO - Received URL: https://programming-link.info/Please-Wait.php
+2024-09-12 02:21:34,612 - INFO - Safe Browsing API response for https://programming-link.info/Please-Wait.php: {}
+2024-09-12 02:21:34,613 - INFO - Trying original URL: https://programming-link.info/Please-Wait.php
+2024-09-12 02:21:35,094 - INFO - Original URL is reachable: https://programming-link.info/Please-Wait.php
+2024-09-12 02:21:37,234 - ERROR - Found link tag: href=https://gmpg.org/xfn/11, rel=['profile']
+2024-09-12 02:21:37,235 - ERROR - Found link tag: href=https://programming-link.info/, rel=['canonical']
+2024-09-12 02:21:37,235 - ERROR - Found link tag: href=https://programming-link.info/page/2/, rel=['next']
+2024-09-12 02:21:37,235 - ERROR - Found link tag: href=https://programming-link.info/wp-content/themes/covernews/assets/bootstrap/css/bootstrap.min.css, rel=['stylesheet']
+2024-09-12 02:21:37,236 - ERROR - Found link tag: href=https://programming-link.info/wp-content/cache/autoptimize/css/autoptimize_single_93375a01ff6ce38ec13e2bf51783d257.css, rel=['stylesheet']
+2024-09-12 02:21:37,236 - ERROR - Found link tag: href=https://programming-link.info/wp-content/cache/autoptimize/css/autoptimize_single_3f60f119f555b55f21f91a4d3a93ae2a.css, rel=['stylesheet']
+2024-09-12 02:21:37,236 - ERROR - Found link tag: href=https://programming-link.info/wp-content/cache/autoptimize/css/autoptimize_single_5cf91781750dacf5ab5b3c3319483059.css, rel=['stylesheet']
+2024-09-12 02:21:37,236 - ERROR - Found link tag: href=https://programming-link.info/wp-content/cache/autoptimize/css/autoptimize_single_f38b2db10e01b1572732a3191d538707.css, rel=['stylesheet']
+2024-09-12 02:21:37,237 - ERROR - Found link tag: href=https://programming-link.info/wp-content/uploads/2017/07/fixsetuperrors.jpeg, rel=['icon']
+2024-09-12 02:21:37,237 - ERROR - Favicon found: https://programming-link.info/wp-content/uploads/2017/07/fixsetuperrors.jpeg
+2024-09-12 02:21:37,318 - ERROR - Normalized URL domain: programming-link.info
+2024-09-12 02:21:38,342 - ERROR - WHOIS domain: programming-link.info
+2024-09-12 02:21:38,342 - ERROR - Domains match
+2024-09-12 02:21:48,954 - INFO - Received URL: https://getintopc.com/
+2024-09-12 02:21:49,088 - INFO - Safe Browsing API response for https://getintopc.com/: {}
+2024-09-12 02:21:49,088 - INFO - Trying original URL: https://getintopc.com/
+2024-09-12 02:21:56,428 - INFO - Received URL: https://getintopc.com/?s=free+cam
+2024-09-12 02:21:56,580 - INFO - Safe Browsing API response for https://getintopc.com/?s=free+cam: {}
+2024-09-12 02:21:56,624 - INFO - Trying original URL: https://getintopc.com/?s=free+cam
+2024-09-12 02:22:34,010 - INFO - Received URL: https://www.ispringsolutions.com/ispring-cam?ref=free-cam-pop-up
+2024-09-12 02:22:34,122 - INFO - Safe Browsing API response for https://www.ispringsolutions.com/ispring-cam?ref=free-cam-pop-up: {}
+2024-09-12 02:22:34,123 - INFO - Trying original URL: https://www.ispringsolutions.com/ispring-cam?ref=free-cam-pop-up
+2024-09-12 02:22:34,217 - INFO - Original URL is reachable: https://www.ispringsolutions.com/ispring-cam?ref=free-cam-pop-up
+2024-09-12 02:22:35,882 - ERROR - Found link tag: href=https://plus.google.com/115205273462063419038, rel=['publisher']
+2024-09-12 02:22:35,883 - ERROR - Found link tag: href=https://cdn2.ispringsolutions.com/ispring_content/content/fonts/EuclidCircularB-Regular.woff2, rel=['preload']
+2024-09-12 02:22:35,883 - ERROR - Found link tag: href=https://cdn2.ispringsolutions.com/ispring_content/content/fonts/EuclidCircularB-Medium.woff2, rel=['preload']
+2024-09-12 02:22:35,883 - ERROR - Found link tag: href=https://cdn2.ispringsolutions.com/ispring_content/content/fonts/EuclidCircularB-SemiBold.woff2, rel=['preload']
+2024-09-12 02:22:35,883 - ERROR - Found link tag: href=https://cdn2.ispringsolutions.com/ispring_content/content/css/components/header/en/style-mobile.css, rel=['preload']
+2024-09-12 02:22:35,883 - ERROR - Found link tag: href=https://cdn2.ispringsolutions.com/ispring_content/content/images/favicon/favicon.ico, rel=['shortcut', 'icon']
+2024-09-12 02:22:35,883 - ERROR - Favicon found: https://cdn2.ispringsolutions.com/ispring_content/content/images/favicon/favicon.ico
+2024-09-12 02:22:35,899 - ERROR - Normalized URL domain: ispringsolutions.com
+2024-09-12 02:22:37,158 - ERROR - WHOIS domain: ispringsolutions.com
+2024-09-12 02:22:37,158 - ERROR - Domains match
