@@ -741,3 +741,140 @@
 2024-09-11 14:09:16,357 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
 2024-09-11 14:09:16,358 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
 2024-09-11 14:09:16,364 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:10:08,587 - INFO - Model loaded successfully.
+2024-09-11 14:10:19,780 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:10:19,901 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:10:19,901 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:10:19,908 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:10:32,075 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:10:32,178 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:10:32,179 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:10:32,191 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:10:46,070 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:10:46,170 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:10:46,172 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:10:46,183 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:12:24,532 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:12:24,630 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:12:24,630 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:12:24,636 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:15:30,121 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:15:30,220 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:15:30,221 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:15:30,229 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:17:27,768 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:17:27,865 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:17:27,867 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:17:27,878 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:18:00,167 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:18:00,254 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:18:00,256 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:18:00,266 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:18:19,199 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:18:19,279 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 14:18:19,280 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:18:19,338 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:18:20,846 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 14:18:20,847 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 14:18:20,847 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 14:18:20,848 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 14:18:21,956 - ERROR - WHOIS domain: webflow.io
+2024-09-11 14:18:21,956 - ERROR - Domains do not match
+2024-09-11 14:18:35,893 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 14:18:35,893 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:19:48,223 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:19:48,414 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:19:48,415 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:19:48,426 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:21:41,703 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:21:41,825 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:21:41,826 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:21:41,837 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:22:23,044 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:22:24,763 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:22:24,763 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:22:24,790 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:22:30,392 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:22:30,645 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:22:30,646 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:22:30,657 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:24:43,580 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:24:43,700 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:24:43,701 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:24:43,707 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:24:50,635 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:24:50,724 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:24:50,725 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:24:50,730 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:25:29,275 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:25:29,373 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:25:29,374 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:25:29,380 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:26:03,387 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:26:03,494 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:26:03,495 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:26:03,501 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:26:15,637 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:26:15,712 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:26:15,712 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:26:15,734 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:26:20,897 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:26:20,984 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:26:20,984 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:26:20,991 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:26:42,580 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:26:42,681 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:26:42,682 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:26:42,687 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:28:57,817 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:28:57,910 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:28:57,911 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:28:57,922 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:30:54,576 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:30:55,112 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:30:55,113 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:30:55,146 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:31:26,745 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:31:26,882 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:31:26,883 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:31:26,889 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:33:25,464 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:33:25,569 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:33:25,569 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:33:25,576 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:34:54,542 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:34:54,663 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:34:54,664 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:34:54,676 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:36:24,132 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:36:24,228 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:36:24,229 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:36:24,236 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:36:32,765 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:36:32,865 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 14:36:32,867 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:36:32,948 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:36:34,184 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 14:36:34,185 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 14:36:34,185 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 14:36:34,185 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 14:36:35,118 - ERROR - WHOIS domain: webflow.io
+2024-09-11 14:36:35,118 - ERROR - Domains do not match
+2024-09-11 14:36:47,447 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 14:36:47,448 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:37:53,510 - INFO - Received URL: http://127.0.0.1:5000/
+2024-09-11 14:37:53,624 - INFO - Safe Browsing API response for http://127.0.0.1:5000/: {}
+2024-09-11 14:37:53,625 - INFO - Trying HTTPS URL: https://127.0.0.1:5000/
+2024-09-11 14:37:53,632 - ERROR - Error checking URL reachability for http://127.0.0.1:5000/: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2024-09-11 14:37:59,464 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:37:59,571 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2024-09-11 14:37:59,573 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:37:59,708 - INFO - Original URL is reachable: https://homepage--coinbase-fec.webflow.io/
+2024-09-11 14:38:02,520 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/6690e869dcdce14bc90c577f/css/homepage--coinbase-fec.webflow.643ab4644.css, rel=['stylesheet']
+2024-09-11 14:38:02,520 - ERROR - Found link tag: href=https://cdn.prod.website-files.com/img/favicon.ico, rel=['shortcut', 'icon']
+2024-09-11 14:38:02,520 - ERROR - Favicon found: https://cdn.prod.website-files.com/img/favicon.ico
+2024-09-11 14:38:02,521 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2024-09-11 14:38:04,531 - ERROR - WHOIS domain: webflow.io
+2024-09-11 14:38:04,532 - ERROR - Domains do not match
+2024-09-11 14:38:16,411 - INFO - Downloaded and saved phishing page: phishing_pages\homepage--coinbase-fec.webflow.io.html
+2024-09-11 14:38:16,411 - INFO - URL already exists in phishing-site-urls.txt: https://homepage--coinbase-fec.webflow.io/
