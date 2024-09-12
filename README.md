@@ -1,4 +1,4 @@
-# ![Phishsighter Here logo](https://github.com/kunley247/phishsighter/main/static\image.jpg) 
+# ![Phishsighter Here logo](https://github.com/kunley247/phishsighter/blob/main/static/image.jpg) 
 
 
 ### Table of Contents
@@ -20,12 +20,12 @@
 1. For the Web App
   ``` python phishsighter.py --web ```
 
-# ![Phishsighter Here logo](https://github.com/kunley247/phishsighter/main/screenshots\gui.png) 
+# ![Phishsighter Here logo](https://github.com/kunley247/phishsighter/blob/main/screenshots/gui.png) 
 
 1. For the Command Line Interface
   ``` python phishsighter.py --url="https://example.com" ```
 
-# ![Phishsighter Here logo](https://github.com/kunley247/phishsighter/main/screenshots\cli.png) 
+# ![Phishsighter Here logo](https://github.com/kunley247/phishsighter/blob/main/screenshots/cli.png) 
 
 
 ### Troubleshooting
