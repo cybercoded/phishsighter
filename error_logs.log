@@ -1524,3 +1524,7 @@
 2024-09-12 02:22:35,899 - ERROR - Normalized URL domain: ispringsolutions.com
 2024-09-12 02:22:37,158 - ERROR - WHOIS domain: ispringsolutions.com
 2024-09-12 02:22:37,158 - ERROR - Domains match
+2024-09-12 13:38:49,848 - INFO - Received URL: chrome://extensions/
+2024-09-12 13:38:51,241 - ERROR - Safe Browsing API request failed for chrome://extensions/: 400 Client Error: Bad Request for url: https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyCiBELtz9S-os_lVBSw9yyypOSke3JHwlE
+2024-09-12 13:38:51,261 - INFO - Trying original URL: chrome://extensions/
+2024-09-12 13:38:51,301 - ERROR - Error checking URL reachability for chrome://extensions/: No connection adapters were found for 'chrome://extensions/'
