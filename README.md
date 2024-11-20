@@ -1,4 +1,7 @@
-### This project implements a robust phishing URL detection system leveraging ensemble machine learning techniques to enhance prediction accuracy and reliability. The system identifies phishing URLs based on features extracted from web links by combining models like Random Forest, Gradient Boosting, and AdaBoost. The project includes feature engineering, model training, and evaluation, and is designed to help protect users from online threats. It is implemented in Python, utilizing libraries such as Scikit-learn and Pandas, with a user-friendly interface for testing URLs.
+# Phishsighter
+### Phishing URL Detection Using Ensemble Machine Learning Techniques
+
+This project implements a robust phishing URL detection system leveraging ensemble machine learning techniques to enhance prediction accuracy and reliability. The system identifies phishing URLs based on features extracted from web links by combining models like Random Forest, Gradient Boosting, and AdaBoost. The project includes feature engineering, model training, and evaluation, and is designed to help protect users from online threats. It is implemented in Python, utilizing libraries such as Scikit-learn and Pandas, with a user-friendly interface for testing URLs.
 
 
 # ![Phishsighter Here logo](https://github.com/kunley247/phishsighter/blob/main/static/image.jpg) 
