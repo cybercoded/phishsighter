@@ -107,25 +107,28 @@ $(document).ready(function() {
                     <div class="card mb-3">
                         <div class="card-header" id="${resultId}">
                             <strong>Result for: ${url}</strong>
+                            ${response.message.includes('is not reachable') || response.message.includes('phishing site') ? '' :`
                             <button class="btn btn-link" data-toggle="collapse" data-target="#${featuresId}" aria-expanded="false" aria-controls="${featuresId}">
                                 Toggle Features
-                            </button>
+                            </button>`}
                         </div>
                         <div class="card-body">
-                            <p class="${response.message.includes('phishing site') ? 'text-danger' : 'text-success'}">
+                            <p class="${response.message.includes('phishing site') ? 'text-danger' : response.message.includes('is not reachable') ? 'text-warning' : 'text-success'}">
                                 ${response.message}
                             </p>
                         </div>
-                        <div id="${featuresId}" class="collapse">
-                            <div class="card-body">
-                                <table class="table table-striped table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>Feature</th>
-                                            <th>Value</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                        ${response.message.includes('is not reachable') || response.message.includes('phishing site') ? '' :`
+                            <div id="${featuresId}" class="collapse">
+                                <div class="card-body">
+                                    <table class="table table-striped table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Feature</th>
+                                                <th>Value</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>`
+                        }
                 `;
 
                 // Populate the features list for the current URL

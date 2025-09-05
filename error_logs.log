@@ -1702,3 +1702,161 @@
 2025-09-05 15:01:19,426 - ERROR - Normalized URL domain: google.com
 2025-09-05 15:01:20,458 - ERROR - WHOIS domain: google.com
 2025-09-05 15:01:20,458 - ERROR - Domains match
+2025-09-05 15:02:34,740 - INFO - Received URL: http://www.google.com
+2025-09-05 15:02:34,757 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2025-09-05 15:02:34,757 - INFO - Received URL: https://login-wsapp-hk.top/
+2025-09-05 15:02:34,758 - INFO - Received URL: https://ckdmckmdkcmdkmck.b-cdn.net/
+2025-09-05 15:02:34,760 - INFO - Received URL: https://up-to1.pages.dev/
+2025-09-05 15:02:34,883 - INFO - Safe Browsing API response for https://login-wsapp-hk.top/: {}
+2025-09-05 15:02:34,883 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2025-09-05 15:02:34,886 - INFO - Trying original URL: https://login-wsapp-hk.top/
+2025-09-05 15:02:34,886 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2025-09-05 15:02:34,887 - INFO - Safe Browsing API response for https://up-to1.pages.dev/: {}
+2025-09-05 15:02:34,890 - INFO - Safe Browsing API response for https://ckdmckmdkcmdkmck.b-cdn.net/: {}
+2025-09-05 15:02:34,892 - INFO - Trying original URL: https://up-to1.pages.dev/
+2025-09-05 15:02:34,895 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 15:02:34,897 - INFO - Trying original URL: https://ckdmckmdkcmdkmck.b-cdn.net/
+2025-09-05 15:02:34,901 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 15:02:34,971 - ERROR - Error checking URL reachability for https://login-wsapp-hk.top/: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-09-05 15:02:34,986 - ERROR - Error checking URL reachability for https://up-to1.pages.dev/: HTTPSConnectionPool(host='up-to1.pages.dev', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:997)')))
+2025-09-05 15:02:34,988 - ERROR - Error checking URL reachability for https://homepage--coinbase-fec.webflow.io/: HTTPSConnectionPool(host='homepage--coinbase-fec.webflow.io', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:997)')))
+2025-09-05 15:02:35,041 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 15:02:36,276 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 15:02:36,279 - ERROR - Normalized URL domain: google.com
+2025-09-05 15:02:37,352 - ERROR - WHOIS domain: google.com
+2025-09-05 15:02:37,352 - ERROR - Domains match
+2025-09-05 15:05:58,785 - INFO - Model loaded successfully.
+2025-09-05 15:05:58,980 - INFO - Received URL: http://www.google.com
+2025-09-05 15:05:58,983 - INFO - Received URL: https://homepage--coinbase-fec.webflow.io/
+2025-09-05 15:05:58,987 - INFO - Received URL: https://login-wsapp-hk.top/
+2025-09-05 15:05:58,988 - INFO - Received URL: https://ckdmckmdkcmdkmck.b-cdn.net/
+2025-09-05 15:05:58,991 - INFO - Received URL: https://up-to1.pages.dev/
+2025-09-05 15:05:59,127 - INFO - Safe Browsing API response for https://login-wsapp-hk.top/: {}
+2025-09-05 15:05:59,128 - INFO - Trying original URL: https://login-wsapp-hk.top/
+2025-09-05 15:05:59,130 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 15:05:59,131 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 15:05:59,133 - INFO - Safe Browsing API response for https://ckdmckmdkcmdkmck.b-cdn.net/: {}
+2025-09-05 15:05:59,135 - INFO - Safe Browsing API response for https://up-to1.pages.dev/: {}
+2025-09-05 15:05:59,137 - INFO - Trying original URL: https://ckdmckmdkcmdkmck.b-cdn.net/
+2025-09-05 15:05:59,139 - INFO - Trying original URL: https://up-to1.pages.dev/
+2025-09-05 15:05:59,157 - INFO - Safe Browsing API response for https://homepage--coinbase-fec.webflow.io/: {}
+2025-09-05 15:05:59,159 - INFO - Trying original URL: https://homepage--coinbase-fec.webflow.io/
+2025-09-05 15:05:59,201 - ERROR - Error checking URL reachability for https://login-wsapp-hk.top/: HTTPSConnectionPool(host='login-wsapp-hk.top', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:997)')))
+2025-09-05 15:05:59,201 - WARNING - URL is not reachable: https://login-wsapp-hk.top/. Continuing anyway.
+2025-09-05 15:05:59,215 - ERROR - Error checking URL reachability for https://up-to1.pages.dev/: HTTPSConnectionPool(host='up-to1.pages.dev', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:997)')))
+2025-09-05 15:05:59,216 - WARNING - URL is not reachable: https://up-to1.pages.dev/. Continuing anyway.
+2025-09-05 15:05:59,225 - ERROR - Error checking URL reachability for https://homepage--coinbase-fec.webflow.io/: HTTPSConnectionPool(host='homepage--coinbase-fec.webflow.io', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:997)')))
+2025-09-05 15:05:59,227 - WARNING - URL is not reachable: https://homepage--coinbase-fec.webflow.io/. Continuing anyway.
+2025-09-05 15:05:59,255 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 15:05:59,295 - WARNING - URL is not reachable: https://ckdmckmdkcmdkmck.b-cdn.net/. Continuing anyway.
+2025-09-05 15:05:59,374 - ERROR - An error occurred: 'str' object has no attribute 'find_all'
+2025-09-05 15:05:59,374 - ERROR - Normalized URL domain: up-to1.pages.dev
+2025-09-05 15:05:59,375 - ERROR - WHOIS domain: 
+2025-09-05 15:05:59,375 - ERROR - Domains do not match
+2025-09-05 15:06:00,272 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 15:06:00,274 - ERROR - Normalized URL domain: google.com
+2025-09-05 15:06:00,331 - ERROR - Found link tag: href=https://fonts.bunny.net/css?family=Rubik:300,400,500,700,900, rel=['stylesheet']
+2025-09-05 15:06:00,331 - ERROR - Found link tag: href=https://bunnycdn.b-cdn.net/assets/landingpage/css/unconfigured.css, rel=['stylesheet']
+2025-09-05 15:06:00,433 - ERROR - No favicon found.
+2025-09-05 15:06:00,436 - ERROR - Normalized URL domain: ckdmckmdkcmdkmck.b-cdn.net
+2025-09-05 15:06:00,531 - ERROR - An error occurred: 'str' object has no attribute 'find_all'
+2025-09-05 15:06:00,531 - ERROR - Normalized URL domain: homepage--coinbase-fec.webflow.io
+2025-09-05 15:06:00,983 - ERROR - WHOIS domain: google.com
+2025-09-05 15:06:00,983 - ERROR - Domains match
+2025-09-05 15:06:01,350 - ERROR - WHOIS domain: b-cdn.net
+2025-09-05 15:06:01,350 - ERROR - Domains do not match
+2025-09-05 15:06:01,606 - ERROR - WHOIS domain: webflow.io
+2025-09-05 15:06:01,606 - ERROR - Domains do not match
+2025-09-05 15:06:12,362 - ERROR - Failed to download the phishing page, status code: 403
+2025-09-05 15:06:13,057 - ERROR - An error occurred: 'str' object has no attribute 'find_all'
+2025-09-05 15:06:13,057 - ERROR - Normalized URL domain: login-wsapp-hk.top
+2025-09-05 15:06:23,484 - ERROR - WHOIS domain: login-wsapp-hk.top
+2025-09-05 15:06:23,484 - ERROR - Domains match
+2025-09-05 15:06:42,634 - ERROR - Error retrieving website traffic data from Google PageSpeed Insights API for https://login-wsapp-hk.top/: 400 Client Error: Bad Request for url: https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://login-wsapp-hk.top/&key=AIzaSyCiBELtz9S-os_lVBSw9yyypOSke3JHwlE
+2025-09-05 15:07:30,818 - INFO - Received URL: https://up-to1.pages.dev/
+2025-09-05 15:07:30,928 - INFO - Safe Browsing API response for https://up-to1.pages.dev/: {}
+2025-09-05 15:07:30,930 - INFO - Trying original URL: https://up-to1.pages.dev/
+2025-09-05 15:07:31,004 - ERROR - Error checking URL reachability for https://up-to1.pages.dev/: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-09-05 15:07:31,004 - WARNING - URL is not reachable: https://up-to1.pages.dev/. Continuing anyway.
+2025-09-05 15:07:31,099 - ERROR - An error occurred: 'str' object has no attribute 'find_all'
+2025-09-05 15:07:31,099 - ERROR - Normalized URL domain: up-to1.pages.dev
+2025-09-05 15:07:31,101 - ERROR - WHOIS domain: 
+2025-09-05 15:07:31,101 - ERROR - Domains do not match
+2025-09-05 15:07:34,545 - INFO - Received URL: https://promo-gsuplementacoes.com/
+2025-09-05 15:07:34,679 - INFO - Safe Browsing API response for https://promo-gsuplementacoes.com/: {}
+2025-09-05 15:07:34,681 - INFO - Trying original URL: https://promo-gsuplementacoes.com/
+2025-09-05 15:07:35,147 - INFO - Original URL is reachable: https://promo-gsuplementacoes.com/
+2025-09-05 15:07:36,785 - ERROR - No favicon found.
+2025-09-05 15:07:36,792 - ERROR - Normalized URL domain: promo-gsuplementacoes.com
+2025-09-05 15:07:37,425 - ERROR - WHOIS domain: promo-gsuplementacoes.com
+2025-09-05 15:07:37,427 - ERROR - Domains match
+2025-09-05 15:08:33,903 - INFO - Received URL: https://portalnomelimpo.site/
+2025-09-05 15:08:34,039 - INFO - Safe Browsing API response for https://portalnomelimpo.site/: {}
+2025-09-05 15:08:34,044 - INFO - Trying original URL: https://portalnomelimpo.site/
+2025-09-05 15:08:34,071 - ERROR - Error checking URL reachability for https://portalnomelimpo.site/: HTTPSConnectionPool(host='portalnomelimpo.site', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002739D23E530>: Failed to resolve 'portalnomelimpo.site' ([Errno 11001] getaddrinfo failed)"))
+2025-09-05 15:08:34,071 - WARNING - URL is not reachable: https://portalnomelimpo.site/. Continuing anyway.
+2025-09-05 15:08:34,150 - ERROR - An error occurred: 'str' object has no attribute 'find_all'
+2025-09-05 15:08:34,150 - ERROR - Normalized URL domain: portalnomelimpo.site
+2025-09-05 15:08:34,224 - ERROR - An error occurred: The queried object does not exist: DOMAIN NOT FOUND
+
+>>> Last update of WHOIS database: 2025-09-05T14:08:34.0Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+>>> IMPORTANT INFORMATION ABOUT THE DEPLOYMENT OF RDAP: please visit
+https://www.centralnicregistry.com/support/information/rdap <<<
+
+The registration data available in this service is limited. Additional
+data may be available at https://lookup.icann.org
+
+The Whois and RDAP services are provided by CentralNic, and contain
+information pertaining to Internet domain names registered by our
+our customers. By using this service you are agreeing (1) not to use any
+information presented here for any purpose other than determining
+ownership of domain names, (2) not to store or reproduce this data in
+any way, (3) not to use any high-volume, automated, electronic processes
+to obtain data from this service. Abuse of this service is monitored and
+actions in contravention of these terms will result in being permanently
+blacklisted. All data is (c) CentralNic Ltd (https://www.centralnicregistry.com)
+
+Access to the Whois and RDAP services is rate limited. For more
+information, visit https://centralnicregistry.com/policies/whois-guidance.
+
+2025-09-05 15:08:54,497 - ERROR - Error retrieving website traffic data from Google PageSpeed Insights API for https://portalnomelimpo.site/: 400 Client Error: Bad Request for url: https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://portalnomelimpo.site/&key=AIzaSyCiBELtz9S-os_lVBSw9yyypOSke3JHwlE
+2025-09-05 15:09:28,915 - INFO - Model loaded successfully.
+2025-09-05 15:09:29,054 - INFO - Received URL: https://portalnomelimpo.site/
+2025-09-05 15:09:29,162 - INFO - Safe Browsing API response for https://portalnomelimpo.site/: {}
+2025-09-05 15:09:29,162 - INFO - Trying original URL: https://portalnomelimpo.site/
+2025-09-05 15:09:29,177 - ERROR - Error checking URL reachability for https://portalnomelimpo.site/: HTTPSConnectionPool(host='portalnomelimpo.site', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000228D5D40AC0>: Failed to resolve 'portalnomelimpo.site' ([Errno 11001] getaddrinfo failed)"))
+2025-09-05 15:13:05,063 - INFO - Received URL: https://portalnomelimpo.site/
+2025-09-05 15:13:05,210 - INFO - Safe Browsing API response for https://portalnomelimpo.site/: {}
+2025-09-05 15:13:05,212 - INFO - Trying original URL: https://portalnomelimpo.site/
+2025-09-05 15:13:05,224 - ERROR - Error checking URL reachability for https://portalnomelimpo.site/: HTTPSConnectionPool(host='portalnomelimpo.site', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000228D5DA78E0>: Failed to resolve 'portalnomelimpo.site' ([Errno 11001] getaddrinfo failed)"))
+2025-09-05 15:16:13,912 - INFO - Received URL: https://portalnomelimpo.site/
+2025-09-05 15:16:14,041 - INFO - Safe Browsing API response for https://portalnomelimpo.site/: {}
+2025-09-05 15:16:14,044 - INFO - Trying original URL: https://portalnomelimpo.site/
+2025-09-05 15:16:14,059 - ERROR - Error checking URL reachability for https://portalnomelimpo.site/: HTTPSConnectionPool(host='portalnomelimpo.site', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000228D5D40130>: Failed to resolve 'portalnomelimpo.site' ([Errno 11001] getaddrinfo failed)"))
+2025-09-05 15:16:26,065 - INFO - Received URL: https://portalnomelimpo.site/
+2025-09-05 15:16:26,079 - INFO - Received URL: http://www.google.com
+2025-09-05 15:16:26,185 - INFO - Safe Browsing API response for https://portalnomelimpo.site/: {}
+2025-09-05 15:16:26,186 - INFO - Trying original URL: https://portalnomelimpo.site/
+2025-09-05 15:16:26,191 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 15:16:26,192 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 15:16:26,204 - ERROR - Error checking URL reachability for https://portalnomelimpo.site/: HTTPSConnectionPool(host='portalnomelimpo.site', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000228D5DA66B0>: Failed to resolve 'portalnomelimpo.site' ([Errno 11001] getaddrinfo failed)"))
+2025-09-05 15:16:26,314 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 15:16:27,484 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 15:16:27,487 - ERROR - Normalized URL domain: google.com
+2025-09-05 15:16:28,501 - ERROR - WHOIS domain: google.com
+2025-09-05 15:16:28,501 - ERROR - Domains match
+2025-09-05 15:17:09,822 - INFO - Received URL: http://www.google.com
+2025-09-05 15:17:09,970 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 15:17:09,971 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 15:17:10,122 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 15:17:11,663 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 15:17:11,664 - ERROR - Normalized URL domain: google.com
+2025-09-05 15:17:12,544 - ERROR - WHOIS domain: google.com
+2025-09-05 15:17:12,544 - ERROR - Domains match
+2025-09-05 15:17:30,300 - INFO - Received URL: https://portalnomelimpo.site/
+2025-09-05 15:17:30,439 - INFO - Safe Browsing API response for https://portalnomelimpo.site/: {}
+2025-09-05 15:17:30,440 - INFO - Trying original URL: https://portalnomelimpo.site/
+2025-09-05 15:17:30,456 - ERROR - Error checking URL reachability for https://portalnomelimpo.site/: HTTPSConnectionPool(host='portalnomelimpo.site', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000228D5DA6920>: Failed to resolve 'portalnomelimpo.site' ([Errno 11001] getaddrinfo failed)"))
