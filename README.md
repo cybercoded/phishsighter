@@ -43,7 +43,7 @@ For the Command Line Interface
 # ![Browser Extension and Notification](https://github.com/kunley247/phishsighter/blob/main/screenshots/broswer-extension-and-notification.png) 
 
 ## Compatibility
-1. Make sure you are using Python 3.12.6 version in a Virtual Environment (env) to avoid unnecessary errors
+1. Make sure you are using Python 3.10.0 version in a Virtual Environment (env) to avoid unnecessary errors
 2. The Browser extension was only tested in google chrome browser.
 
 ## Building the Browser Extension

@@ -1528,3 +1528,177 @@
 2024-09-12 13:38:51,241 - ERROR - Safe Browsing API request failed for chrome://extensions/: 400 Client Error: Bad Request for url: https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyCiBELtz9S-os_lVBSw9yyypOSke3JHwlE
 2024-09-12 13:38:51,261 - INFO - Trying original URL: chrome://extensions/
 2024-09-12 13:38:51,301 - ERROR - Error checking URL reachability for chrome://extensions/: No connection adapters were found for 'chrome://extensions/'
+2025-09-05 13:23:33,131 - ERROR - Error loading the model: No module named 'catboost'
+2025-09-05 13:23:45,743 - INFO - Received URL: http://www.google.com
+2025-09-05 13:23:46,431 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 13:23:46,432 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 13:23:47,082 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 13:23:48,383 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 13:23:48,386 - ERROR - Normalized URL domain: google.com
+2025-09-05 13:23:48,386 - ERROR - An error occurred: module 'whois' has no attribute 'whois'
+2025-09-05 13:23:54,825 - INFO - Received URL: http://www.google.com
+2025-09-05 13:23:55,409 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 13:23:55,410 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 13:23:55,993 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 13:23:57,207 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 13:23:57,208 - ERROR - Normalized URL domain: google.com
+2025-09-05 13:23:57,208 - ERROR - An error occurred: module 'whois' has no attribute 'whois'
+2025-09-05 13:24:00,696 - INFO - Received URL: http://www.google.com
+2025-09-05 13:24:01,504 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 13:24:01,506 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 13:24:02,413 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 13:24:02,737 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 13:24:02,737 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 13:24:03,763 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 13:24:03,769 - ERROR - Normalized URL domain: google.com
+2025-09-05 13:24:03,769 - ERROR - An error occurred: module 'whois' has no attribute 'whois'
+2025-09-05 13:24:16,815 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 13:24:30,503 - INFO - Received URL: http://www.google.com
+2025-09-05 13:24:31,132 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 13:24:31,133 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 13:24:31,766 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 13:24:33,022 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 13:24:33,024 - ERROR - Normalized URL domain: google.com
+2025-09-05 13:24:33,024 - ERROR - An error occurred: module 'whois' has no attribute 'whois'
+2025-09-05 13:24:34,861 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 13:25:27,595 - INFO - Received URL: http://www.google.com
+2025-09-05 13:25:28,257 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 13:25:28,258 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 13:25:28,912 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 13:25:30,166 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 13:25:30,167 - ERROR - Normalized URL domain: google.com
+2025-09-05 13:25:30,168 - ERROR - An error occurred: module 'whois' has no attribute 'whois'
+2025-09-05 13:25:44,153 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 13:39:21,075 - INFO - Received URL: http://www.google.com
+2025-09-05 13:39:21,678 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 13:39:21,679 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 13:39:22,265 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 13:39:23,526 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 13:39:23,528 - ERROR - Normalized URL domain: google.com
+2025-09-05 13:39:23,528 - ERROR - An error occurred: module 'whois' has no attribute 'whois'
+2025-09-05 13:39:37,102 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 13:42:47,185 - ERROR - Error loading the model: No module named 'sklearn.ensemble._gb_losses'
+2025-09-05 13:42:47,189 - INFO - Received URL: www.google.com
+2025-09-05 13:42:47,798 - INFO - Safe Browsing API response for www.google.com: {}
+2025-09-05 13:42:47,799 - INFO - Trying original URL: www.google.com
+2025-09-05 13:42:47,800 - ERROR - Error checking URL reachability for www.google.com: Invalid URL 'www.google.com': No scheme supplied. Perhaps you meant https://www.google.com?
+2025-09-05 13:43:32,044 - ERROR - Error loading the model: No module named 'sklearn.ensemble._gb_losses'
+2025-09-05 13:43:32,047 - INFO - Received URL: http://www.google.com
+2025-09-05 13:43:32,652 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 13:43:32,655 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 13:43:33,254 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 13:43:34,418 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 13:43:34,419 - ERROR - Normalized URL domain: google.com
+2025-09-05 13:43:34,420 - ERROR - An error occurred: module 'whois' has no attribute 'whois'
+2025-09-05 13:43:50,766 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 13:44:51,119 - ERROR - Error loading the model: No module named 'sklearn.ensemble._gb_losses'
+2025-09-05 13:44:51,122 - INFO - Received URL: http://www.google.com
+2025-09-05 13:44:51,748 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 13:44:51,749 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 13:44:52,310 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 13:44:53,449 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 13:44:53,454 - ERROR - Normalized URL domain: google.com
+2025-09-05 13:44:53,454 - ERROR - An error occurred: module 'whois' has no attribute 'whois'
+2025-09-05 13:45:08,797 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 13:53:13,894 - ERROR - Error loading the model: No module named 'sklearn.ensemble._gb_losses'
+2025-09-05 13:53:13,897 - INFO - Received URL: http://www.google.com
+2025-09-05 13:53:14,507 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 13:53:14,509 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 13:53:15,096 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 13:53:16,310 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 13:53:16,316 - ERROR - Normalized URL domain: google.com
+2025-09-05 13:53:16,316 - ERROR - An error occurred: module 'whois' has no attribute 'whois'
+2025-09-05 13:53:30,322 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 13:58:18,536 - ERROR - Error loading the model: No module named 'sklearn.ensemble._gb_losses'
+2025-09-05 13:58:18,540 - INFO - Received URL: www.google.com
+2025-09-05 13:58:19,277 - INFO - Safe Browsing API response for www.google.com: {}
+2025-09-05 13:58:19,278 - INFO - Trying original URL: www.google.com
+2025-09-05 13:58:19,279 - ERROR - Error checking URL reachability for www.google.com: Invalid URL 'www.google.com': No scheme supplied. Perhaps you meant https://www.google.com?
+2025-09-05 13:58:32,188 - ERROR - Error loading the model: No module named 'sklearn.ensemble._gb_losses'
+2025-09-05 13:58:32,191 - INFO - Received URL: http://www.google.com
+2025-09-05 13:58:32,792 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 13:58:32,794 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 13:58:33,367 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 13:58:35,573 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 13:58:35,575 - ERROR - Normalized URL domain: google.com
+2025-09-05 13:58:36,519 - ERROR - WHOIS domain: google.com
+2025-09-05 13:58:36,519 - ERROR - Domains match
+2025-09-05 13:58:50,078 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 14:05:52,628 - ERROR - Error loading the model: No module named 'sklearn.ensemble._gb_losses'
+2025-09-05 14:05:52,631 - INFO - Received URL: http://www.google.com
+2025-09-05 14:05:53,256 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 14:05:53,258 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 14:05:53,847 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 14:05:55,954 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 14:05:55,960 - ERROR - Normalized URL domain: google.com
+2025-09-05 14:05:56,853 - ERROR - WHOIS domain: google.com
+2025-09-05 14:05:56,853 - ERROR - Domains match
+2025-09-05 14:06:17,478 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 14:23:51,222 - ERROR - Error loading the model: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2025-09-05 14:23:51,225 - INFO - Received URL: http://www.google.com
+2025-09-05 14:23:51,520 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 14:23:51,521 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 14:23:51,673 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 14:23:52,932 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 14:23:52,934 - ERROR - Normalized URL domain: google.com
+2025-09-05 14:23:53,747 - ERROR - WHOIS domain: google.com
+2025-09-05 14:23:53,747 - ERROR - Domains match
+2025-09-05 14:24:07,355 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 14:27:54,051 - ERROR - Error loading the model: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2025-09-05 14:27:54,054 - INFO - Received URL: http://www.google.com
+2025-09-05 14:27:54,315 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 14:27:54,317 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 14:27:54,447 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 14:27:55,740 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 14:27:55,741 - ERROR - Normalized URL domain: google.com
+2025-09-05 14:27:56,753 - ERROR - WHOIS domain: google.com
+2025-09-05 14:27:56,753 - ERROR - Domains match
+2025-09-05 14:28:11,822 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 14:36:11,443 - INFO - Model loaded successfully.
+2025-09-05 14:36:11,446 - INFO - Received URL: http://www.google.com
+2025-09-05 14:36:11,595 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 14:36:11,597 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 14:36:11,729 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 14:36:13,049 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 14:36:13,052 - ERROR - Normalized URL domain: google.com
+2025-09-05 14:36:13,974 - ERROR - WHOIS domain: google.com
+2025-09-05 14:36:13,974 - ERROR - Domains match
+2025-09-05 14:36:26,772 - ERROR - Error during model prediction for https://www.google.com: 'GradientBoostingClassifier' object has no attribute '_loss'
+2025-09-05 14:39:37,176 - INFO - Model loaded successfully.
+2025-09-05 14:39:37,180 - INFO - Received URL: http://www.google.com
+2025-09-05 14:39:37,316 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 14:39:37,319 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 14:39:37,453 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 14:39:38,559 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 14:39:38,561 - ERROR - Normalized URL domain: google.com
+2025-09-05 14:39:39,298 - ERROR - WHOIS domain: google.com
+2025-09-05 14:39:39,298 - ERROR - Domains match
+2025-09-05 14:40:35,121 - INFO - Model loaded successfully.
+2025-09-05 14:40:37,006 - INFO - Model loaded successfully.
+2025-09-05 14:40:49,837 - INFO - Received URL: http://www.google.com
+2025-09-05 14:40:50,003 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 14:40:50,005 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 14:40:50,119 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 14:40:51,447 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 14:40:51,448 - ERROR - Normalized URL domain: google.com
+2025-09-05 14:40:52,412 - ERROR - WHOIS domain: google.com
+2025-09-05 14:40:52,412 - ERROR - Domains match
+2025-09-05 14:59:54,986 - ERROR - Error loading the model: No module named 'sklearn._loss.loss'
+2025-09-05 15:00:33,208 - INFO - Received URL: http://www.google.com
+2025-09-05 15:00:33,356 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 15:00:33,357 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 15:00:33,495 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 15:00:34,843 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 15:00:34,846 - ERROR - Normalized URL domain: google.com
+2025-09-05 15:00:35,578 - ERROR - WHOIS domain: google.com
+2025-09-05 15:00:35,578 - ERROR - Domains match
+2025-09-05 15:00:48,752 - ERROR - Error during model prediction for https://www.google.com: 'NoneType' object has no attribute 'predict'
+2025-09-05 15:01:16,774 - INFO - Model loaded successfully.
+2025-09-05 15:01:18,038 - INFO - Received URL: http://www.google.com
+2025-09-05 15:01:18,223 - INFO - Safe Browsing API response for http://www.google.com: {}
+2025-09-05 15:01:18,225 - INFO - Trying HTTPS URL: https://www.google.com
+2025-09-05 15:01:18,328 - INFO - HTTPS URL is reachable: https://www.google.com
+2025-09-05 15:01:19,416 - ERROR - Favicon found at fallback location: https://www.google.com/favicon.ico
+2025-09-05 15:01:19,426 - ERROR - Normalized URL domain: google.com
+2025-09-05 15:01:20,458 - ERROR - WHOIS domain: google.com
+2025-09-05 15:01:20,458 - ERROR - Domains match

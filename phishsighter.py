@@ -38,7 +38,7 @@ load_dotenv()
 
 # Load the pre-trained model
 try:
-    with open("models/ensemble_model.pkl", "rb") as file:
+    with open("models/model.pkl", "rb") as file:
         gbc = pickle.load(file)
     logger.info("Model loaded successfully.")
 except Exception as e:
